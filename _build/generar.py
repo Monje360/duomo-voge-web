@@ -656,12 +656,12 @@ def page_home():
     <div class="wrap" style="position:relative"><div class="hero__dots" role="tablist" aria-label="Modelos destacados">{"".join(f'<button aria-label="{t}"{" class=\"is-active\"" if i == 0 else ""}></button>' for i, (t, d, sl) in enumerate(hero_txt))}</div></div>
   </section>
 
-  <section class="section">
+  <section class="trust" aria-label="Voge Madrid Sur">
     <div class="wrap">
-      <span class="eyebrow" style="display:flex;justify-content:center">Dónde estamos</span>
-      <h2>Voge Móstoles y Voge Getafe</h2>
-      <p class="sub">Concesionarios oficiales. Prueba tu Voge o contacta con nosotros.</p>
-      <div class="hero__actions" style="justify-content:center"><a class="btn btn--dark" href="/solicitud-de-prueba/">Prueba tu Voge</a><a class="btn btn--ghost" href="/contacto/">Contacto</a><a class="btn btn--ghost" href="/concesionario-voge-madrid-sur/">Descubre más</a></div>
+      <div class="trust__item"><span class="trust__ico">{ICO["pin"]}</span><span><b>Móstoles y Getafe</b>Concesionarios oficiales</span></div>
+      <div class="trust__item"><span class="trust__ico">{ICO["wrench"]}</span><span><b>Taller propio</b>Servicio postventa</span></div>
+      <div class="trust__item"><span class="trust__ico">{ICO["box"]}</span><span><b>Recambios originales</b>Voge</span></div>
+      <div class="trust__item"><span class="trust__ico">{ICO["bike"]}</span><span><b>+1.500 motos</b>Entregadas</span></div>
     </div>
   </section>
 
@@ -684,11 +684,33 @@ def page_home():
     </div>
   </section>
 
+  <section class="section section--dark">
+    <div class="wrap">
+      <span class="eyebrow" style="display:flex;justify-content:center">Siempre cerca de ti</span>
+      <h2>Tu concesionario de confianza en <span class="hl">Móstoles y Getafe</span></h2>
+      <p class="sub">Nuestra historia nace de una auténtica pasión por el mundo del motor y de una sólida tradición familiar en automoción que se remonta a 1960.</p>
+      <div class="features">
+        <div class="feature reveal"><div class="feature__ico">{ICO["wrench"]}</div><h3>Taller propio</h3><p>Mecánica y mantenimiento de tu Voge en manos de especialistas.</p></div>
+        <div class="feature reveal reveal-d1"><div class="feature__ico">{ICO["shield"]}</div><h3>Servicio postventa</h3><p>Atención integral antes, durante y después de tu compra.</p></div>
+        <div class="feature reveal reveal-d2"><div class="feature__ico">{ICO["box"]}</div><h3>Recambios originales</h3><p>Recambios y accesorios originales Voge.</p></div>
+        <div class="feature reveal reveal-d3"><div class="feature__ico">{ICO["star"]}</div><h3>Equipo especializado</h3><p>Asesoramiento personalizado y una atención cercana.</p></div>
+      </div>
+      <div class="stats" style="margin-top:56px">
+        <div class="stat reveal"><b>+<span data-count="20">20</span></b><span>Profesionales del motor</span></div>
+        <div class="stat reveal reveal-d1"><b>+<span data-count="1500">1500</span></b><span>Motos entregadas</span></div>
+        <div class="stat reveal reveal-d2"><b>+<span data-count="50">50</span></b><span>Años de experiencia en motos</span></div>
+        <div class="stat reveal reveal-d3"><b>2</b><span>Concesionarios: Móstoles y Getafe</span></div>
+      </div>
+      <div class="hero__actions" style="justify-content:center;margin-top:40px"><a class="btn btn--primary" href="/solicitud-de-prueba/">Prueba tu Voge</a><a class="btn btn--ghost-light" href="/concesionario-voge-madrid-sur/">Descubre más</a></div>
+    </div>
+  </section>
+
   <section class="section section--alt">
     <div class="wrap">
       {visit_block("Tu concesionario Voge en Móstoles y Getafe")}
     </div>
   </section>
+  {cta_band()}
 """
     write("/", head("Motos Voge Madrid Sur · Concesionaria de Motos Voge en Madrid Sur",
                     f"Concesionarios oficiales Voge en Móstoles y Getafe. Toda la gama Voge: scooters, naked y adventure, desde {eur(precio_min())}. Solicita tu prueba.",
