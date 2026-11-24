@@ -39,6 +39,7 @@
       cur = (n + slides.length) % slides.length;
       var img = slides[cur].querySelector("img"); if (img && img.loading === "lazy") img.loading = "eager";
       slides[cur].classList.add("is-active"); if (dots[cur]) dots[cur].classList.add("is-active");
+      document.querySelectorAll(".hero__txt").forEach(function (t) { var on = +t.getAttribute("data-slide") === cur; t.hidden = !on; t.classList.toggle("is-active", on); });
     };
     var start = function () { if (!reduce) timer = setInterval(function () { go(cur + 1); }, 6500); };
     dots.forEach(function (d, i) { d.addEventListener("click", function () { clearInterval(timer); go(i); start(); }); });

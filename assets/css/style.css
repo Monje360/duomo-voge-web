@@ -630,3 +630,10 @@ h1, h2 { letter-spacing: -.025em; }
 @media (max-width: 900px) { .dests { grid-template-columns: 1fr; } }
 .kpis { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 420px) { .kpis { grid-template-columns: repeat(2, 1fr); } .kpi:nth-child(3) { border-left: 0; } .kpi:nth-child(n+3) { border-top: 1px solid var(--line); } }
+
+.hero__txt[hidden] { display: none; }
+.hero__txt.is-active { animation: heroTxt .6s var(--ease); }
+@keyframes heroTxt { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.hero h2.h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); color: #fff; text-align: left; }
+.catgrid--3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 860px) { .catgrid--3 { grid-template-columns: 1fr; } }

@@ -110,7 +110,7 @@ HORAS = [
     {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "16:00", "closes": "19:30"},
     {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00"}]
 DEALER_ID = SITE + "/#concesionario"
-GETAFE_ID = SITE + "/voge-getafe/#concesionario"
+GETAFE_ID = SITE + "/concesionario-voge-madrid-sur/#voge-getafe"
 DEALER = {
     "@context": "https://schema.org", "@type": "MotorcycleDealer", "@id": DEALER_ID,
     "name": "Voge Móstoles · Duomo Motor Bikes", "alternateName": "Voge Madrid Sur", "legalName": NEGOCIO["razon"], "url": SITE + "/",
@@ -119,27 +119,19 @@ DEALER = {
     "address": {"@type": "PostalAddress", "streetAddress": NEGOCIO["calle"], "postalCode": NEGOCIO["cp"],
                 "addressLocality": NEGOCIO["ciudad"], "addressRegion": "Comunidad de Madrid", "addressCountry": "ES"},
     "openingHoursSpecification": HORAS,
-    "areaServed": [{"@type": "City", "name": z} for z in ZONAS if z != "Madrid capital"],
     "brand": {"@type": "Brand", "name": "Voge"},
     "geo": GEO, "hasMap": GMAPS, "sameAs": [NEGOCIO["instagram"], GMAPS],
     "foundingDate": "2020", "currenciesAccepted": "EUR", "paymentAccepted": "Efectivo, tarjeta, transferencia, financiación",
-    "slogan": "Tu nueva Voge a 5 minutos del X-Madrid",
-    "knowsAbout": ["Motos Voge", "Scooters 125 cc", "Motos para carnet A2", "Motos trail", "Taller de motos", "Financiación de motos"],
-    "department": [{"@type": "AutoRepair", "@id": SITE + "/taller-voge/#taller", "name": "Taller Voge Madrid Sur · Duomo Motor Bikes",
-                    "telephone": NEGOCIO["telTallerIntl"], "url": SITE + "/taller-voge/", "image": SITE + "/assets/img/og/voge-madrid-sur.jpg",
-                    "address": {"@type": "PostalAddress", "streetAddress": NEGOCIO["calle"], "postalCode": NEGOCIO["cp"],
-                                "addressLocality": NEGOCIO["ciudad"], "addressRegion": "Comunidad de Madrid", "addressCountry": "ES"}}],
     "parentOrganization": {"@type": "Organization", "name": "Duomo Motor Bikes", "url": "https://duomomotor.com/"},
 }
 DEALER_GETAFE = {
     "@context": "https://schema.org", "@type": "MotorcycleDealer", "@id": GETAFE_ID,
-    "name": GETAFE["nombre"], "legalName": NEGOCIO["razon"], "url": SITE + "/voge-getafe/",
+    "name": GETAFE["nombre"], "legalName": NEGOCIO["razon"], "url": SITE + "/concesionario-voge-madrid-sur/",
     "image": SITE + "/assets/img/og/voge-madrid-sur.jpg", "logo": SITE + "/assets/img/logo/voge-madrid-sur-negro.png",
     "telephone": GETAFE["telIntl"], "email": NEGOCIO["email"], "priceRange": "€€",
     "address": {"@type": "PostalAddress", "streetAddress": GETAFE["calle"], "postalCode": GETAFE["cp"],
                 "addressLocality": GETAFE["ciudad"], "addressRegion": "Comunidad de Madrid", "addressCountry": "ES"},
     "openingHoursSpecification": HORAS, "geo": GETAFE["geo"], "hasMap": GETAFE["gmaps"], "sameAs": [GETAFE["gmaps"]],
-    "areaServed": [{"@type": "City", "name": z} for z in ["Getafe", "Leganés", "Parla", "Pinto", "Fuenlabrada", "Madrid capital"]],
     "brand": {"@type": "Brand", "name": "Voge"},
     "parentOrganization": {"@type": "Organization", "name": "Duomo Motor Bikes", "url": "https://duomomotor.com/"},
 }
@@ -188,16 +180,17 @@ def head(title, desc, path, og_img="/assets/img/og/voge-madrid-sur.jpg", ld=(), 
   {ld_html}
 </head>"""
 
-NAV = [("Modelos", "/#gama", "modelos"), ("Concesionarios", "/concesionario-voge-madrid-sur/", "concesionario"), ("Taller", "/taller-voge/", "taller"),
+NAV = [("Inicio", "/", "inicio"), ("Modelos", "/#gama", "modelos"), ("Puntos de venta", "/concesionario-voge-madrid-sur/", "concesionario"),
        ("Blog", "/blog/", "blog"), ("Contacto", "/contacto/", "contacto")]
+WHATSAPP = "34613915505"; WHATSAPP_TXT = "613 91 55 05"
 
 def header(active=""):
     links = "".join(f'<a href="{u}"{" class=\"active\" aria-current=\"page\"" if k == active else ""}>{n}</a>' for n, u, k in NAV)
     return f"""<body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
   <div class="topbar"><div class="wrap">
-    <div class="topbar__info"><span>Concesionarios oficiales en Móstoles y Getafe</span><span>{e(NEGOCIO["horarioCorto"])}</span></div>
-    <span class="topbar__tels"><a href="tel:{NEGOCIO["telIntl"]}">Móstoles: {NEGOCIO["tel"]}</a> · <a href="tel:{GETAFE["telIntl"]}">Getafe: {GETAFE["tel"]}</a></span>
+    <div class="topbar__info"><span>Concesionarios en Móstoles y Getafe</span></div>
+    <span class="topbar__tels"><a href="tel:{NEGOCIO["telIntl"]}">910 40 92 76</a> · <a href="tel:{GETAFE["telIntl"]}">{GETAFE["tel"]}</a> · <a href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener">WhatsApp {WHATSAPP_TXT}</a> · <a href="{NEGOCIO["instagram"]}" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></span>
   </div></div>
   <header class="site-header">
     <div class="wrap nav">
@@ -206,7 +199,7 @@ def header(active=""):
       </a>
       <nav class="nav__links" id="menu" aria-label="Menú principal">
         {links}
-        <a class="btn btn--primary" href="/solicitud-de-prueba/">Pedir prueba</a>
+        <a class="btn btn--primary" href="/solicitud-de-prueba/">Solicitar prueba</a>
       </nav>
       <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
     </div>
@@ -214,49 +207,43 @@ def header(active=""):
   <main id="contenido">"""
 
 def footer():
-    cats = "".join(f'<a href="{cat_url(c)}">{c["plural"]} Voge</a>' for c in CATS)
+    cats = "".join(f'<a href="{cat_url(c)}">{c["plural"]}</a>' for c in CATS)
     return f"""  </main>
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
         <img class="footer-logo" src="/assets/img/logo/voge-madrid-sur-blanco.png" srcset="/assets/img/logo/voge-madrid-sur-blanco@2x.png 2x" alt="Voge Madrid Sur" width="406" height="150" loading="lazy">
-        <p style="max-width:38ch">Duomo Motor Bikes · Concesionarios oficiales Voge en Móstoles y Getafe (Madrid Sur). Venta, financiación, taller y recambios originales.</p>
+        <p style="max-width:38ch">Duomo Motor Bikes · Concesionarios oficiales Voge en Móstoles y Getafe.</p>
         <p class="disclaimer">Voge y los nombres de sus modelos son marcas registradas de su fabricante. Esta web pertenece a un concesionario oficial, no es la web oficial de la marca. Precios orientativos sujetos a la tarifa y promociones vigentes.</p>
       </div>
       <div>
-        <h2>Gama Voge</h2>
-        {cats}
-        <a href="/motos-voge-a2/">Motos Voge A2</a>
-        <a href="/motos-125-carnet-coche/">Motos 125 con carnet de coche</a>
-      </div>
-      <div>
-        <h2>Web</h2>
-        <a href="/#gama">Todos los modelos</a>
-        <a href="/solicitud-de-prueba/">Solicitar prueba</a>
-        <a href="/concesionario-voge-madrid-sur/">Concesionarios Voge</a>
-        <a href="/voge-mostoles/">Voge Móstoles</a>
-        <a href="/voge-getafe/">Voge Getafe</a>
-        <a href="/taller-voge/">Taller Voge</a>
+        <h2>Navegación</h2>
+        <a href="/">Voge Madrid Sur</a>
+        <a href="/solicitud-de-prueba/">Solicita una prueba</a>
+        <a href="/concesionario-voge-madrid-sur/">Tu concesionario</a>
         <a href="/blog/">Blog</a>
         <a href="/contacto/">Contacto</a>
       </div>
       <div>
-        <h2>Visítanos</h2>
+        <h2>Modelos</h2>
+        {cats}
+      </div>
+      <div>
+        <h2>Dónde estamos</h2>
         <address>
           <a href="{MAPS_DIR}" target="_blank" rel="noopener"><b>Voge Móstoles</b><br>{e(NEGOCIO["calle"])}<br>{NEGOCIO["cp"]} {e(NEGOCIO["ciudad"])} (Madrid)</a>
-          <a href="tel:{NEGOCIO["telIntl"]}">{NEGOCIO["tel"]}</a>
+          <a href="tel:{NEGOCIO["telIntl"]}">910 40 92 76</a>
           <a href="{GETAFE["dir"]}" target="_blank" rel="noopener" style="margin-top:8px"><b>Voge Getafe</b><br>{e(GETAFE["calle"])}<br>{GETAFE["cp"]} {e(GETAFE["ciudad"])} (Madrid)</a>
           <a href="tel:{GETAFE["telIntl"]}">{GETAFE["tel"]}</a>
+          <a href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener">WhatsApp {WHATSAPP_TXT}</a>
           <a href="mailto:{NEGOCIO["email"]}">{NEGOCIO["email"]}</a>
           <a href="{NEGOCIO["instagram"]}" target="_blank" rel="noopener">{NEGOCIO["instagramUser"]}</a>
         </address>
-        <p style="font-size:.85rem;margin-top:8px">{e(NEGOCIO["horario"])}</p>
       </div>
     </div>
-    <div class="wrap footer-zonas"><span>Concesionario Voge cerca de:</span> <a href="/voge-mostoles/">Móstoles</a> · <a href="/voge-getafe/">Getafe</a> · <a href="/voge-alcorcon/">Alcorcón</a> · <a href="/voge-x-madrid/">X-Madrid</a> · <a href="/voge-fuenlabrada/">Fuenlabrada</a> · <a href="/voge-leganes/">Leganés</a></div>
     <div class="wrap footer-bottom">
       <span>© <span id="year">{datetime.date.today().year}</span> {NEGOCIO["razon"]}. Todos los derechos reservados.</span>
-      <span><a href="/aviso-legal/">Aviso legal</a> · <a href="/politicas-de-privacidad/">Privacidad</a> · <a href="/politicas-de-cookies/">Cookies</a></span>
+      <span><a href="/aviso-legal/">Aviso Legal</a> · <a href="/politicas-de-cookies/">Políticas de Cookies</a> · <a href="/politicas-de-privacidad/">Políticas de Privacidad</a></span>
     </div>
   </footer>
   <script src="/assets/js/config.js"></script>
@@ -278,7 +265,7 @@ def crumbs_html(items):
 def faq_html(qas):
     return '<div class="faq">' + "".join(f'<details class="reveal"><summary>{e(q)}</summary><p>{a}</p></details>' for q, a in qas) + "</div>"
 
-def cta_band(title="¿Ya sabes qué Voge quieres?", text="Escríbenos y te preparamos oferta, financiación a medida y una prueba sin compromiso en Voge Móstoles o Voge Getafe."):
+def cta_band(title="Prueba tu Voge", text="Ven a Voge Móstoles o Voge Getafe y solicita tu prueba."):
     return f"""<section class="section"><div class="wrap"><div class="cta-band reveal">
       <h2>{title}</h2><p>{text}</p>
       <div class="hero__actions">
@@ -290,16 +277,16 @@ def visit_block(h="Ven a verlas a Móstoles o Getafe", tienda="ambas"):
     def un(nombre, direccion, tel, telI, dir_, embed, extra=""):
         return f"""<div class="visit reveal">
       <div class="visit__info">
-        <span class="eyebrow">Concesionario oficial Voge</span>
+        <span class="eyebrow">Concesionario oficial</span>
         <h2>{nombre}</h2>
         <div class="info-item"><div class="info-item__ico">{ICO["pin"]}</div><div><h3>Dirección</h3><p>{e(direccion)}</p></div></div>
         <div class="info-item"><div class="info-item__ico">{ICO["clock"]}</div><div><h3>Horario</h3><p>{e(NEGOCIO["horario"])}</p></div></div>
         <div class="info-item"><div class="info-item__ico">{ICO["tel"]}</div><div><h3>Teléfono</h3><a href="tel:{telI}">{tel}</a>{extra}</div></div>
-        <div class="hero__actions"><a class="btn btn--primary" href="{dir_}" target="_blank" rel="noopener">Cómo llegar</a><a class="btn btn--ghost-light" href="/solicitud-de-prueba/">Reservar prueba</a></div>
+        <div class="hero__actions"><a class="btn btn--primary" href="{dir_}" target="_blank" rel="noopener">Ver mapa</a><a class="btn btn--ghost-light" href="/solicitud-de-prueba/">Prueba tu Voge</a></div>
       </div>
       <iframe src="{embed}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de {e(nombre)}"></iframe>
     </div>"""
-    mo = un("Voge Móstoles", DIRECCION, NEGOCIO["tel"], NEGOCIO["telIntl"], MAPS_DIR, MAPS_EMBED, f'<br><small>Taller: <a href="tel:{NEGOCIO["telTallerIntl"]}">{NEGOCIO["telTaller"]}</a></small>')
+    mo = un("Voge Móstoles", DIRECCION, NEGOCIO["tel"], NEGOCIO["telIntl"], MAPS_DIR, MAPS_EMBED)
     ge = un("Voge Getafe", DIR_GETAFE, GETAFE["tel"], GETAFE["telIntl"], GETAFE["dir"], GETAFE["embed"])
     if tienda == "mostoles": return mo
     if tienda == "getafe": return ge
@@ -308,17 +295,16 @@ def visit_block(h="Ven a verlas a Móstoles o Getafe", tienda="ambas"):
 def card(m, lazy=True, h="h3"):
     badge = '<span class="card__badge">En promoción</span>' if m["promo"] else ""
     price = (f'<del>{eur(m["pvp"])}</del>' if m["pvp"] else "") + eur(m["price"])
-    lic = LIC[m["license"]]["corto"]
     ncol = len(m["colors"])
     return f"""<article class="card reveal" data-cat="{m["cat"]}">
-        <div class="card__media"><img src="/{m["main"]}" alt="{e(full(m))} en Móstoles y Getafe" width="{m["mw"]}" height="{m["mh"]}"{' loading="lazy" decoding="async"' if lazy else ''}>{badge}</div>
+        <div class="card__media"><img src="/{m["main"]}" alt="{e(full(m))}" width="{m["mw"]}" height="{m["mh"]}"{' loading="lazy" decoding="async"' if lazy else ''}>{badge}</div>
         <div class="card__body">
           <span class="card__cat">{m["cat"]}</span>
           <{h} class="card__title"><a href="{model_url(m)}">{e(m["name"])}</a></{h}>
           <div class="card__specs">
             <span class="card__spec"><b>{m["cc"]} cc</b>Cilindrada</span>
             <span class="card__spec"><b>{m["cv"]} CV</b>Potencia</span>
-            <span class="card__spec"><b>{lic}</b>Carnet</span>
+            <span class="card__spec"><b>{m["nm"]} Nm</b>Par máx.</span>
           </div>
           {f'<div class="card__colors">{ncol} colores disponibles</div>' if ncol > 1 else ''}
           <div class="card__foot">
@@ -498,8 +484,8 @@ def blog_index_template():
     <div class="hero__bg"><img src="/assets/img/hero/concesionario-voge-madrid-sur-3.webp" alt="" width="1366" height="911"></div>
     <div class="wrap"><div class="hero__inner">
       <span class="eyebrow">Blog · Voge Madrid Sur</span>
-      <h1>Blog de motos en <span class="hl">Madrid Sur</span></h1>
-      <p class="lead">Novedades del mundo de la moto, rutas desde Alcorcón, Móstoles y Getafe, consejos de carnet y mantenimiento, y todo sobre la gama Voge. Tus concesionarios en Móstoles ({XMADRID}) y Getafe.</p>
+      <h1>Blog <span class="hl">Voge Madrid Sur</span></h1>
+      <p class="lead">Novedades, rutas, consejos y todo sobre la gama Voge, de la mano de Voge Móstoles y Voge Getafe.</p>
     </div></div>
   </section>
   {crumbs_html(crumbs)}
@@ -508,16 +494,10 @@ def blog_index_template():
       <div class="bgrid" id="blog-list">%%LISTADO%%</div>
     </div>
   </section>
-  <section class="section section--alt">
-    <div class="wrap">
-      <h2>Tus concesionarios Voge en Madrid Sur</h2>
-      <p class="sub">Estamos en <a href="/voge-mostoles/">Móstoles</a>, {XMADRID}, y en <a href="/voge-getafe/">Getafe</a>. Si vienes desde <a href="/voge-alcorcon/">Alcorcón</a>, <a href="/voge-fuenlabrada/">Fuenlabrada</a> o <a href="/voge-leganes/">Leganés</a>, te pillamos muy cerca.</p>
-    </div>
-  </section>
   {cta_band("Tu nueva Voge, en Móstoles o Getafe", "Ven a verla y pruébala en Voge Móstoles o Voge Getafe. Toda la gama y taller propio.")}
 """
-    return head("Blog de motos en Madrid Sur · Voge Madrid Sur",
-                "Novedades de motos, rutas desde Alcorcón, Móstoles y Getafe, consejos de carnet y mantenimiento y la gama Voge. Blog de Voge Madrid Sur (Móstoles y Getafe).",
+    return head("Blog · Motos Voge Madrid Sur",
+                "Novedades, rutas, consejos y todo sobre la gama Voge. Blog de Voge Madrid Sur, concesionarios oficiales en Móstoles y Getafe.",
                 url, ld=ld) + header("blog") + body + footer()
 
 def blog_article_template():
@@ -540,7 +520,7 @@ def blog_article_template():
         <div class="post__autor">
           <img src="/assets/img/logo/icon-180.png" alt="" width="64" height="64" loading="lazy">
           <div><p class="post__autor-t">Sobre Voge Madrid Sur</p>
-          <p>{e(CREDENCIALES)} Somos los concesionarios oficiales Voge de Duomo Motor Bikes en <a href="/voge-mostoles/">Móstoles</a>, {XMADRID}, y <a href="/voge-getafe/">Getafe</a>, con <a href="/taller-voge/">taller propio</a>.</p></div>
+          <p>Somos Duomo Motor Bikes, concesionarios oficiales Voge en Móstoles y Getafe, con taller propio, servicio postventa y recambios originales. <a href="/concesionario-voge-madrid-sur/">Conócenos</a>.</p></div>
         </div>
       </div>
       <aside class="post__aside">
@@ -553,15 +533,11 @@ def blog_article_template():
           <a class="btn btn--ghost btn--block" href="/contacto/">Pedir información</a>
         </div>
         <div class="post__zonas">
-          <p class="post__card-t">Cerca de ti</p>
-          <a href="/voge-mostoles/">Voge Móstoles</a>
-          <a href="/voge-x-madrid/">Voge cerca del X-Madrid</a>
-          <a href="/voge-alcorcon/">Voge para Alcorcón</a>
-          <a href="/voge-fuenlabrada/">Voge para Fuenlabrada</a>
-          <a href="/voge-leganes/">Voge para Leganés</a>
-          <a href="/voge-getafe/">Voge Getafe</a>
-          <a href="/motos-125-carnet-coche/">Motos 125 con carnet de coche</a>
-          <a href="/motos-voge-a2/">Motos Voge para el A2</a>
+          <p class="post__card-t">Modelos Voge</p>
+          <a href="/categoria-producto/scooters/">Scooters Voge</a>
+          <a href="/categoria-producto/naked/">Naked Voge</a>
+          <a href="/categoria-producto/adventure/">Adventure Voge</a>
+          <a href="/concesionario-voge-madrid-sur/">Puntos de venta</a>
         </div>
       </aside>
     </div>
@@ -654,154 +630,69 @@ def page_home():
     counts = {c["name"]: sum(1 for m in M if m["cat"] == c["name"]) for c in CATS}
     tiles = "".join(f"""<a class="cattile reveal{' reveal-d1' if i % 2 else ''}" href="{cat_url(c)}">
         <img src="/assets/img/categorias/{c["img"]}" alt="Motos {e(c["plural"].lower())} Voge" width="1200" height="900" loading="lazy" decoding="async">
-        <span class="cattile__txt"><strong>{c["plural"]}</strong><span>{counts[c["name"]]} modelos · desde {eur(precio_min(cat=c["name"]))}</span></span></a>""" for i, c in enumerate(CATS))
-    tiles += f"""<a class="cattile cattile--promo reveal" href="/motos-voge-a2/">
-        <span class="cattile__txt"><strong>Carnet A2</strong><span>{sum(1 for m in M if lic_ok_a2(m))} Voge que puedes llevar con el A2</span></span>
-        <span class="btn btn--dark">Ver motos A2</span></a>"""
+        <span class="cattile__txt"><strong>{c["name"] if c["name"] != "Scooters" else "Scooter"}</strong><span>{c["corto"]}.</span></span></a>""" for i, c in enumerate([CAT["Adventure"], CAT["Naked"], CAT["Scooters"]]))
     bar = '<button class="active" data-filter="Todas">Todas <small>' + str(len(M)) + '</small></button>' + "".join(
         f'<button data-filter="{c["name"]}">{c["plural"]} <small>{counts[c["name"]]}</small></button>' for c in CATS)
     cards = "\n".join(card(m) for m in M)
-    lic_cards = ""
-    for k, t, txt in [("A1", "Carnet de coche o A1", f"Todas las Voge de 125 cc, desde {eur(precio_min('A1'))}: scooters SR16 Air, SR16, SR1 y SR1 ADV y las naked 125R y 125RS. Si tienes el carnet B con más de tres años de antigüedad, puedes llevarlas sin examen."),
-                      ("A2", "Carnet A2", f"SR3, SR4 Radar, SR450X, 300 Rally y 525DSX, desde {eur(precio_min('A2'))}, y la 625R en su versión limitada a 35 kW."),
-                      ("A", "Carnet A", f"625DSX, DS800 Rally y 900DSX, trail de 64 y 95 CV, desde {eur(precio_min('A'))}, y la naked 625R de 64 CV.")]:
-        keys = {"A1": ["A1"], "A2": ["A2", "A-A2"], "A": ["A", "A-A2"]}[k]
-        chips = "".join(f'<a href="{model_url(m)}">{e(m["name"])}</a>' for m in M if m["license"] in keys)
-        lic_cards += f"""<div class="license reveal"><span class="license__tag">{LIC[k]["tag"]}</span><h3>{t}</h3><p>{txt}</p><div class="license__models">{chips}</div></div>"""
-    slides = "".join(f'<div class="hero__slide{" is-active" if i == 0 else ""}"><img src="/assets/img/hero/concesionario-voge-madrid-sur-{i+1}.webp" alt="" width="1366" height="911"></div>' for i in range(3))
-    faqs = [
-        ("¿Dónde hay un concesionario oficial Voge en Madrid Sur?",
-         f"Tienes dos: <b>Voge Móstoles</b>, en {e(DIRECCION)}, y <b>Voge Getafe</b>, en {e(DIR_GETAFE)}. Los dos son de Duomo Motor Bikes, concesionario oficial Voge, con exposición de la gama, financiación y servicio posventa."),
-        ("¿Hay un concesionario Voge cerca del X-Madrid?",
-         f"Sí. Voge Móstoles está {XMADRID} de Alcorcón: {e(DIRECCION)}. Tienes toda la gama Voge en exposición, prueba y taller."),
-        ("¿Qué Voge puedo llevar con el carnet de coche?",
-         f"Con el carnet B y más de tres años de antigüedad puedes llevar cualquier Voge de 125 cc: los scooters <a href=\"/modelo/sr16/\">SR16</a>, <a href=\"/modelo/sr16-air/\">SR16 Air</a>, <a href=\"/modelo/sr1/\">SR1</a> y <a href=\"/modelo/sr1-adv/\">SR1 ADV</a> o las naked <a href=\"/modelo/125r/\">125R</a> y <a href=\"/modelo/125rs/\">125RS</a>. Desde {eur(precio_min('A1'))}."),
-        ("¿Qué Voge es mejor para el carnet A2?",
-         "Depende del uso: para ciudad y viajes, los scooters <a href=\"/modelo/sr3/\">SR3</a>, <a href=\"/modelo/sr4-radar/\">SR4 Radar</a> y <a href=\"/modelo/sr450x/\">SR450X</a>; para trail, la <a href=\"/modelo/300-rally/\">300 Rally</a> y la <a href=\"/modelo/525dsx/\">525DSX</a>; y si buscas una naked, la <a href=\"/modelo/625r/\">625R</a> en versión limitada a 35 kW."),
-        ("¿Puedo probar una Voge antes de comprarla?",
-         "Sí. Pide tu prueba en <a href=\"/solicitud-de-prueba/\">Solicitar prueba</a> y te confirmamos día, hora y concesionario (Móstoles o Getafe). Recuerda traer tu carnet y tu equipamiento."),
-        ("¿Tenéis taller para motos Voge?",
-         f"Sí. Tenemos taller propio con servicio posventa y recambios originales. <a href=\"/taller-voge/\">Pide cita en el taller</a> o llama al {NEGOCIO['telTaller']}."),
-        ("¿Se puede financiar una Voge?",
-         "Sí, te preparamos una financiación a medida. Pídenos las condiciones para el modelo que te interesa y te las enviamos por escrito."),
-    ]
-    ld = [DEALER, DEALER_GETAFE, {"@context": "https://schema.org", "@type": "WebSite", "name": "Voge Madrid Sur", "url": SITE + "/", "inLanguage": "es-ES", "publisher": {"@id": DEALER_ID}},
-          faq_ld(faqs),
-          {"@context": "https://schema.org", "@type": "ItemList", "name": "Gama Voge en Madrid Sur", "itemListElement": [
-              {"@type": "ListItem", "position": i + 1, "url": SITE + model_url(m), "name": full(m)} for i, m in enumerate(M)]}]
     hero_txt = [("Voge 625 DSX", "Diseñada para ser tu mejor aliada en cualquier terreno, esta motocicleta combina potencia, tecnología avanzada y un diseño robusto.", "625dsx"),
                 ("Voge SR4 Radar", "Scooter de vanguardia dotado con tecnología de detección de obstáculos en ángulo muerto y alerta de colisión.", "sr4-radar"),
                 ("Voge 900 DSX", "Combina tecnología de punta, un diseño y un precio increíblemente competitivo, que incorpora nuevas características diseñadas para maximizar tu experiencia de conducción.", "900dsx")]
-    destacados = "".join(f"""<article class="dest reveal{' reveal-d' + str(i) if i else ''}">
-        <a class="dest__media" href="/modelo/{s}/" tabindex="-1" aria-hidden="true"><img src="/{mm(s)['main']}" alt="" width="{mm(s)['mw']}" height="{mm(s)['mh']}" loading="lazy" decoding="async"></a>
-        <div class="dest__body"><h3><a href="/modelo/{s}/">{t}</a></h3><p>{d}</p>
-        <div class="dest__ctas"><a class="btn btn--dark" href="/modelo/{s}/">Más información</a><a class="btn btn--ghost" href="/solicitud-de-prueba/?modelo={quote(mm(s)['name'])}">Solicita una prueba</a></div></div>
-      </article>""" for i, (t, d, s) in enumerate(hero_txt))
+    slides = "".join(f'''<div class="hero__slide{" is-active" if i == 0 else ""}"><img src="/assets/img/hero/concesionario-voge-madrid-sur-{i+1}.webp" alt="" width="1366" height="911"{"" if i == 0 else ' loading="lazy"'}></div>''' for i in range(3))
+    textos = "".join(f'''<div class="hero__txt{" is-active" if i == 0 else ""}" data-slide="{i}"{"" if i == 0 else " hidden"}>
+          <span class="eyebrow">Voge Madrid Sur</span>
+          {"<h1>" if i == 0 else "<h2 class=\'h1\'>"}{t}{"</h1>" if i == 0 else "</h2>"}
+          <p class="lead">{d}</p>
+          <div class="hero__actions"><a class="btn btn--primary" href="/modelo/{sl}/">Más información</a><a class="btn btn--ghost-light" href="/solicitud-de-prueba/?modelo={quote(mm(sl)['name'])}">Solicita una prueba</a></div>
+        </div>''' for i, (t, d, sl) in enumerate(hero_txt))
+    ld = [DEALER, DEALER_GETAFE, {"@context": "https://schema.org", "@type": "WebSite", "name": "Voge Madrid Sur", "url": SITE + "/", "inLanguage": "es-ES", "publisher": {"@id": DEALER_ID}},
+          {"@context": "https://schema.org", "@type": "ItemList", "name": "Gama Voge", "itemListElement": [
+              {"@type": "ListItem", "position": i + 1, "url": SITE + model_url(m), "name": full(m)} for i, m in enumerate(M)]}]
     body = f"""
   <section class="hero" aria-label="Voge Madrid Sur">
     <div class="hero__slides">{slides}</div>
     <div class="wrap">
-      <div class="hero__inner">
-        <span class="eyebrow">Concesionarios oficiales Voge · Móstoles y Getafe</span>
-        <h1><span class="hl">Voge Madrid Sur</span>, concesionarios oficiales en Móstoles y Getafe</h1>
-        <p class="lead">Toda la gama Voge en Duomo Motor Bikes: scooters, naked y adventure para carnet B, A2 y A. Ven a verlas, pruébalas y llévate la tuya en Voge Móstoles o Voge Getafe.</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#gama">Ver la gama Voge</a>
-          <a class="btn btn--ghost-light" href="/solicitud-de-prueba/">Solicita una prueba</a>
-        </div>
-      </div>
+      <div class="hero__inner">{textos}</div>
     </div>
-    <div class="wrap" style="position:relative"><div class="hero__dots" role="tablist" aria-label="Imágenes">{"".join(f'<button aria-label="Imagen {i+1}"{" class=\"is-active\"" if i == 0 else ""}></button>' for i in range(3))}</div></div>
-  </section>
-
-  <section class="trust" aria-label="Por qué Duomo">
-    <div class="wrap">
-      <div class="trust__item"><span class="trust__ico">{ICO["pin"]}</span><span><b>2 concesionarios</b>Móstoles y Getafe</span></div>
-      <div class="trust__item"><span class="trust__ico">{ICO["wrench"]}</span><span><b>Taller propio</b>Posventa y recambios originales</span></div>
-      <div class="trust__item"><span class="trust__ico">{ICO["bike"]}</span><span><b>+1.500 motos</b>Entregadas</span></div>
-      <div class="trust__item"><span class="trust__ico">{ICO["star"]}</span><span><b>Desde 1960</b>Tradición familiar en automoción</span></div>
-    </div>
+    <div class="wrap" style="position:relative"><div class="hero__dots" role="tablist" aria-label="Modelos destacados">{"".join(f'<button aria-label="{t}"{" class=\"is-active\"" if i == 0 else ""}></button>' for i, (t, d, sl) in enumerate(hero_txt))}</div></div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <span class="eyebrow" style="display:flex;justify-content:center">Gama Voge</span>
-      <h2>Una Voge para cada estilo</h2>
-      <p class="sub">Scooters para el día a día, naked con carácter y adventure para salir del asfalto.</p>
-      <div class="catgrid">{tiles}</div>
+      <span class="eyebrow" style="display:flex;justify-content:center">Dónde estamos</span>
+      <h2>Voge Móstoles y Voge Getafe</h2>
+      <p class="sub">Concesionarios oficiales. Prueba tu Voge o contacta con nosotros.</p>
+      <div class="hero__actions" style="justify-content:center"><a class="btn btn--dark" href="/solicitud-de-prueba/">Prueba tu Voge</a><a class="btn btn--ghost" href="/contacto/">Contacto</a><a class="btn btn--ghost" href="/concesionario-voge-madrid-sur/">Descubre más</a></div>
     </div>
   </section>
 
-  <section class="section section--alt" id="gama">
+  <section class="section section--alt">
+    <div class="wrap">
+      <span class="eyebrow" style="display:flex;justify-content:center">Concesionarios oficiales</span>
+      <h2>Modelos Voge</h2>
+      <div class="catgrid catgrid--3">{tiles}</div>
+    </div>
+  </section>
+
+  <section class="section" id="gama">
     <div class="wrap">
       <h2>Toda la gama Voge</h2>
-      <p class="sub">Visita toda la gama Voge en Móstoles y Getafe.</p>
       <div class="cat-bar" id="cat-bar" role="group" aria-label="Filtrar por categoría">{bar}</div>
       <div class="grid" id="models-grid">
 {cards}
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <span class="eyebrow" style="display:flex;justify-content:center">Destacadas</span>
-      <h2>Las Voge del momento</h2>
-      <div class="dests">{destacados}</div>
+      <p class="promo-legal">{PRICE_NOTE}</p>
     </div>
   </section>
 
   <section class="section section--alt">
     <div class="wrap">
-      <span class="eyebrow" style="display:flex;justify-content:center">Antes de elegir</span>
-      <h2>¿Qué Voge puedo llevar con mi carnet?</h2>
-      <p class="sub">Es la primera pregunta que nos hacéis. Aquí tienes la respuesta rápida; en el concesionario te lo confirmamos con tu carnet en la mano.</p>
-      <div class="licenses">{lic_cards}</div>
+      {visit_block("Tu concesionario Voge en Móstoles y Getafe")}
     </div>
   </section>
-
-  <section class="section section--dark">
-    <div class="wrap">
-      <span class="eyebrow" style="display:flex;justify-content:center">Duomo Motor Bikes</span>
-      <h2>Siempre cerca de ti: <span class="hl">Móstoles y Getafe</span></h2>
-      <p class="sub">Nuestra historia nace de una auténtica pasión por el mundo del motor y de una sólida tradición familiar en automoción que se remonta a 1960.</p>
-      <div class="features">
-        <div class="feature reveal"><div class="feature__ico">{ICO["wrench"]}</div><h3>Taller propio</h3><p>Servicio posventa con mecánicos especializados para que tu Voge esté siempre a punto.</p></div>
-        <div class="feature reveal reveal-d1"><div class="feature__ico">{ICO["box"]}</div><h3>Recambios originales</h3><p>Recambios y accesorios originales Voge, sin esperas.</p></div>
-        <div class="feature reveal reveal-d2"><div class="feature__ico">{ICO["euro"]}</div><h3>Financiación a medida</h3><p>Te preparamos la cuota que mejor encaja contigo y te damos las condiciones por escrito.</p></div>
-        <div class="feature reveal reveal-d3"><div class="feature__ico">{ICO["key"]}</div><h3>Prueba sin compromiso</h3><p>Siéntate en ella, compárala con otras y pruébala antes de decidir.</p></div>
-      </div>
-      <div class="stats" style="margin-top:56px">
-        <div class="stat reveal"><b>+<span data-count="20">20</span></b><span>Profesionales del motor</span></div>
-        <div class="stat reveal reveal-d1"><b>+<span data-count="1500">1500</span></b><span>Motos entregadas</span></div>
-        <div class="stat reveal reveal-d2"><b>+<span data-count="50">50</span></b><span>Años de experiencia en motos</span></div>
-        <div class="stat reveal reveal-d3"><b>2</b><span>Concesionarios Voge: Móstoles y Getafe</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <span class="eyebrow" style="display:flex;justify-content:center">Junto a Alcorcón y en Getafe</span>
-      <h2>Tu nueva Voge {XMADRID}</h2>
-      <p class="sub">Voge Móstoles está <a href="/voge-x-madrid/" style="border-bottom:2px solid var(--yellow)">{XMADRID}</a> (Alcorcón) y Voge Getafe te pilla cerca si vives en Getafe, Leganés, Parla o Pinto.</p>
-      <div class="areas" style="margin-bottom:40px">{"".join(f"<span>{z}</span>" for z in ZONAS)}</div>
-      {visit_block("Nuestros concesionarios Voge")}
-    </div>
-  </section>
-
-  <section class="section section--alt">
-    <div class="wrap">
-      <h2>Preguntas frecuentes</h2>
-      <p class="sub">Lo que más nos preguntáis sobre Voge en el concesionario.</p>
-      {faq_html(faqs)}
-    </div>
-  </section>
-  {cta_band()}
 """
-    write("/", head("Voge Madrid Sur · Concesionarios oficiales en Móstoles y Getafe",
-                    f"Voge Madrid Sur: concesionarios oficiales Voge en Móstoles (junto al X-Madrid) y Getafe. {len(M)} modelos desde {eur(precio_min())}: SR4 Radar, 625DSX, 900DSX…",
-                    "/", ld=ld, preload="/assets/img/hero/concesionario-voge-madrid-sur-1.webp") + header("modelos") + body + footer())
+    write("/", head("Motos Voge Madrid Sur · Concesionaria de Motos Voge en Madrid Sur",
+                    f"Concesionarios oficiales Voge en Móstoles y Getafe. Toda la gama Voge: scooters, naked y adventure, desde {eur(precio_min())}. Solicita tu prueba.",
+                    "/", ld=ld, preload="/assets/img/hero/concesionario-voge-madrid-sur-1.webp") + header("inicio") + body + footer())
 
 # ------------------------------------------------------------------ MODELO
 def tagline(m):
@@ -828,7 +719,7 @@ def page_model(m):
         big = col["imgs"][0]
         thumbs = "".join(f'<button type="button" class="cthumb{" active" if j == 0 else ""}" data-src="/{im["img"]}" aria-label="Foto {j+1} de la {e(fn)} en {e(col["name"].lower())}"><img src="/{im["img"]}" alt="" width="{im["w"]}" height="{im["h"]}" loading="lazy" decoding="async"></button>' for j, im in enumerate(col["imgs"])) if len(col["imgs"]) > 1 else ""
         panes += f"""<div class="cpane{" active" if i == 0 else ""}" data-color="{i}"{"" if i == 0 else " hidden"}>
-          <figure class="cpane__big"><img src="/{big["img"]}" alt="{e(fn)} color {e(col["name"].lower())} en Voge Madrid Sur" width="{big["w"]}" height="{big["h"]}" loading="lazy" decoding="async"></figure>
+          <figure class="cpane__big"><img src="/{big["img"]}" alt="{e(fn)} color {e(col["name"].lower())}" width="{big["w"]}" height="{big["h"]}" loading="lazy" decoding="async"></figure>
           {f'<div class="cthumbs">{thumbs}</div>' if thumbs else ''}
         </div>"""
     colores = f"""<section class="section" id="colores">
@@ -853,14 +744,8 @@ def page_model(m):
     equip = "".join(f"""<div class="ecard reveal">{f'<img src="/{q["img"]}" alt="{e(fn)}: {e(q["title"].lower())}" width="900" height="675" loading="lazy" decoding="async">' if q["img"] else ''}<div class="ecard__body"><h3>{e(q["title"])}</h3>{f'<p>{e(q["text"])}</p>' if q["text"] else ''}</div></div>""" for q in m["equip"])
     galeria = "".join(f'<figure><img src="/{g["img"]}" alt="{e(fn)} · foto {i+1}" width="{g["w"]}" height="{g["h"]}" loading="lazy" decoding="async"></figure>' for i, g in enumerate(m["gallery"]))
     rel_cards = "\n".join(card(x) for x in related(m))
-    manual = f'<a class="lnk" href="/{m["manual"]}" target="_blank" rel="noopener" download>Descargar el manual del usuario (PDF)</a>' if m["manual"] else f'<a class="lnk" href="/contacto/?modelo={qmodel}#solicita">Pídenos el manual y la ficha completa</a>'
+    manual = f'<a class="lnk" href="/{m["manual"]}" target="_blank" rel="noopener" download>Descargar</a>' if m["manual"] else f'<a class="lnk" href="/contacto/?modelo={qmodel}#solicita">Pídenoslo</a>'
     precio_txt = (f"{eur(m['price'])} (antes {eur(m['pvp'])})" if m["pvp"] else eur(m["price"]))
-    faqs = [
-        (f"¿Cuánto cuesta la {fn}?", f"La {e(fn)} tiene un precio de {precio_txt}, PVP con IVA incluido. Los gastos de matriculación y transporte y la financiación te los detallamos en el concesionario."),
-        (f"¿Qué carnet necesito para la {fn}?", e(L["texto"])),
-        (f"¿Dónde puedo ver y probar la {fn} en Madrid?", f"En nuestros concesionarios oficiales Voge: <b>Voge Móstoles</b> ({e(DIRECCION)}), {XMADRID}, y <b>Voge Getafe</b> ({e(DIR_GETAFE)}). Pide tu prueba en <a href=\"/solicitud-de-prueba/?modelo={qmodel}\">Solicitar prueba</a>."),
-        (f"¿En qué colores está disponible la {fn}?", f"En {e(', '.join(col['name'] for col in m['colors']))}. Consúltanos la disponibilidad de cada color."),
-    ]
     imgs = [SITE + "/" + m["main"]] + [SITE + "/" + col["imgs"][0]["img"] for col in m["colors"]]
     desc_txt = " ".join(p for b in m["blocks"] for p in b["p"])
     product = {"@context": "https://schema.org", "@type": ["Product", "Motorcycle"], "name": fn, "sku": m["slug"],
@@ -870,35 +755,33 @@ def page_model(m):
                "additionalProperty": [
                    {"@type": "PropertyValue", "name": "Cilindrada", "value": m["cc"], "unitText": "cc"},
                    {"@type": "PropertyValue", "name": "Potencia", "value": m["cv"], "unitText": "CV"},
-                   {"@type": "PropertyValue", "name": "Par máximo", "value": m["nm"], "unitText": "Nm"},
-                   {"@type": "PropertyValue", "name": "Carnet", "value": L["label"]}],
+                   {"@type": "PropertyValue", "name": "Par máximo", "value": m["nm"], "unitText": "Nm"}],
                "offers": {"@type": "Offer", "url": SITE + url, "priceCurrency": "EUR", "price": str(m["price"]),
                           "itemCondition": "https://schema.org/NewCondition", "availability": "https://schema.org/InStoreOnly",
                           "priceValidUntil": f"{datetime.date.today().year}-12-31", "seller": {"@id": DEALER_ID},
                           "areaServed": {"@type": "AdministrativeArea", "name": "Madrid Sur"}}}
     crumbs = [("Inicio", "/"), (c["plural"], cat_url(c)), (fn, url)]
-    ld = [product, crumbs_ld(crumbs), faq_ld(faqs)]
-    title = f"{fn}: precio, ficha y prueba en Madrid Sur"
-    meta = f"{fn} por {eur(m['price'])} en Voge Madrid Sur: concesionarios oficiales en Móstoles y Getafe. {m['cc']} cc y {m['cv']} CV, {L['label'].replace('Carnet', 'carnet')}. Precio, colores y prueba."
-    if len(meta) > 165: meta = f"{fn} por {eur(m['price'])} en Voge Móstoles y Voge Getafe. {m['cc']} cc, {m['cv']} CV, {L['label'].replace('Carnet', 'carnet')}. Precio, colores y prueba."
+    ld = [product, crumbs_ld(crumbs)]
+    title = f"{fn} · Motos Voge Madrid Sur"
+    primera = re.split(r"(?<=[.!?])\s", desc_txt.strip())[0] if desc_txt.strip() else ""
+    meta = f"{fn} por {eur(m['price'])}. {primera}"
+    if len(meta) > 160: meta = meta[:157].rsplit(" ", 1)[0] + "…"
     body = f"""
   {crumbs_html(crumbs)}
   <section class="mhero">
     <div class="wrap mhero__grid">
       <div class="mhero__media">
-        <img id="model-photo" class="is-first" src="/{m["main"]}" alt="{e(fn)} en Voge Madrid Sur (Móstoles y Getafe)" width="{m["mw"]}" height="{m["mh"]}" fetchpriority="high">
+        <img id="model-photo" class="is-first" src="/{m["main"]}" alt="{e(fn)}" width="{m["mw"]}" height="{m["mh"]}" fetchpriority="high">
       </div>
       <div class="mhero__info">
-        <div class="badges"><a class="badge badge--dark" href="{cat_url(c)}">{c["name"]}</a><span class="badge badge--line">{L["label"]}</span></div>
+        <div class="badges"><a class="badge badge--dark" href="{cat_url(c)}">{c["name"]}</a></div>
         <h1><small>Voge</small> {e(m["name"])}</h1>
-        <p class="mhero__tagline">{e(tagline(m))}. Disponible en Duomo Motor Bikes, concesionarios oficiales Voge en Móstoles y Getafe.</p>
         <div class="pricebox"><span class="pricebox__now">{eur(m["price"])}</span>{f'<del>{eur(m["pvp"])}</del>' if m["pvp"] else ''}{saving}</div>
         <p class="price-note">{PRICE_NOTE}</p>
-        <div class="kpis">
+        <div class="kpis kpis--3">
           <div class="kpi"><b>{m["cv"]} CV</b><span>Potencia</span></div>
           <div class="kpi"><b>{m["cc"]} cc</b><span>Cilindrada</span></div>
           <div class="kpi"><b>{m["nm"]} Nm</b><span>Par máx.</span></div>
-          <div class="kpi"><b>{L["tag"]}</b><span>Carnet</span></div>
         </div>
         <div class="colors-pick"><div class="colors-pick__label">Colores: <b>{e(", ".join(col["name"] for col in m["colors"]))}</b> · <a href="#colores" class="lnk">Ver fotos</a></div></div>
         <div class="mhero__ctas">
@@ -929,33 +812,24 @@ def page_model(m):
   {f'<section class="section"><div class="wrap"><h2>Galería</h2><p class="sub">La {e(fn)} en detalle.</p><div class="mgallery">{galeria}</div></div></section>' if galeria else ''}
 
   <section class="section{' section--alt' if galeria else ''}">
-    <div class="wrap split">
-      <div class="note-box reveal" style="margin:0"><b>¿Qué carnet necesito?</b><br>{e(L["texto"])}</div>
-      <div class="info-cards reveal reveal-d1" style="grid-template-columns:1fr;margin-top:0">
-        <div><h3>Descarga el manual del usuario</h3><p>De tu {e(m["name"])}.</p>{manual}</div>
-        <div><h3>Pruébala en Móstoles o Getafe</h3><p>Ven al concesionario, siéntate en ella y sal a probarla. Te confirmamos día y hora.</p><a class="lnk" href="/solicitud-de-prueba/?modelo={qmodel}">Solicitar prueba</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
     <div class="wrap">
-      <h2>Preguntas sobre la {e(fn)}</h2>
-      <p class="sub">Las dudas más habituales antes de comprarla.</p>
-      {faq_html(faqs)}
+      <div class="info-cards" style="margin-top:0">
+        <div class="reveal"><h3>Descarga el manual del usuario</h3><p>De tu {e(m["name"])}.</p>{manual}</div>
+        <div class="reveal reveal-d1"><h3>Solicita una prueba</h3><p>Prueba la {e(fn)} en Voge Móstoles o Voge Getafe.</p><a class="lnk" href="/solicitud-de-prueba/?modelo={qmodel}">Solicitar prueba</a></div>
+        <div class="reveal reveal-d2"><h3>Pide información</h3><p>Precio, disponibilidad y financiación.</p><a class="lnk" href="/contacto/?modelo={qmodel}#solicita">Contactar</a></div>
+      </div>
     </div>
   </section>
 
   <section class="section section--alt">
     <div class="wrap">
       <h2>Otros modelos que te pueden interesar</h2>
-      <p class="sub">Compáralos en Voge Móstoles o Voge Getafe.</p>
       <div class="grid">
 {rel_cards}
       </div>
     </div>
   </section>
-  {cta_band(f"¿Te quedas con la {e(fn)}?", "Pídenos presupuesto con financiación a medida o reserva tu prueba en Móstoles o Getafe. Te respondemos lo antes posible.")}
+  {cta_band(f"Prueba la {e(fn)}", "Solicita tu prueba en Voge Móstoles o Voge Getafe.")}
 """
     write(url, head(title, meta, url, og_img="/" + m["og"], ld=ld, preload="/" + m["main"]) + header() + body + footer())
 
@@ -964,16 +838,9 @@ def page_cat(c):
     ms = [m for m in M if m["cat"] == c["name"]]
     url = cat_url(c)
     cards = "\n".join(card(m, h="h2") for m in ms)
-    lics = sorted({m["license"] for m in ms}, key=LIC_ORDER.index)
-    lic_txt = "".join(f'<li><b>{LIC[k]["label"]}:</b> {", ".join(e(m["name"]) for m in ms if m["license"] == k)}.</li>' for k in lics)
     pmin = min(m["price"] for m in ms)
-    nom = c["name"].lower()
-    faqs = [
-        (f"¿Cuánto cuesta una moto {nom} Voge?", f"En Duomo Motor Bikes tienes {len(ms)} modelos {nom} de Voge desde {eur(pmin)} (PVP con IVA). Consulta financiación en el concesionario."),
-        (f"¿Dónde ver motos {nom} Voge en Madrid?", f"En nuestros concesionarios oficiales Voge de Móstoles ({e(DIRECCION)}) y Getafe ({e(DIR_GETAFE)}). Puedes <a href=\"/solicitud-de-prueba/\">pedir una prueba</a>."),
-    ]
     crumbs = [("Inicio", "/"), (c["plural"] + " Voge", url)]
-    ld = [crumbs_ld(crumbs), faq_ld(faqs), {"@context": "https://schema.org", "@type": "ItemList", "name": c["h1"], "itemListElement": [
+    ld = [crumbs_ld(crumbs), {"@context": "https://schema.org", "@type": "ItemList", "name": c["h1"], "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "url": SITE + model_url(m), "name": full(m)} for i, m in enumerate(ms)]}]
     others = "".join(f'<a class="btn btn--ghost" href="{cat_url(o)}">{o["plural"]}</a>' for o in CATS if o["slug"] != c["slug"])
     body = f"""
@@ -982,17 +849,11 @@ def page_cat(c):
     <div class="wrap"><div class="hero__inner">
       <span class="eyebrow">{len(ms)} modelos · desde {eur(pmin)}</span>
       <h1>{c["h1"]}</h1>
-      <p class="lead">{c["corto"]}. Precios actualizados, carnet necesario y prueba en Voge Móstoles y Voge Getafe.</p>
+      <p class="lead">{c["corto"]}.</p>
       <div class="hero__actions"><a class="btn btn--primary" href="#modelos">Ver modelos</a><a class="btn btn--ghost-light" href="/solicitud-de-prueba/">Pedir prueba</a></div>
     </div></div>
   </section>
   {crumbs_html(crumbs)}
-  <section class="section" style="padding-top:36px">
-    <div class="wrap split">
-      <div class="prose reveal">{"".join(f"<p>{p}</p>" for p in c["intro"])}</div>
-      <div class="note-box reveal reveal-d1" style="margin:0"><b>Carnet necesario</b><ul style="margin:8px 0 0 18px">{lic_txt}</ul></div>
-    </div>
-  </section>
   <section class="section section--alt" id="modelos">
     <div class="wrap">
       <div class="grid">
@@ -1001,17 +862,10 @@ def page_cat(c):
       <p class="promo-legal">{PRICE_NOTE}</p>
     </div>
   </section>
-  <section class="section">
-    <div class="wrap">
-      <h2>Preguntas frecuentes</h2>
-      <p class="sub">Sobre las motos {nom} de Voge.</p>
-      {faq_html(faqs)}
-      <div class="hero__actions" style="justify-content:center;margin-top:40px">{others}</div>
-    </div>
-  </section>
+  <section class="section"><div class="wrap"><div class="hero__actions" style="justify-content:center">{others}</div></div></section>
   {cta_band()}
 """
-    write(url, head(c["title"], c["meta"], url, ld=ld) + header("modelos") + body + footer())
+    write(url, head(f"{c['plural']} Voge · Motos Voge Madrid Sur", f"{c['corto']}. {len(ms)} modelos Voge {c['name'].lower()} desde {eur(pmin)} en Voge Móstoles y Voge Getafe.", url, ld=ld) + header("modelos") + body + footer())
 
 # ------------------------------------------------------------------ FORMULARIOS
 def model_select():
@@ -1049,15 +903,6 @@ def form(tipo):
             </div>"""
     else:
         top = f"""<div class="field">
-              <label for="carnet">¿Qué carnet tienes?*</label>
-              <select id="carnet" name="carnet" required>
-                <option value="">Selecciona…</option>
-                <option>Carnet B con más de 3 años</option>
-                <option>A1</option><option>A2</option><option>A</option>
-                <option>Aún no tengo carnet de moto</option>
-              </select>
-            </div>
-            <div class="field">
               <label for="modelo">Modelo de interés{'*' if prueba else ''}</label>
               <select id="modelo" name="modelo"{' required' if prueba else ''}>{model_select()}</select>
             </div>
@@ -1098,7 +943,7 @@ def form(tipo):
           </form>"""
 
 def info_card(taller=False):
-    tel_m = f'<a href="tel:{NEGOCIO["telIntl"]}">{NEGOCIO["tel"]}</a>' + (f' · Taller: <a href="tel:{NEGOCIO["telTallerIntl"]}">{NEGOCIO["telTaller"]}</a>' if taller else "")
+    tel_m = f'<a href="tel:{NEGOCIO["telIntl"]}">910 40 92 76</a>'
     return f"""<div class="info-card reveal">
           <div class="info-item"><div class="info-item__ico">{ICO["pin"]}</div><div><h3>Voge Móstoles</h3><p>{e(DIRECCION)}<br>{tel_m}</p></div></div>
           <div class="info-item"><div class="info-item__ico">{ICO["pin"]}</div><div><h3>Voge Getafe</h3><p>{e(DIR_GETAFE)}<br><a href="tel:{GETAFE["telIntl"]}">{GETAFE["tel"]}</a></p></div></div>
@@ -1110,11 +955,10 @@ def info_card(taller=False):
         </div>"""
 
 def page_form(tipo):
-    if tipo == "taller": return page_taller()
     prueba = tipo == "prueba"
     url = "/solicitud-de-prueba/" if prueba else "/contacto/"
     h1 = "Prueba tu nueva Voge" if prueba else "Contáctanos"
-    lead = ("Elige el modelo, dinos qué carnet tienes y en qué concesionario prefieres probarla (Móstoles o Getafe). Te confirmamos día y hora. Recuerda traer tu carnet y tu equipamiento."
+    lead = ("Elige el modelo y el concesionario (Móstoles o Getafe) y te confirmamos día y hora."
             if prueba else "Rellena el formulario y te preparamos presupuesto, financiación y lo que necesites. Te respondemos lo antes posible.")
     crumbs = [("Inicio", "/"), ("Solicitar prueba" if prueba else "Contacto", url)]
     contact_ld = {"@context": "https://schema.org", "@type": "ContactPage", "name": h1, "url": SITE + url, "about": [{"@id": DEALER_ID}, {"@id": GETAFE_ID}]}
@@ -1141,83 +985,15 @@ def page_form(tipo):
     </div>
   </section>
 """
-    title = "Prueba una moto Voge en Móstoles o Getafe · Voge Madrid Sur" if prueba else "Contacto · Voge Madrid Sur (Móstoles y Getafe)"
-    meta = ("Reserva una prueba de cualquier moto Voge (SR4 Radar, 525DSX, 625DSX, 900DSX…) en Voge Móstoles o Voge Getafe. Te confirmamos día y hora."
+    title = "Solicitud de prueba · Motos Voge Madrid Sur" if prueba else "Contacto · Motos Voge Madrid Sur"
+    meta = ("Prueba tu nueva Voge en Voge Móstoles o Voge Getafe. Elige el modelo y te confirmamos día y hora."
             if prueba else f"Contacta con Voge Madrid Sur: Voge Móstoles ({NEGOCIO['tel']}) y Voge Getafe ({GETAFE['tel']}). Formulario, direcciones y horario.")
     write(url, head(title, meta, url, ld=[crumbs_ld(crumbs), contact_ld, DEALER, DEALER_GETAFE]) + header("contacto" if not prueba else "") + body + footer())
-
-# ------------------------------------------------------------------ TALLER
-def page_taller():
-    url = "/taller-voge/"
-    crumbs = [("Inicio", "/"), ("Taller Voge", url)]
-    faqs = [
-        ("¿Dónde hay un taller para motos Voge en Madrid Sur?", f"En Voge Madrid Sur (Duomo Motor Bikes), con taller propio en {e(DIRECCION)}. Damos servicio a motoristas de Móstoles, Getafe, Alcorcón, Fuenlabrada, Leganés y el resto del sur de Madrid."),
-        ("¿Puedo llevar mi Voge aunque no la comprara en Duomo?", "Sí. Atendemos cualquier Voge, la hayas comprado donde la hayas comprado."),
-        ("¿Cómo pido cita en el taller?", f"Rellena el formulario de esta página o llama al taller al <a href=\"tel:{NEGOCIO['telTallerIntl']}\">{NEGOCIO['telTaller']}</a>. Te confirmamos el día."),
-        ("¿Usáis recambios originales?", "Sí, trabajamos con recambios originales Voge."),
-    ]
-    service = {"@context": "https://schema.org", "@type": "AutoRepair", "@id": SITE + "/taller-voge/#taller",
-               "name": "Taller Voge Madrid Sur · Duomo Motor Bikes", "url": SITE + url, "telephone": NEGOCIO["telTallerIntl"],
-               "address": DEALER["address"], "openingHoursSpecification": HORAS,
-               "areaServed": DEALER["areaServed"], "brand": {"@type": "Brand", "name": "Voge"}, "parentOrganization": {"@id": DEALER_ID}}
-    servicios = [("Revisiones de mantenimiento", "Siguiendo el plan de mantenimiento que marca Voge para cada modelo."),
-                 ("Puesta a punto de temporada", "Antes del verano o del invierno: revisamos niveles, frenos, neumáticos, luces y batería."),
-                 ("Cambio de aceite y filtros", "Con los aceites y filtros que marca el fabricante para cada motor."),
-                 ("Frenos", "Revisión y cambio de pastillas, discos y líquido de frenos."),
-                 ("Neumáticos", "Montaje y equilibrado de neumáticos."),
-                 ("Accesorios originales", "Instalamos maletas, baúles, pantallas, protecciones y el resto de accesorios originales.")]
-    cards = "".join(f'<div class="equip__item reveal"><div><h3>{t}</h3><p>{d}</p></div></div>' for t, d in servicios)
-    body = f"""
-  <section class="hero hero--page">
-    <div class="hero__bg"><img src="/assets/img/hero/concesionario-voge-madrid-sur-2.webp" alt="" width="1366" height="911"></div>
-    <div class="wrap"><div class="hero__inner">
-      <span class="eyebrow">Servicio posventa · Móstoles</span>
-      <h1>Taller Voge en Madrid Sur</h1>
-      <p class="lead">Taller propio, servicio posventa y recambios originales para tu Voge, a un paso de Alcorcón, Fuenlabrada, Getafe y Leganés.</p>
-      <div class="hero__actions"><a class="btn btn--primary" href="#cita">Pedir cita</a><a class="btn btn--ghost-light" href="tel:{NEGOCIO["telTallerIntl"]}">Llamar al taller</a></div>
-    </div></div>
-  </section>
-  {crumbs_html(crumbs)}
-  <section class="section" style="padding-top:36px">
-    <div class="wrap">
-      <h2>Qué hacemos en el taller</h2>
-      <p class="sub">Un equipo humano especializado y recambios originales. Tu Voge, en manos de quien la conoce.</p>
-      <div class="equip">{cards}</div>
-    </div>
-  </section>
-  <section class="section section--alt" id="cita">
-    <div class="wrap">
-      <div class="contact-grid">
-        <div class="reveal">
-          <span class="eyebrow">Cita de taller</span>
-          <h2>Pide cita para tu Voge</h2>
-          {form("taller")}
-        </div>
-        {info_card(taller=True)}
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="wrap">
-      <h2>Preguntas frecuentes del taller</h2>
-      <p class="sub">Lo que más nos preguntáis antes de traer la moto.</p>
-      {faq_html(faqs)}
-    </div>
-  </section>
-"""
-    write(url, head("Taller Voge en Madrid Sur · Móstoles",
-                    "Taller para motos Voge en Móstoles: mantenimiento, revisiones, neumáticos y recambios originales. Cerca de Alcorcón, Fuenlabrada, Getafe y Leganés.",
-                    url, ld=[service, crumbs_ld(crumbs), faq_ld(faqs)]) + header("taller") + body + footer())
 
 # ------------------------------------------------------------------ CONCESIONARIOS (página del WordPress)
 def page_concesionarios():
     url = "/concesionario-voge-madrid-sur/"
-    crumbs = [("Inicio", "/"), ("Concesionarios Voge", url)]
-    faqs = [
-        ("¿Dónde están los concesionarios Voge de Duomo?", f"Voge Móstoles: {e(DIRECCION)}, teléfono {NEGOCIO['tel']}. Voge Getafe: {e(DIR_GETAFE)}, teléfono {GETAFE['tel']}."),
-        ("¿Qué horario tienen?", "Los dos abren de lunes a viernes de 10:00 a 14:00 y de 16:00 a 19:30, y los sábados de 10:00 a 14:00. Domingos cerrado."),
-        ("¿Tenéis las mismas motos en los dos?", "Tenemos toda la gama Voge. Si buscas un modelo o color concreto, escríbenos y te decimos dónde está disponible para verla o probarla."),
-    ]
+    crumbs = [("Inicio", "/"), ("Puntos de venta", url)]
     body = f"""
   <section class="hero hero--page">
     <div class="hero__bg"><img src="/assets/img/hero/concesionario-voge-madrid-sur-3.webp" alt="" width="1366" height="911"></div>
@@ -1225,7 +1001,7 @@ def page_concesionarios():
       <span class="eyebrow">Siempre cerca de ti</span>
       <h1>Voge Madrid Sur: tu concesionario de confianza en Móstoles y Getafe</h1>
       <p class="lead">Disponemos de taller propio, servicio postventa, recambios originales y un equipo humano especializado que garantiza una atención integral y una experiencia completa, cómoda y segura antes, durante y después de tu compra.</p>
-      <div class="hero__actions"><a class="btn btn--primary" href="/voge-mostoles/">Voge Móstoles</a><a class="btn btn--ghost-light" href="/voge-getafe/">Voge Getafe</a></div>
+      <div class="hero__actions"><a class="btn btn--primary" href="#puntos">Ver puntos de venta</a><a class="btn btn--ghost-light" href="/solicitud-de-prueba/">Prueba la tuya</a></div>
     </div></div>
   </section>
   {crumbs_html(crumbs)}
@@ -1245,383 +1021,19 @@ def page_concesionarios():
       </div>
     </div>
   </section>
-  <section class="section section--alt"><div class="wrap">{visit_block("Elige tu concesionario Voge")}</div></section>
-  <section class="section">
-    <div class="wrap">
-      <h2>Preguntas frecuentes</h2>
-      <p class="sub">Sobre nuestros concesionarios Voge.</p>
-      {faq_html(faqs)}
-    </div>
-  </section>
+  <section class="section section--alt" id="puntos"><div class="wrap">{visit_block("Puntos de venta")}</div></section>
   {cta_band("Prueba la tuya", "Reserva tu prueba en Voge Móstoles o Voge Getafe y te confirmamos día y hora.")}
 """
-    write(url, head("Concesionarios Voge en Móstoles y Getafe · Voge Madrid Sur",
-                    "Voge Madrid Sur: concesionarios oficiales Voge en Móstoles y Getafe con taller propio, posventa y recambios originales. Direcciones, horario y teléfonos.",
-                    url, ld=[DEALER, DEALER_GETAFE, crumbs_ld(crumbs), faq_ld(faqs)]) + header("concesionario") + body + footer())
+    write(url, head("Concesionario Voge Madrid Sur · Motos Voge Madrid Sur",
+                    "Voge Madrid Sur, tu concesionario de confianza en Móstoles y Getafe: taller propio, servicio postventa, recambios originales y un equipo humano especializado.",
+                    url, ld=[DEALER, DEALER_GETAFE, crumbs_ld(crumbs)]) + header("concesionario") + body + footer())
 
-# ------------------------------------------------------------------ TIENDAS
-def page_tienda(cual):
-    mo = cual == "mostoles"
-    url = "/voge-mostoles/" if mo else "/voge-getafe/"
-    nombre = "Voge Móstoles" if mo else "Voge Getafe"
-    d = DIRECCION if mo else DIR_GETAFE
-    tel, telI = (NEGOCIO["tel"], NEGOCIO["telIntl"]) if mo else (GETAFE["tel"], GETAFE["telIntl"])
-    dir_ = MAPS_DIR if mo else GETAFE["dir"]
-    crumbs = [("Inicio", "/"), ("Concesionarios", "/concesionario-voge-madrid-sur/"), (nombre, url)]
-    cerca = "Alcorcón, Fuenlabrada, Villaviciosa de Odón, Arroyomolinos y Navalcarnero" if mo else "Leganés, Parla, Pinto, Fuenlabrada y el sur de Madrid capital"
-    tops = [mm(s) for s in (["sr4-radar", "525dsx", "625dsx", "sr1", "300-rally", "900dsx"] if mo else ["sr4-radar", "900dsx", "sr16", "625r", "525dsx", "sr3"])]
-    faqs = [
-        (f"¿Dónde está {nombre}?", f"En {e(d)}. Es un concesionario oficial Voge de Duomo Motor Bikes. <a href=\"{dir_}\" target=\"_blank\" rel=\"noopener\">Cómo llegar</a>."),
-        (f"¿Qué horario tiene {nombre}?", "Lunes a viernes de 10:00 a 14:00 y de 16:00 a 19:30. Sábados de 10:00 a 14:00. Domingo cerrado."),
-        (f"¿Cuál es el teléfono de {nombre}?", f"<a href=\"tel:{telI}\">{tel}</a>" + (f". Taller: <a href=\"tel:{NEGOCIO['telTallerIntl']}\">{NEGOCIO['telTaller']}</a>." if mo else ".") + " También puedes escribirnos desde el <a href=\"/contacto/\">formulario de contacto</a>."),
-        (f"¿Puedo probar una Voge en {'Móstoles' if mo else 'Getafe'}?", "Sí. Pide tu prueba en <a href=\"/solicitud-de-prueba/\">Solicitar prueba</a>, elige el modelo y el concesionario, y te confirmamos día y hora."),
-        ("¿Trabajáis otras marcas?", "Sí. Duomo Motor Bikes trabaja también con otras marcas, como Zontes, Royal Enfield y Suzuki. Pregúntanos qué tenemos disponible en cada concesionario."),
-    ]
-    if mo: faqs.insert(1, ("¿Está cerca del X-Madrid?", f"Sí, Voge Móstoles está {XMADRID}, el centro comercial de Alcorcón."))
-    otra = ("Voge Getafe", "/voge-getafe/", DIR_GETAFE) if mo else ("Voge Móstoles", "/voge-mostoles/", DIRECCION)
-    body = f"""
-  <section class="hero hero--page">
-    <div class="hero__bg"><img src="/assets/img/hero/concesionario-voge-madrid-sur-{1 if mo else 2}.webp" alt="" width="1366" height="911"></div>
-    <div class="wrap"><div class="hero__inner">
-      <span class="eyebrow">Concesionario oficial Voge · Duomo Motor Bikes</span>
-      <h1>Concesionario Voge en {'Móstoles' if mo else 'Getafe'}</h1>
-      <p class="lead">Toda la gama Voge, financiación a medida y servicio posventa en {e(d)}.{(' ' + XMADRID[0].upper() + XMADRID[1:] + '.') if mo else ''} Cerca de {cerca}.</p>
-      <div class="hero__actions"><a class="btn btn--primary" href="{dir_}" target="_blank" rel="noopener">Cómo llegar</a><a class="btn btn--ghost-light" href="/solicitud-de-prueba/">Pedir prueba</a></div>
-    </div></div>
-  </section>
-  {crumbs_html(crumbs)}
-  <section class="section" style="padding-top:36px">
-    <div class="wrap">
-      <div class="info-cards" style="margin-top:0">
-        <div class="reveal"><h3>Dirección</h3><p>{e(d)}</p><a class="lnk" href="{dir_}" target="_blank" rel="noopener">Abrir en Google Maps</a></div>
-        <div class="reveal reveal-d1"><h3>Horario</h3><p>{e(NEGOCIO["horario"])}</p><a class="lnk" href="/solicitud-de-prueba/">Reservar prueba</a></div>
-        <div class="reveal reveal-d2"><h3>Teléfono</h3><p><a href="tel:{telI}">{tel}</a>{f'<br>Taller: <a href="tel:{NEGOCIO["telTallerIntl"]}">{NEGOCIO["telTaller"]}</a>' if mo else ''}</p><a class="lnk" href="/contacto/">Escribirnos</a></div>
-      </div>
-    </div>
-  </section>
-  <section class="section section--alt">
-    <div class="wrap">
-      <h2>Voge en {'Móstoles' if mo else 'Getafe'}: algunos de los modelos más buscados</h2>
-      <p class="sub">Toda la gama está disponible para verla y probarla.</p>
-      <div class="grid">{"".join(card(m) for m in tops)}</div>
-      <div class="hero__actions" style="justify-content:center;margin-top:30px"><a class="btn btn--dark" href="/#gama">Ver los {len(M)} modelos</a></div>
-    </div>
-  </section>
-  {bloque_confianza()}
-  <section class="section"><div class="wrap">{visit_block(nombre, "mostoles" if mo else "getafe")}</div></section>
-  <section class="section section--alt">
-    <div class="wrap">
-      <p class="sub" style="margin-bottom:0">¿Te pilla mejor el otro? <a class="lnk" href="{otra[1]}">{otra[0]}</a> está en {e(otra[2])}.</p>
-    </div>
-  </section>
-  {bloque_blog(["Móstoles", "Alcorcón", "X-Madrid"] if mo else ["Getafe", "Leganés"])}
-  <section class="section">
-    <div class="wrap">
-      <h2>Preguntas frecuentes</h2>
-      <p class="sub">Sobre {nombre}.</p>
-      {faq_html(faqs)}
-    </div>
-  </section>
-  {cta_band()}
-"""
-    title = f"{nombre} · Concesionario oficial Voge" + (" junto al X-Madrid" if mo else " en Getafe")
-    meta = f"{nombre}: concesionario oficial Voge en {d.split(',')[0]}. Horario, teléfono {tel}, cómo llegar y prueba. Cerca de {cerca.split(',')[0]} y {cerca.split(',')[1].strip()}."
-    write(url, head(title, meta, url, ld=[DEALER if mo else DEALER_GETAFE, crumbs_ld(crumbs), faq_ld(faqs)]) + header("concesionario") + body + footer())
 
-# ------------------------------------------------------------------ A2
-def page_a2():
-    url = "/motos-voge-a2/"
-    crumbs = [("Inicio", "/"), ("Motos Voge A2", url)]
-    a2 = [m for m in M if m["license"] == "A2"]; lim = [m for m in M if m["license"] == "A-A2"]
-    barata = min(a2, key=lambda x: x["price"])
-    faqs = [
-        ("¿Qué motos Voge puedo llevar con el carnet A2?", f"Sin limitar: {', '.join(e(m['name']) for m in a2)}. Y la naked 625R en su versión limitada a 35 kW."),
-        ("¿Cuál es la Voge A2 más barata?", f"La <a href=\"{model_url(barata)}\">Voge {e(barata['name'])}</a>, por {eur(barata['price'])} (PVP con IVA)."),
-        ("¿Qué Voge A2 me recomendáis para viajar?", "Si prefieres scooter, la <a href=\"/modelo/sr450x/\">SR450X</a> o la <a href=\"/modelo/sr4-radar/\">SR4 Radar</a>. Si prefieres moto trail, la <a href=\"/modelo/525dsx/\">525DSX</a>, con 47,6 CV, justo en el límite del A2."),
-        ("¿Dónde probar una Voge A2 en Madrid Sur?", f"En Voge Móstoles ({e(DIRECCION)}) o en Voge Getafe ({e(DIR_GETAFE)}). <a href=\"/solicitud-de-prueba/\">Pide tu prueba</a>."),
-    ]
-    body = f"""
-  <section class="hero hero--page">
-    <div class="hero__bg"><img src="/assets/img/categorias/motos-voge-adventure.webp" alt="" width="1200" height="900"></div>
-    <div class="wrap"><div class="hero__inner">
-      <span class="eyebrow">{len(a2)} modelos sin limitar · desde {eur(barata["price"])}</span>
-      <h1>Motos Voge para carnet A2</h1>
-      <p class="lead">Scooters y trail que puedes llevar con el A2 tal cual salen de fábrica, y la 625R en versión de 35 kW. Pruébalas en Voge Móstoles o Voge Getafe.</p>
-      <div class="hero__actions"><a class="btn btn--primary" href="#a2">Ver modelos A2</a><a class="btn btn--ghost-light" href="/solicitud-de-prueba/">Pedir prueba</a></div>
-    </div></div>
-  </section>
-  {crumbs_html(crumbs)}
-  <section class="section" style="padding-top:36px">
-    <div class="wrap split">
-      <div class="prose reveal">
-        <h2>Las Voge que puedes llevar con el A2</h2>
-        <p>El carnet A2 permite motos de hasta <b>35 kW</b> (47,6 CV). En Voge tienes opciones para todos los usos: los scooters <a href="/modelo/sr3/">SR3</a>, <a href="/modelo/sr4-radar/">SR4 Radar</a> y <a href="/modelo/sr450x/">SR450X</a> para moverte a diario y viajar, y las trail <a href="/modelo/300-rally/">300 Rally</a> y <a href="/modelo/525dsx/">525DSX</a> para salir del asfalto.</p>
-        <p>Si lo tuyo son las naked, la <a href="/modelo/625r/">625R</a> bicilíndrica de 64 CV también está disponible en versión limitada a 35 kW para el A2.</p>
-      </div>
-      <div class="note-box reveal reveal-d1" style="margin:0"><b>Con el A2 puedes llevar</b><ul style="margin:8px 0 0 18px"><li>Motos de hasta 35 kW (47,6 CV).</li><li>Relación peso/potencia de hasta 0,2 kW/kg.</li><li>Si la moto está limitada, su potencia original no puede superar el doble (70 kW).</li></ul></div>
-    </div>
-  </section>
-  <section class="section section--alt" id="a2">
-    <div class="wrap">
-      <h2>Voge A2 sin limitar</h2>
-      <p class="sub">Se llevan con el A2 tal cual salen de fábrica.</p>
-      <div class="grid">
-{chr(10).join(card(m) for m in a2)}
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="wrap">
-      <h2>Voge en versión A2</h2>
-      <p class="sub">Con versión limitada a 35 kW para el carnet A2.</p>
-      <div class="grid">
-{chr(10).join(card(m) for m in lim)}
-      </div>
-      <p class="promo-legal">{PRICE_NOTE}</p>
-    </div>
-  </section>
-  <section class="section section--alt">
-    <div class="wrap">
-      <h2>Preguntas frecuentes</h2>
-      <p class="sub">Sobre las Voge para el carnet A2.</p>
-      {faq_html(faqs)}
-    </div>
-  </section>
-  {cta_band()}
-"""
-    write(url, head("Motos Voge para carnet A2 en Madrid Sur",
-                    f"Motos Voge para carnet A2 en Móstoles y Getafe: SR3, SR4 Radar, SR450X, 300 Rally y 525DSX desde {eur(barata['price'])}, y la 625R en versión 35 kW. Precios y prueba.",
-                    url, ld=[crumbs_ld(crumbs), faq_ld(faqs), {"@context": "https://schema.org", "@type": "ItemList", "name": "Motos Voge para carnet A2", "itemListElement": [
-                        {"@type": "ListItem", "position": i + 1, "url": SITE + model_url(m), "name": full(m)} for i, m in enumerate(a2 + lim)]}]) + header("modelos") + body + footer())
-
-# ------------------------------------------------------------------ 125
-def page_125():
-    url = "/motos-125-carnet-coche/"
-    crumbs = [("Inicio", "/"), ("Motos 125 con carnet de coche", url)]
-    ms = sorted([m for m in M if m["license"] == "A1"], key=lambda x: x["price"])
-    faqs = [
-        ("¿Puedo llevar una moto de 125 con el carnet de coche?", "Sí. En España, con el carnet B y más de tres años de antigüedad puedes conducir motos de hasta 125 cc, 11 kW (unos 15 CV) y una relación peso/potencia de 0,1 kW/kg. Ese permiso solo vale para circular por España."),
-        ("¿Vale para motos de marchas o solo para scooters?", "Para las dos: con el carnet B de más de tres años puedes llevar tanto scooters automáticos como motos de marchas de 125 cc que cumplan esos límites, como las naked <a href=\"/modelo/125r/\">125R</a> y <a href=\"/modelo/125rs/\">125RS</a>."),
-        ("¿Cuál es la Voge 125 más barata?", f"La <a href=\"{model_url(ms[0])}\">Voge {e(ms[0]['name'])}</a>, por {eur(ms[0]['price'])} (PVP con IVA)."),
-        ("¿Qué Voge 125 me recomendáis para ir a trabajar a Madrid?", "Un scooter: la <a href=\"/modelo/sr16/\">SR16</a> o la <a href=\"/modelo/sr16-air/\">SR16 Air</a> por ligereza y precio, la <a href=\"/modelo/sr1/\">SR1</a> si buscas más confort, o la <a href=\"/modelo/sr1-adv/\">SR1 ADV</a> si quieres un aire más aventurero."),
-        ("¿Dónde probar una Voge 125 en Madrid Sur?", f"En Voge Móstoles ({e(DIRECCION)}), {XMADRID}, o en Voge Getafe ({e(DIR_GETAFE)}). <a href=\"/solicitud-de-prueba/\">Pide tu prueba</a>."),
-    ]
-    body = f"""
-  <section class="hero hero--page">
-    <div class="hero__bg"><img src="/assets/img/categorias/motos-voge-scooters.webp" alt="" width="1200" height="900"></div>
-    <div class="wrap"><div class="hero__inner">
-      <span class="eyebrow">{len(ms)} modelos · desde {eur(ms[0]["price"])}</span>
-      <h1>Motos 125 con carnet de coche</h1>
-      <p class="lead">Todas las Voge de 125 cc que puedes llevar con el carnet B de más de tres años: scooters y naked. Pruébalas en Voge Móstoles o Voge Getafe.</p>
-      <div class="hero__actions"><a class="btn btn--primary" href="#modelos-125">Ver las 125</a><a class="btn btn--ghost-light" href="/solicitud-de-prueba/">Pedir prueba</a></div>
-    </div></div>
-  </section>
-  {crumbs_html(crumbs)}
-  <section class="section" style="padding-top:36px">
-    <div class="wrap split">
-      <div class="prose reveal">
-        <h2>Deja el coche: muévete por Madrid en una 125</h2>
-        <p>Si vives en Madrid Sur y vas a trabajar a Madrid, una 125 te ahorra atascos y vueltas para aparcar. Con el <b>carnet de coche de más de tres años</b> no necesitas sacarte otro permiso: puedes llevar cualquier moto de 125 cc de hasta 11 kW.</p>
-        <p>En Voge tienes cuatro scooters (<a href="/modelo/sr16-air/">SR16 Air</a>, <a href="/modelo/sr16/">SR16</a>, <a href="/modelo/sr1/">SR1</a> y <a href="/modelo/sr1-adv/">SR1 ADV</a>) y dos naked de marchas (<a href="/modelo/125r/">125R</a> y <a href="/modelo/125rs/">125RS</a>).</p>
-      </div>
-      <div class="note-box reveal reveal-d1" style="margin:0"><b>Con el carnet B (+3 años) puedes llevar</b><ul style="margin:8px 0 0 18px"><li>Motos de hasta 125 cc.</li><li>Potencia máxima de 11 kW (unos 15 CV).</li><li>Relación peso/potencia de hasta 0,1 kW/kg.</li><li>Solo para circular por España.</li></ul></div>
-    </div>
-  </section>
-  <section class="section section--alt" id="modelos-125">
-    <div class="wrap">
-      <h2>Voge 125 para carnet B</h2>
-      <p class="sub">Ordenadas de menor a mayor precio.</p>
-      <div class="grid">
-{chr(10).join(card(m) for m in ms)}
-      </div>
-      <p class="promo-legal">{PRICE_NOTE}</p>
-    </div>
-  </section>
-  {bloque_confianza()}
-  {bloque_blog(["125", "carnet"])}
-  <section class="section">
-    <div class="wrap">
-      <h2>Preguntas frecuentes</h2>
-      <p class="sub">Sobre las 125 y el carnet de coche.</p>
-      {faq_html(faqs)}
-    </div>
-  </section>
-  {cta_band()}
-"""
-    ld = [crumbs_ld(crumbs), faq_ld(faqs), {"@context": "https://schema.org", "@type": "ItemList", "name": "Motos Voge 125 para carnet de coche",
-          "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": SITE + model_url(m), "name": full(m)} for i, m in enumerate(ms)]}]
-    write(url, head("Motos 125 con carnet de coche · Voge en Madrid Sur",
-                    f"Motos de 125 cc que puedes llevar con el carnet B (+3 años): {len(ms)} Voge desde {eur(ms[0]['price'])}. Scooters y naked. Prueba en Voge Móstoles o Voge Getafe.",
-                    url, ld=ld) + header("modelos") + body + footer())
-
-# ------------------------------------------------------------------ BLOQUES COMUNES
-def posts_relacionados_ciudad(nombres, n=3):
-    ps = sorted(blog_posts(), key=lambda p: p["fecha"], reverse=True)
-    hit = [p for p in ps if any(x.lower() in (p["titulo"] + " " + p.get("descripcion", "") + " " + p.get("keyword", "")).lower() for x in nombres)]
-    resto = [p for p in ps if p not in hit]
-    return (hit + resto)[:n]
-
-def bloque_blog(nombres, titulo="Del blog de Voge Madrid Sur"):
-    ps = posts_relacionados_ciudad(nombres)
-    if not ps: return ""
-    return f"""<section class="section section--alt">
-    <div class="wrap">
-      <h2>{titulo}</h2>
-      <p class="sub">Rutas, consejos y novedades para motoristas de la zona.</p>
-      <div class="bgrid">{"".join(bcard_html(p) for p in ps)}</div>
-      <div class="hero__actions" style="justify-content:center;margin-top:30px"><a class="btn btn--dark" href="/blog/">Ver todos los artículos</a></div>
-    </div>
-  </section>"""
-
-def bloque_confianza():
-    return f"""<section class="section">
-    <div class="wrap split">
-      <div class="prose reveal">
-        <h2>Por qué comprar tu Voge en Duomo Motor Bikes</h2>
-        <p>{e(CREDENCIALES)}</p>
-        <ul>
-          <li><b>Concesionario oficial Voge</b> en Móstoles y en Getafe.</li>
-          <li><b>Toda la gama Voge</b>: siéntate en las motos y compáralas una al lado de la otra.</li>
-          <li><b>Prueba sin compromiso</b> y financiación a medida.</li>
-          <li><b>Taller propio</b>, servicio posventa y recambios originales.</li>
-        </ul>
-      </div>
-      <div class="note-box reveal reveal-d1" style="margin:0">
-        <b>Voge Móstoles</b><br>{e(DIRECCION)}<br><a href="tel:{NEGOCIO["telIntl"]}">{NEGOCIO["tel"]}</a> · Taller: <a href="tel:{NEGOCIO["telTallerIntl"]}">{NEGOCIO["telTaller"]}</a><br><br>
-        <b>Voge Getafe</b><br>{e(DIR_GETAFE)}<br><a href="tel:{GETAFE["telIntl"]}">{GETAFE["tel"]}</a><br><br>
-        <b>Horario:</b> {e(NEGOCIO["horario"])}
-      </div>
-    </div>
-  </section>"""
-
-def note_tienda(t):
-    if t == "getafe":
-        return f"""<b>Voge Getafe</b><br>{e(DIR_GETAFE)}<br><br><b>Horario:</b> {e(NEGOCIO["horario"])}<br><br><b>Teléfono:</b> <a href="tel:{GETAFE["telIntl"]}">{GETAFE["tel"]}</a>"""
-    if t == "mostoles":
-        return f"""<b>Voge Móstoles</b><br>{e(DIRECCION)}<br><br><b>Horario:</b> {e(NEGOCIO["horario"])}<br><br><b>Ventas:</b> <a href="tel:{NEGOCIO["telIntl"]}">{NEGOCIO["tel"]}</a> · <b>Taller:</b> <a href="tel:{NEGOCIO["telTallerIntl"]}">{NEGOCIO["telTaller"]}</a>"""
-    return f"""<b>Voge Móstoles</b><br>{e(DIRECCION)}<br><a href="tel:{NEGOCIO["telIntl"]}">{NEGOCIO["tel"]}</a><br><br><b>Voge Getafe</b><br>{e(DIR_GETAFE)}<br><a href="tel:{GETAFE["telIntl"]}">{GETAFE["tel"]}</a><br><br><b>Horario:</b> {e(NEGOCIO["horario"])}"""
-
-# ------------------------------------------------------------------ ZONAS
-ZONAS_PAG = [
-    {"slug": "voge-x-madrid", "ciudad": "el X-Madrid", "corto": "X-Madrid", "tienda": "mostoles", "nombres": ["X-Madrid", "Alcorcón"],
-     "title": "Voge X-Madrid · Concesionario a 5 minutos, en Móstoles",
-     "meta": f"¿Buscas Voge cerca del X-Madrid? Voge Móstoles está {XMADRID} de Alcorcón: toda la gama Voge, prueba sin compromiso, financiación y taller propio.",
-     "eyebrow": "X-Madrid · Alcorcón · Madrid Sur", "h1": f"Tu nueva Voge {XMADRID}",
-     "lead": "Voge Móstoles es el concesionario oficial Voge más cercano al X-Madrid de Alcorcón: toda la gama, prueba sin compromiso y taller propio.",
-     "hero": "concesionario-voge-madrid-sur-1.webp",
-     "intro": [f"Si vives o trabajas cerca del <b>X-Madrid</b>, en Alcorcón, tienes tu concesionario oficial Voge {XMADRID}: <b>Voge Móstoles</b>, de Duomo Motor Bikes. Aquí puedes ver la gama Voge, sentarte en las motos y probar la que te interesa antes de decidir.",
-               "Desde los scooters de 125 cc como la <a href=\"/modelo/sr1/\">SR1</a>, que se llevan con el carnet de coche, hasta la <a href=\"/modelo/sr4-radar/\">SR4 Radar</a> para el A2 o las trail <a href=\"/modelo/625dsx/\">625DSX</a> y <a href=\"/modelo/900dsx/\">900DSX</a>."],
-     "llegar": "Desde el X-Madrid toma la M-506 en dirección a Móstoles y en unos minutos estás en la Calle Juan de la Cierva.",
-     "perfiles": [("Las más buscadas", ["sr4-radar", "sr1", "525dsx", "625dsx", "900dsx", "125r"])],
-     "faqs": [("¿Hay un concesionario Voge cerca del X-Madrid?", f"Sí. Voge Móstoles (Duomo Motor Bikes) está {XMADRID} de Alcorcón, en {e(DIRECCION)}. No hay tienda Voge dentro del centro comercial."),
-              ("¿Cómo llego desde el X-Madrid?", f"Abre la ruta en <a href=\"{MAPS_DIR}\" target=\"_blank\" rel=\"noopener\">Google Maps</a> y te lleva directo a Calle Juan de la Cierva 7-9, en Móstoles."),
-              ("¿Puedo probar una Voge si vengo desde Alcorcón?", "Claro. Pide tu prueba en <a href=\"/solicitud-de-prueba/\">Solicitar prueba</a>, elige el modelo y te confirmamos día y hora."),
-              ("¿Qué horario tenéis?", f"{e(NEGOCIO['horario'])}.")]},
-    {"slug": "voge-alcorcon", "ciudad": "Alcorcón", "corto": "Alcorcón", "tienda": "mostoles", "nombres": ["Alcorcón", "X-Madrid"],
-     "title": "Voge Alcorcón · Concesionario oficial a 5 min, en Móstoles",
-     "meta": "¿Buscas Voge en Alcorcón? Voge Móstoles está a 5 minutos del X-Madrid: toda la gama Voge, prueba sin compromiso, financiación y taller propio.",
-     "eyebrow": "Alcorcón · X-Madrid · Parque Oeste", "h1": "Concesionario Voge cerca de Alcorcón",
-     "lead": "Alcorcón y Móstoles son vecinos: desde el X-Madrid tienes tu concesionario oficial Voge en 5 minutos. Toda la gama, prueba y taller propio.",
-     "hero": "concesionario-voge-madrid-sur-2.webp",
-     "intro": ["Si vives en <b>Alcorcón</b>, no necesitas cruzar Madrid para ver una Voge. Voge Móstoles está a 5 minutos del <b>X-Madrid</b>, y aquí tienes toda la gama: scooters, naked y adventure.",
-               "Si vas a trabajar a Madrid por la A-5, una moto te libra de atascos y de buscar aparcamiento. Con el carnet de coche de más de tres años, los scooters <a href=\"/modelo/sr16/\">SR16</a> y <a href=\"/modelo/sr1/\">SR1</a>; con el A2, la <a href=\"/modelo/sr4-radar/\">SR4 Radar</a>."],
-     "llegar": "Desde el centro de Alcorcón o desde el X-Madrid, toma la M-506 en dirección a Móstoles y en unos minutos estás en la Calle Juan de la Cierva.",
-     "perfiles": [("Para ir a trabajar a Madrid", ["sr16", "sr1", "sr4-radar"]), ("Para escapadas de fin de semana", ["300-rally", "525dsx", "625dsx"])],
-     "faqs": [("¿Hay concesionario Voge en Alcorcón?", f"El concesionario oficial Voge más cercano a Alcorcón es Voge Móstoles (Duomo Motor Bikes), en {e(DIRECCION)}, a 5 minutos del X-Madrid. No tenemos tienda dentro de Alcorcón: estamos en el municipio de al lado."),
-              ("¿Qué Voge me recomendáis para ir de Alcorcón a Madrid?", "Con el carnet de coche de más de tres años, un scooter de 125 como la <a href=\"/modelo/sr1/\">SR1</a>. Si tienes el A2 y haces muchos kilómetros por autovía, la <a href=\"/modelo/sr4-radar/\">SR4 Radar</a> o la <a href=\"/modelo/sr450x/\">SR450X</a>."),
-              ("¿Puedo llevar mi Voge al taller si vivo en Alcorcón?", "Sí. Nuestro <a href=\"/taller-voge/\">taller</a> está en Móstoles, con servicio posventa y recambios originales."),
-              ("¿Qué horario tenéis?", f"{e(NEGOCIO['horario'])}.")]},
-    {"slug": "voge-fuenlabrada", "ciudad": "Fuenlabrada", "corto": "Fuenlabrada", "tienda": "ambas", "nombres": ["Fuenlabrada"],
-     "title": "Voge Fuenlabrada · Concesionarios oficiales en Móstoles y Getafe",
-     "meta": "¿Buscas Voge en Fuenlabrada? Tienes Voge Móstoles y Voge Getafe a pocos minutos: toda la gama Voge, prueba, financiación y taller propio.",
-     "eyebrow": "Fuenlabrada · Humanes · Madrid Sur", "h1": "Concesionario Voge cerca de Fuenlabrada",
-     "lead": "Fuenlabrada queda entre nuestros dos concesionarios Voge: Móstoles y Getafe. Elige el que te pille mejor.",
-     "hero": "concesionario-voge-madrid-sur-3.webp",
-     "intro": ["<b>Fuenlabrada</b> está justo entre Móstoles y Getafe, así que tienes dos concesionarios oficiales Voge a pocos minutos. En los dos puedes ver la gama y pedir tu prueba antes de decidir.",
-               "Si buscas tu primera moto, las Voge de 125 cc como la <a href=\"/modelo/125r/\">125R</a> o la <a href=\"/modelo/sr16/\">SR16</a> son una buena forma de empezar con el carnet A1 o con el de coche. Si ya tienes el A2, mira las <a href=\"/motos-voge-a2/\">Voge para el carnet A2</a>."],
-     "llegar": "Por la M-506 llegas a los dos: hacia el oeste, a Voge Móstoles (Calle Juan de la Cierva, 7-9); hacia el este, a Voge Getafe (Calle Barberán y Collar, 1).",
-     "perfiles": [("Primera moto", ["125r", "sr16", "sr1-adv"]), ("Carnet A2", ["sr4-radar", "300-rally", "525dsx"])],
-     "faqs": [("¿Dónde comprar una Voge si vivo en Fuenlabrada?", f"En Voge Móstoles ({e(DIRECCION)}) o en Voge Getafe ({e(DIR_GETAFE)}), los dos de Duomo Motor Bikes. No tenemos tienda en Fuenlabrada, pero los dos están muy bien comunicados por la M-506."),
-              ("¿Cuál es la Voge más barata?", (lambda m: f"Ahora mismo, la <a href=\"{model_url(m)}\">Voge {e(m['name'])}</a>, por {eur(m['price'])} (PVP con IVA).")(min(M, key=lambda x: x["price"]))),
-              ("¿Hacéis revisiones a motos Voge compradas en otro sitio?", "Sí. Nuestro <a href=\"/taller-voge/\">taller</a> atiende cualquier Voge, la hayas comprado aquí o no."),
-              ("¿Qué horario tenéis?", f"Los dos concesionarios: {e(NEGOCIO['horario'])}.")]},
-    {"slug": "voge-leganes", "ciudad": "Leganés", "corto": "Leganés", "tienda": "getafe", "nombres": ["Leganés"],
-     "title": "Voge Leganés · Concesionario oficial al lado, en Getafe",
-     "meta": "¿Buscas Voge en Leganés? Voge Getafe es tu concesionario oficial más cercano: toda la gama Voge, prueba sin compromiso y financiación a medida.",
-     "eyebrow": "Leganés · Getafe · Madrid Sur", "h1": "Concesionario Voge cerca de Leganés",
-     "lead": "Si vives en Leganés, Voge Getafe te pilla al lado: toda la gama Voge, prueba sin compromiso y financiación a medida.",
-     "hero": "concesionario-voge-madrid-sur-2.webp",
-     "intro": ["Desde <b>Leganés</b> tienes <b>Voge Getafe</b> a un corto trayecto. Allí puedes comparar en persona los scooters, las naked y las adventure de Voge y salir con la moto que de verdad encaja contigo.",
-               "Para moverte entre Leganés y Madrid sin atascos ni problemas de aparcamiento, un scooter de 125 con el carnet de coche como la <a href=\"/modelo/sr1/\">SR1</a> es la opción más práctica. Si quieres más motor, la <a href=\"/modelo/sr4-radar/\">SR4 Radar</a> se lleva con el A2."],
-     "llegar": "Desde Leganés, ve hacia Getafe por la M-406 o la M-45. Abre la ruta en Google Maps y te lleva directo a la Calle Barberán y Collar, 1.",
-     "perfiles": [("Para moverte por Madrid", ["sr16-air", "sr1", "sr3"]), ("Para viajar", ["sr450x", "525dsx", "900dsx"])],
-     "faqs": [("¿Hay concesionario Voge en Leganés?", f"El concesionario oficial Voge más cercano a Leganés es Voge Getafe, en {e(DIR_GETAFE)}. No tenemos tienda en Leganés."),
-              ("¿Puedo llevar una 125 con el carnet de coche?", "Sí, si tu carnet B tiene más de tres años de antigüedad, en España puedes llevar motos de hasta 125 cc y 11 kW. Mira todas en <a href=\"/motos-125-carnet-coche/\">Voge 125 con carnet de coche</a>."),
-              ("¿Me podéis mandar precio sin ir al concesionario?", "Claro. Escríbenos desde el <a href=\"/contacto/\">formulario de contacto</a> y te enviamos precio, financiación y disponibilidad."),
-              ("¿Qué horario tenéis?", f"{e(NEGOCIO['horario'])}.")]},
-]
-
-def page_zona(z):
-    url = f"/{z['slug']}/"
-    crumbs = [("Inicio", "/"), (f"Voge cerca de {z['corto']}", url)]
-    dir_ = GETAFE["dir"] if z["tienda"] == "getafe" else MAPS_DIR
-    perf = ""
-    for t, slugs in z["perfiles"]:
-        perf += f"""<h3 style="margin:34px 0 14px">{e(t)}</h3><div class="grid">{"".join(card(mm(s)) for s in slugs)}</div>"""
-    destino = {"getafe": "Getafe", "mostoles": "Móstoles", "ambas": "Móstoles o Getafe"}[z["tienda"]]
-    body = f"""
-  <section class="hero hero--page">
-    <div class="hero__bg"><img src="/assets/img/hero/{z['hero']}" alt="" width="1366" height="911"></div>
-    <div class="wrap"><div class="hero__inner">
-      <span class="eyebrow">{e(z['eyebrow'])}</span>
-      <h1>{e(z['h1'])}</h1>
-      <p class="lead">{z['lead']}</p>
-      <div class="hero__actions"><a class="btn btn--primary" href="{dir_}" target="_blank" rel="noopener">Cómo llegar</a><a class="btn btn--ghost-light" href="/solicitud-de-prueba/">Pedir prueba</a></div>
-    </div></div>
-  </section>
-  {crumbs_html(crumbs)}
-  <section class="section" style="padding-top:36px">
-    <div class="wrap split">
-      <div class="prose reveal">
-        <h2>Voge para {e(z['ciudad'])}</h2>
-        {"".join(f"<p>{p}</p>" for p in z['intro'])}
-        <h3>Cómo llegar desde {e(z['ciudad'])}</h3>
-        <p>{z['llegar']}</p>
-      </div>
-      <div class="note-box reveal reveal-d1" style="margin:0">{note_tienda(z["tienda"])}</div>
-    </div>
-  </section>
-  <section class="section section--alt">
-    <div class="wrap">
-      <h2>Las Voge que más se llevan desde {e(z['corto'])}</h2>
-      <p class="sub">Según para qué quieras la moto.</p>
-      {perf}
-      <div class="hero__actions" style="justify-content:center;margin-top:30px"><a class="btn btn--dark" href="/#gama">Ver los {len(M)} modelos</a></div>
-    </div>
-  </section>
-  {bloque_confianza()}
-  <section class="section"><div class="wrap">{visit_block(f"Ven desde {z['corto']} a {destino}", z["tienda"])}</div></section>
-  {bloque_blog(z['nombres'])}
-  <section class="section">
-    <div class="wrap">
-      <h2>Preguntas frecuentes</h2>
-      <p class="sub">Si vienes desde {e(z['ciudad'])}.</p>
-      {faq_html(z['faqs'])}
-    </div>
-  </section>
-  {cta_band()}
-"""
-    about = {"@id": GETAFE_ID} if z["tienda"] == "getafe" else ({"@id": DEALER_ID} if z["tienda"] == "mostoles" else [{"@id": DEALER_ID}, {"@id": GETAFE_ID}])
-    ld = [crumbs_ld(crumbs), faq_ld(z["faqs"]), {"@context": "https://schema.org", "@type": "WebPage", "name": z["h1"], "url": SITE + url,
-          "about": about, "spatialCoverage": {"@type": "Place", "name": z["corto"]}}]
-    write(url, head(z["title"], z["meta"], url, ld=ld) + header() + body + footer())
-
+def bloque_blog(*a, **k): return ""
 # ------------------------------------------------------------------ SITEMAP, ROBOTS, LLMS
 def seo_files():
-    urls = [("/", "1.0", "weekly"), ("/concesionario-voge-madrid-sur/", "0.9", "monthly"), ("/voge-mostoles/", "0.9", "monthly"), ("/voge-getafe/", "0.9", "monthly"),
-            ("/taller-voge/", "0.8", "monthly"), ("/motos-voge-a2/", "0.9", "weekly"), ("/motos-125-carnet-coche/", "0.9", "weekly"),
+    urls = [("/", "1.0", "weekly"), ("/concesionario-voge-madrid-sur/", "0.9", "monthly"),
             ("/solicitud-de-prueba/", "0.7", "monthly"), ("/contacto/", "0.7", "monthly")]
-    urls += [(f"/{z['slug']}/", "0.8", "monthly") for z in ZONAS_PAG]
     urls += [(cat_url(c), "0.8", "weekly") for c in CATS]
     urls += [(model_url(m), "0.9", "weekly") for m in M]
     posts = sorted(blog_posts(), key=lambda p: p["fecha"], reverse=True)
@@ -1642,29 +1054,21 @@ def seo_files():
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write("\n".join(xml) + "\n")
     open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: /\nDisallow: /_build/\n\nSitemap: {SITE}/sitemap.xml\n")
     open(os.path.join(ROOT, f"{INDEXNOW_KEY}.txt"), "w", encoding="utf-8").write(INDEXNOW_KEY)
-    zonas = "\n".join(f"- [Voge cerca de {z['corto']}]({SITE}/{z['slug']}/)" for z in ZONAS_PAG)
-    gama = "\n".join(f"- [{full(m)}]({SITE}{model_url(m)}): {m['cat'].lower()}, {m['cc']} cc, {m['cv']} CV, {LIC[m['license']]['label'].lower()}, {eur(m['price'])}" for m in M)
+    gama = "\n".join(f"- [{full(m)}]({SITE}{model_url(m)}): {m['cat'].lower()}, {m['cc']} cc, {m['cv']} CV, {eur(m['price'])}" for m in M)
     blog = "\n".join(f"- [{p['titulo']}]({SITE}/blog/{p['slug']}/)" for p in posts[:20])
     open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8").write(f"""# Voge Madrid Sur · Duomo Motor Bikes
 
-> Concesionarios oficiales Voge en Móstoles ({XMADRID} de Alcorcón) y Getafe. Venta de motos Voge nuevas, prueba sin compromiso, financiación, taller propio y recambios originales.
+> Concesionarios oficiales Voge en Móstoles y Getafe (Duomo Motor Bikes). Venta de motos Voge nuevas, prueba, taller propio, servicio postventa y recambios originales.
 
-- Voge Móstoles: {DIRECCION} · Tel. {NEGOCIO['tel']} · Taller: {NEGOCIO['telTaller']}
+- Voge Móstoles: {DIRECCION} · Tel. 910 40 92 76
 - Voge Getafe: {DIR_GETAFE} · Tel. {GETAFE['tel']}
 - Email: {NEGOCIO['email']}
 - Horario (los dos): {NEGOCIO['horario']}
-- Zona que atendemos: {', '.join(ZONAS)}
-- {CREDENCIALES}
+- WhatsApp: 613 91 55 05
 
 ## Páginas principales
 - [Inicio]({SITE}/)
-- [Concesionarios Voge Madrid Sur]({SITE}/concesionario-voge-madrid-sur/)
-- [Voge Móstoles]({SITE}/voge-mostoles/)
-- [Voge Getafe]({SITE}/voge-getafe/)
-{zonas}
-- [Taller Voge]({SITE}/taller-voge/)
-- [Motos Voge para carnet A2]({SITE}/motos-voge-a2/)
-- [Motos 125 con carnet de coche]({SITE}/motos-125-carnet-coche/)
+- [Puntos de venta: Voge Móstoles y Voge Getafe]({SITE}/concesionario-voge-madrid-sur/)
 - [Solicitar prueba]({SITE}/solicitud-de-prueba/)
 - [Contacto]({SITE}/contacto/)
 
@@ -1684,9 +1088,7 @@ if __name__ == "__main__":
     page_home()
     for m in M: page_model(m)
     for c in CATS: page_cat(c)
-    page_form("contacto"); page_form("prueba"); page_taller(); page_concesionarios()
-    page_tienda("mostoles"); page_tienda("getafe"); page_a2(); page_125()
-    for z in ZONAS_PAG: page_zona(z)
+    page_form("contacto"); page_form("prueba"); page_concesionarios()
     for u, (t, s, cnt) in LEGAL.items(): page_legal(u, t, s, cnt)
     page_blog(); page_404(); seo_files()
     print(f"OK · {len(M)} modelos · {len(CATS)} categorías")
