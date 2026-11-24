@@ -1,0 +1,2985 @@
+[
+ {
+  "slug": "sr16-air",
+  "name": "SR16 Air",
+  "cat": "Scooters",
+  "catSlug": "scooters",
+  "cc": "124,8",
+  "cv": "10,9",
+  "nm": "10,3",
+  "ccNum": 124.8,
+  "license": "A1",
+  "price": 2192,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/sr16-air/voge-sr16-air.webp",
+  "mw": 1132,
+  "mh": 754,
+  "og": "assets/img/og/voge-sr16-air.jpg",
+  "colors": [
+   {
+    "name": "Gris mate",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr16-air/voge-sr16-air-gris-mate-1.webp",
+      "w": 1200,
+      "h": 900
+     },
+     {
+      "img": "assets/img/modelos/sr16-air/voge-sr16-air-gris-mate-2.webp",
+      "w": 1200,
+      "h": 900
+     },
+     {
+      "img": "assets/img/modelos/sr16-air/voge-sr16-air-gris-mate-3.webp",
+      "w": 1200,
+      "h": 900
+     },
+     {
+      "img": "assets/img/modelos/sr16-air/voge-sr16-air-gris-mate-4.webp",
+      "w": 1200,
+      "h": 800
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge SR16: El scooter Voge de rueda alta con tecnología y equipamiento premium",
+    "p": [
+     "Te presentamos el SR16, la respuesta de Voge a la demanda del mercado de un scooter 125cc de rueda alta con la última tecnología, y que a diferencia de la mayoría de sus competidores que equipan sólo el clásico motor refrigerado por aire, dispone de una mecánica de última generación con refrigeración líquida y 11,5 CV, además de un gran equipamiento de calidad a un precio altamente competitivo.",
+     "Equipado con navegación “Turn by Turn”, gran parabrisas y paramanos desmontables de serie, el SR16 está preparado para tus recorridos cotidianos. Su configuración de rueda alta y plataforma plana, te ofrece estabilidad, confort y capacidad para dos cascos integrales gracias al baúl de serie. Mientras que la cámara frontal HD, el control de tracción TCS, ABS de doble canal y la alerta de frenada ESS, completan tus exigencias en cuanto a seguridad.",
+     "5 años de garantía incluidos.",
+     "El nuevo SR16 está disponible en dos colores: matt grey y matt black."
+    ],
+    "img": "assets/img/modelos/sr16-air/voge-sr16-air-voge-sr16-el-scooter-voge-de-rueda-alta--1.webp",
+    "w": 1024,
+    "h_": 768
+   },
+   {
+    "h": "Mecánica y tecnología contrastadas",
+    "p": [
+     "Desarrollado sobre la base de los modernos SR1 y SR1 ADV, el SR16 hereda su calidad, equipamiento y excelente relación calidad-precio. Cuenta con un moderno motor con refrigeración líquida que garantiza potencia, suavidad y fiabilidad testada en ciclos de funcionamiento de 200 horas ininterrumpidas, y ensayos de larga duración de 60.000 km. Y que sorprende por su dinamismo y capacidad de respuesta."
+    ],
+    "img": "assets/img/modelos/sr16-air/voge-sr16-air-mecanica-y-tecnologia-contrastadas-2.webp",
+    "w": 1024,
+    "h_": 768
+   }
+  ],
+  "equipTitle": "Equipamiento para tu SR16 Air",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "El nuevo Voge SR16 Air amplía la familia de scooters de rueda alta de Voge con una propuesta pensada para el día a día. Su motor de 124,8 cc de refrigeración forzada por aire, la rueda delantera de 16 pulgadas y la plataforma plana combinan agilidad, seguridad y comodidad para afrontar con soltura los desplazamientos urbanos.",
+    "img": "assets/img/modelos/sr16-air/voge-sr16-air-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "La ciudad, más fácil cada día",
+    "text": "Su peso contenido, unas dimensiones compactas y una altura de asiento de 790 mm facilitan las maniobras y permiten una posición de conducción accesible. Los paramanos y el espacio de carga aportan un extra de comodidad para el día a día.",
+    "img": "assets/img/modelos/sr16-air/voge-sr16-air-equipamiento-2-la-ciudad-mas-facil-cada-dia.webp"
+   },
+   {
+    "title": "Seguridad de serie",
+    "text": "ABS de doble canal y control de tracción TCS en todas las unidades. Iluminación Full LED, tomas USB de tipo A y C, y baúl trasero de 34 litros incluido de serie.",
+    "img": "assets/img/modelos/sr16-air/voge-sr16-air-equipamiento-3-seguridad-de-serie.webp"
+   },
+   {
+    "title": "Espacio para dos cascos",
+    "text": "Bajo el asiento caben dos cascos integrales, algo poco habitual en un scooter de 125 cc y que en el día a día se agradece.",
+    "img": "assets/img/modelos/sr16-air/voge-sr16-air-equipamiento-4-espacio-para-dos-cascos.webp"
+   }
+  ],
+  "gallery": [],
+  "manual": "manuales/manual-voge-sr16.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/sr16-air/"
+ },
+ {
+  "slug": "sr16",
+  "name": "SR16",
+  "cat": "Scooters",
+  "catSlug": "scooters",
+  "cc": "124,9",
+  "cv": "11,5",
+  "nm": "11",
+  "ccNum": 124.9,
+  "license": "A1",
+  "price": 2688,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/sr16/voge-sr16.webp",
+  "mw": 1132,
+  "mh": 754,
+  "og": "assets/img/og/voge-sr16.jpg",
+  "colors": [
+   {
+    "name": "Gris mate",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-gris-mate-1.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-gris-mate-2.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-gris-mate-3.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-gris-mate-4.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-gris-mate-5.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-gris-mate-6.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-gris-mate-7.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-gris-mate-8.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-gris-mate-9.webp",
+      "w": 1024,
+      "h": 768
+     }
+    ]
+   },
+   {
+    "name": "Negro mate",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-negro-mate-1.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-negro-mate-2.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-negro-mate-3.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-negro-mate-4.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-negro-mate-5.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-negro-mate-6.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-negro-mate-7.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr16/voge-sr16-negro-mate-8.webp",
+      "w": 1024,
+      "h": 768
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge SR16: El scooter Voge de rueda alta con tecnología y equipamiento premium",
+    "p": [
+     "Te presentamos el SR16, la respuesta de Voge a la demanda del mercado de un scooter 125cc de rueda alta con la última tecnología, y que a diferencia de la mayoría de sus competidores que equipan sólo el clásico motor refrigerado por aire, dispone de una mecánica de última generación con refrigeración líquida y 11,5 CV, además de un gran equipamiento de calidad a un precio altamente competitivo.",
+     "Equipado con navegación “Turn by Turn”, gran parabrisas y paramanos desmontables de serie, el SR16 está preparado para tus recorridos cotidianos. Su configuración de rueda alta y plataforma plana, te ofrece estabilidad, confort y capacidad para dos cascos integrales gracias al baúl de serie. Mientras que la cámara frontal HD, el control de tracción TCS, ABS de doble canal y la alerta de frenada ESS, completan tus exigencias en cuanto a seguridad.",
+     "5 años de garantía incluidos.",
+     "El nuevo SR16 está disponible en dos colores: matt grey y matt black."
+    ],
+    "img": "assets/img/modelos/sr16/voge-sr16-voge-sr16-el-scooter-voge-de-rueda-alta--1.webp",
+    "w": 1024,
+    "h_": 768
+   },
+   {
+    "h": "Mecánica y tecnología contrastadas",
+    "p": [
+     "Desarrollado sobre la base de los modernos SR1 y SR1 ADV, el SR16 hereda su calidad, equipamiento y excelente relación calidad-precio. Cuenta con un moderno motor con refrigeración líquida que garantiza potencia, suavidad y fiabilidad testada en ciclos de funcionamiento de 200 horas ininterrumpidas, y ensayos de larga duración de 60.000 km. Y que sorprende por su dinamismo y capacidad de respuesta."
+    ],
+    "img": "assets/img/modelos/sr16/voge-sr16-mecanica-y-tecnologia-contrastadas-2.webp",
+    "w": 1024,
+    "h_": 768
+   }
+  ],
+  "equipTitle": "Equipamiento para tu SR16",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "El VOGE SR16 está propulsado por un motor monocilíndrico de 125 cc, con inyección electrónica EFI y refrigeración líquida. Este motor ofrece un rendimiento eficiente, ideal para el uso diario en ciudad, con una respuesta ágil y un consumo optimizado.",
+    "img": "assets/img/modelos/sr16/voge-sr16-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "Suspención y frenos",
+    "text": "Para garantizar estabilidad y confort, el SR16 incorpora una horquilla hidráulica delantera y un doble amortiguador trasero regulable en precarga, permitiendo ajustar la suspensión según las necesidades del conductor.",
+    "img": "assets/img/modelos/sr16/voge-sr16-equipamiento-2-suspencion-y-frenos.webp"
+   },
+   {
+    "title": "Suspención y frenos",
+    "text": "En términos de seguridad, dispone de discos de freno en ambos ejes con sistema ABS de doble canal, proporcionando una frenada potente y estable, reduciendo el riesgo de bloqueo de ruedas en situaciones de emergencia.",
+    "img": "assets/img/modelos/sr16/voge-sr16-equipamiento-3-suspencion-y-frenos.webp"
+   },
+   {
+    "title": "Iluminación y seguridad",
+    "text": "El SR16 está equipado con un sistema de iluminación Full LED, ofreciendo máxima visibilidad tanto de día como de noche. Además, incorpora el sistema ESS de alerta de frenada de emergencia, que activa las luces intermitentes cuando se detecta una frenada brusca, alertando a otros conductores y mejorando la seguridad.",
+    "img": "assets/img/modelos/sr16/voge-sr16-equipamiento-4-iluminacion-y-seguridad.webp"
+   },
+   {
+    "title": "Instrumentación y seguridad",
+    "text": "El cuadro de instrumentos cuenta con una pantalla digital LCD a color, que proporciona información clara y precisa. Además, incluye conectividad Bluetooth y navegación Turn by Turn, facilitando la orientación durante los trayectos. Dispone de un sistema Keyless de llave inteligente por proximidad, que permite el arranque del motor y la apertura del asiento de manera remota, mejorando la comodidad y seguridad en el uso diario.",
+    "img": "assets/img/modelos/sr16/voge-sr16-equipamiento-5-instrumentacion-y-seguridad.webp"
+   },
+   {
+    "title": "Cámara integrada",
+    "text": "Para capturar cada viaje, el SR16 incorpora una cámara de video HD de alta definición (1080p), ideal para grabar rutas y disponer de un registro en caso de incidentes.",
+    "img": "assets/img/modelos/sr16/voge-sr16-equipamiento-6-camara-integrada.webp"
+   },
+   {
+    "title": "Espacio de almacenamiento",
+    "text": "El scooter cuenta con un compartimento bajo el asiento con capacidad para un casco integral, además de una parrilla con baúl removible de 34 litros de serie y un gancho retráctil, que le proporciona un espacio extra para el transporte de bolsas. También dispone de una guantera con toma USB, ubicada tras el escudo, ideal para cargar dispositivos móviles en movimiento.",
+    "img": "assets/img/modelos/sr16/voge-sr16-equipamiento-7-espacio-de-almacenamiento.webp"
+   },
+   {
+    "title": "Confort y ergonomía",
+    "text": "Su gran parabrisas y paramanos desmontables ofrecen protección para climas fríos. Su asiento se sitúa a una altura de 800 mm, ofreciendo una posición de conducción ergonómica. Además, incorpora estriberas retráctiles, brindando un apoyo cómodo y seguro al pasajero cuando sea necesario.",
+    "img": "assets/img/modelos/sr16/voge-sr16-equipamiento-8-confort-y-ergonomia.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/sr16/voge-sr16-galeria-1.webp",
+    "w": 1024,
+    "h": 768
+   },
+   {
+    "img": "assets/img/modelos/sr16/voge-sr16-galeria-2.webp",
+    "w": 1024,
+    "h": 768
+   }
+  ],
+  "manual": "manuales/manual-voge-sr16.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/sr16/"
+ },
+ {
+  "slug": "sr1",
+  "name": "SR1",
+  "cat": "Scooters",
+  "catSlug": "scooters",
+  "cc": "124,9",
+  "cv": "11,5",
+  "nm": "11",
+  "ccNum": 124.9,
+  "license": "A1",
+  "price": 2792,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/sr1/voge-sr1.webp",
+  "mw": 1141,
+  "mh": 760,
+  "og": "assets/img/og/voge-sr1.jpg",
+  "colors": [
+   {
+    "name": "Plata",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-plata-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-plata-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-plata-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-plata-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-plata-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-plata-6.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Blanco",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-blanco-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-blanco-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-blanco-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-blanco-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-blanco-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-blanco-6.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Gris",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-gris-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-gris-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-gris-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-gris-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-gris-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1/voge-sr1-gris-6.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge SR1: estilo italiano, calidad Voge",
+    "p": [
+     "Nuestro nuevo VOGE SR1 125 es un scooter compacto con estética GT, fresca, elegante y aerodinámica, creado por el prestigioso diseñador italiano Massimo Zaniboni. Está concebido para hacer los desplazamientos urbanos e interurbanos más cómodos, gracias a sus compactas dimensiones que le proporcionan una gran agilidad, estabilidad y extremo confort."
+    ],
+    "img": "assets/img/modelos/sr1/voge-sr1-voge-sr1-estilo-italiano-calidad-voge-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Compacto, Ágil y Sofisticado",
+    "p": [
+     "El SR1 125 es un scooter compacto con estética GT, fresca, elegante y aerodinámica, creado por el prestigioso diseñador italiano Massimo Zaniboni. Está concebido para hacer los desplazamientos urbanos e interurbanos más cómodos, gracias a sus compactas dimensiones que le proporcionan una gran agilidad, estabilidad y máximo confort. El SR1 dispone de un amplio hueco de 29 L bajo su asiento, con capacidad para albergar un casco integral y otros objetos, y además de una guantera lateral tras el escudo frontal con toma auxiliar USB, así como asideros laterales combinados con una estilizada parrilla de fundición de aluminio."
+    ],
+    "img": "assets/img/modelos/sr1/voge-sr1-compacto-agil-y-sofisticado-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Potencia, Eficiencia y Fiabilidad Sin Límites",
+    "p": [
+     "El SR1 está impulsado por un motor EFI de última generación con refrigeración líquida, que sorprende por su respuesta y suavidad, además de un reducido consumo medio de 2’2 L / 100 kms, que unido a su depósito de 8 L le alarga la autonomía hasta aproximadamente 360 km. Esta mecánica destaca también por tener una gran fiabilidad testada en bancos de pruebas, con ciclos de funcionamiento de 200 horas ininterrumpidas, y en ensayos de larga duración de 60.000 km. Asimismo, su bastidor y asiento, cosido con costuras impermeables, han sido testados en pruebas de esfuerzo de 150.000 ciclos."
+    ],
+    "img": "assets/img/modelos/sr1/voge-sr1-potencia-eficiencia-y-fiabilidad-sin-lim-3.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Máxima Seguridad, Equipamiento Premium",
+    "p": [
+     "En el apartado de seguridad el SR1 equipa ABS de doble canal independiente, control de tracción desconectable TCS, y alerta de frenada de emergencia ESS, la cual añade un factor muy importante a la seguridad activa. Equipa también un caballete central y otro lateral con corte de corriente, además de unas anchas estriberas traseras desplegables. Como no podía ser de otra forma en un modelo VOGE, el SR1 ofrece de serie un gran nivel de equipamiento de alta calidad en el que destacamos el sistema de arranque sin llave Keyless, el cuadro de instrumentos LCD en color, la iluminación Full LED y hasta una cámara frontal para grabar los desplazamientos en HD con una resolución de 1080p."
+    ],
+    "img": "assets/img/modelos/sr1/voge-sr1-maxima-seguridad-equipamiento-premium-4.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu SR1",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "El VOGE SR1 está equipado con un motor monocilíndrico de 125 cc con inyección electrónica EFI y refrigeración líquida. Este propulsor garantiza un rendimiento eficiente y equilibrado, ideal para la movilidad urbana con un consumo optimizado y una respuesta ágil en el tráfico.",
+    "img": "assets/img/modelos/sr1/voge-sr1-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "Frenos y seguridad",
+    "text": "Para ofrecer la máxima seguridad, el SR1 incorpora discos de freno en ambos ejes junto con un sistema ABS de doble canal que evita el bloqueo de las ruedas en frenadas bruscas y aviso de frenada de emergencia. Además, cuenta con control de tracción (TCS) desconectable, proporcionando mayor estabilidad en superficies de baja adherencia.",
+    "img": "assets/img/modelos/sr1/voge-sr1-equipamiento-2-frenos-y-seguridad.webp"
+   },
+   {
+    "title": "Ruedas y neumáticos",
+    "text": "El scooter monta neumáticos de gran estabilidad y adherencia, ofreciendo una conducción segura y cómoda en distintos tipos de superficies.",
+    "img": "assets/img/modelos/sr1/voge-sr1-equipamiento-3-ruedas-y-neumaticos.webp"
+   },
+   {
+    "title": "Iluminación y visibilidad",
+    "text": "Dispone de un sistema de iluminación Full LED, diseñado para maximizar la visibilidad en cualquier condición. Destaca su doble óptica estrecha en altura y alargada, complementada por guías luminosas en forma de “L” en los laterales e inferior de las ópticas, que actúan como luz de posición. Para mayor seguridad, incorpora el sistema ESS de alerta de frenada de emergencia, que hace parpadear el piloto de freno en caso de una frenada repentina, alertando a otros conductores y reduciendo el riesgo de colisiones.",
+    "img": "assets/img/modelos/sr1/voge-sr1-equipamiento-4-iluminacion-y-visibilidad.webp"
+   },
+   {
+    "title": "Instrumentación y conectividad",
+    "text": "El cuadro de instrumentos cuenta con una moderna pantalla digital LCD a color de 7”, con caracteres en negativo (blanco sobre fondo negro), asegurando una visualización clara y fácil de leer. El SR1 incorpora un sistema Keyless de llave inteligente por proximidad, que permite el arranque del motor, la apertura del asiento y el acceso al depósito de combustible de manera remota, aportando un plus de comodidad y seguridad.",
+    "img": "assets/img/modelos/sr1/voge-sr1-equipamiento-5-instrumentacion-y-conectividad.webp"
+   },
+   {
+    "title": "Cámara integrada",
+    "text": "Este scooter viene equipado con una cámara de video HD de alta definición (1080p), permitiendo grabar los recorridos en una tarjeta microSD para inmortalizar tus viajes o contar con un registro en caso de incidentes.",
+    "img": "assets/img/modelos/sr1/voge-sr1-equipamiento-6-camara-integrada.webp"
+   },
+   {
+    "title": "Espacio de almacenamiento",
+    "text": "Ofrece una capacidad de carga de 29 litros, suficiente para el día a día. Además, incluye una guantera con toma USB tras el escudo, ideal para cargar dispositivos móviles sobre la marcha. También incorpora una parrilla porta baúl de serie, facilitando la instalación de un baúl trasero para ampliar la capacidad de almacenamiento.",
+    "img": "assets/img/modelos/sr1/voge-sr1-equipamiento-7-espacio-de-almacenamiento.webp"
+   },
+   {
+    "title": "Comodidad y ergonomía",
+    "text": "El asiento está situado a una altura de 775 mm, ofreciendo una posición de conducción cómoda y accesible para diferentes usuarios. Para mayor confort del pasajero, cuenta con estriberas retráctiles escamoteables, proporcionando un apoyo firme y cómodo cuando se necesiten.",
+    "img": "assets/img/modelos/sr1/voge-sr1-equipamiento-8-comodidad-y-ergonomia.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/sr1/voge-sr1-galeria-1.webp",
+    "w": 1200,
+    "h": 800
+   },
+   {
+    "img": "assets/img/modelos/sr1/voge-sr1-galeria-2.webp",
+    "w": 1200,
+    "h": 800
+   }
+  ],
+  "manual": "manuales/manual-voge-sr1.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/sr1/"
+ },
+ {
+  "slug": "sr1-adv",
+  "name": "SR1 ADV",
+  "cat": "Scooters",
+  "catSlug": "scooters",
+  "cc": "124,9",
+  "cv": "11,5",
+  "nm": "11",
+  "ccNum": 124.9,
+  "license": "A1",
+  "price": 2992,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/sr1-adv/voge-sr1-adv.webp",
+  "mw": 1133,
+  "mh": 755,
+  "og": "assets/img/og/voge-sr1-adv.jpg",
+  "colors": [
+   {
+    "name": "Rojo",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-rojo-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-rojo-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-rojo-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-rojo-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-rojo-5.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Gris",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-gris-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-gris-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-gris-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-gris-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-gris-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-gris-6.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge SR1 ADV: Calidad Voge sobre cualquier terreno",
+    "p": [
+     "El nuevo scooter SR1 ADV 125 es la respuesta de Voge al segmento de los scooters Crossover con el que puedes romper los límites marcados por elasfalto, saboreando la aventura de rodar por pistas."
+    ],
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-voge-sr1-adv-calidad-voge-sobre-cualquie-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Diseño Agresivo, Rendimiento Imparable",
+    "p": [
+     "Partiendo del innovador motor EFI de última generación con refrigeración líquida del popular Voge SR1, se estrena con una nueva estética más agresiva, parabrisas regulable eléctricamente, suspensiones de mayor recorrido con amortiguadores de gas, depósito de mayor capacidad para aumentar la autonomía, neumáticos mixtos y nuevo panel de instrumentos con pantalla a color, conexión con el móvil y navegación GPS simplificada “turn-by-turn”."
+    ],
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-diseno-agresivo-rendimiento-imparable-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Máxima Seguridad, Máxima Confianza",
+    "p": [
+     "El SR1 ADV también hereda unos sofisticados sistemas de seguridad activa, con ABS de doble canal independiente, control de tracción desconectable TCS y alerta de frenada de emergencia ESS. No puede faltar tampoco todo el equipamiento de serie de su predecesor, entre el que destaca el sistema de arranque Keyless, cuadro de instrumentos LCD en color, iluminación Full Led y una cámara frontal para grabar los desplazamientos en HD con una resolución de 1080p. Además, puedes equiparlo con baúl superior opcional."
+    ],
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-maxima-seguridad-maxima-confianza-3.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu SR1 ADV",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "El VOGE SR1 ADV está propulsado por un eficiente motor monocilíndrico de 125 cc con inyección electrónica EFI y refrigeración líquida. Este propulsor combina un bajo consumo de combustible con una respuesta ágil, ideal para la movilidad urbana y los desplazamientos interurbanos.",
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "Frenos y seguridad",
+    "text": "Este scooter está equipado con discos de freno en ambos ejes, ofreciendo una gran capacidad de detención. Además, cuenta con ABS de doble canal, que evita el bloqueo de las ruedas en frenadas de emergencia, y un sistema de control de tracción (TCS) desconectable, y alerta de frenada de emergencia proporcionando un extra de seguridad.",
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-equipamiento-2-frenos-y-seguridad.webp"
+   },
+   {
+    "title": "Ruedas y neumáticos",
+    "text": "El SR1 ADV monta llantas de 14 pulgadas en la rueda delantera y 13 pulgadas en la trasera, equipadas con neumáticos mixtos de 110/80 y 130/70, optimizados para ofrecer un equilibrio entre agarre en asfalto y capacidad para transitar sobre terrenos irregulares.",
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-equipamiento-3-ruedas-y-neumaticos.webp"
+   },
+   {
+    "title": "Iluminación y visibilidad",
+    "text": "Dispone de un sistema de iluminación Full LED, que garantiza una visibilidad óptima en todo tipo de condiciones. Además, el parabrisas ahumado es regulable en altura eléctricamente, permitiendo ajustar la protección aerodinámica según las necesidades del piloto. Para aumentar la seguridad y funcionalidad, el SR1 ADV incorpora una cámara de video HD de alta definición, permitiendo grabar recorridos o situaciones en carretera.",
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-equipamiento-4-iluminacion-y-visibilidad.webp"
+   },
+   {
+    "title": "Instrumentación y conectividad",
+    "text": "El cuadro de mandos cuenta con una moderna pantalla a color con conectividad Bluetooth, que permite visualizar información esencial de manera clara. Entre sus funciones avanzadas, incluye, vinculando un smartphone, un sistema de navegación GPS Turn-by-Turn, proporcionando indicaciones en tiempo real.",
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-equipamiento-5-instrumentacion-y-conectividad.webp"
+   },
+   {
+    "title": "Espacio de almacenamiento",
+    "text": "El SR1 ADV ofrece una capacidad de carga de 29 litros, ideal para el día a día. En la parte delantera, incorpora una guantera con toma USB, permitiendo cargar dispositivos electrónicos de manera sencilla.",
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-equipamiento-6-espacio-de-almacenamiento.webp"
+   },
+   {
+    "title": "Comodidad y ergonomía",
+    "text": "El asiento está situado a una altura de 775 mm, ofreciendo una posición de conducción cómoda y accesible para diferentes usuarios. Para mayor confort del pasajero, cuenta con estriberas retráctiles escamoteables, proporcionando un apoyo firme y cómodo cuando se necesiten.",
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-equipamiento-7-comodidad-y-ergonomia.webp"
+   },
+   {
+    "title": "Diseño y estilo",
+    "text": "El diseño del VOGE SR1 ADV ha sido desarrollado por Massimo Zaniboni, fusionando un estilo crossover con líneas agresivas y modernas que le otorgan un carácter distintivo dentro del segmento de scooters de 125 cc.",
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-equipamiento-8-diseno-y-estilo.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-galeria-1.webp",
+    "w": 1200,
+    "h": 800
+   },
+   {
+    "img": "assets/img/modelos/sr1-adv/voge-sr1-adv-galeria-2.webp",
+    "w": 1200,
+    "h": 800
+   }
+  ],
+  "manual": "manuales/manual-voge-sr1-adv.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/sr1-adv/"
+ },
+ {
+  "slug": "sr3",
+  "name": "SR3",
+  "cat": "Scooters",
+  "catSlug": "scooters",
+  "cc": "244,3",
+  "cv": "25,5",
+  "nm": "23",
+  "ccNum": 244.3,
+  "license": "A2",
+  "price": 3992,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/sr3/voge-sr3.webp",
+  "mw": 1150,
+  "mh": 766,
+  "og": "assets/img/og/voge-sr3.jpg",
+  "colors": [
+   {
+    "name": "Negro",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-negro-1.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-negro-2.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-negro-3.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-negro-4.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-negro-5.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-negro-6.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-negro-7.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-negro-8.webp",
+      "w": 1024,
+      "h": 768
+     }
+    ]
+   },
+   {
+    "name": "Gris",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-gris-1.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-gris-2.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-gris-3.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-gris-4.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-gris-5.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-gris-6.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-gris-7.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-gris-8.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-gris-9.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr3/voge-sr3-gris-10.webp",
+      "w": 1024,
+      "h": 768
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge SR3: El equilibrio perfecto entre tamaño y prestaciones",
+    "p": [
+     "Te presentamos la opción perfecta para quienes buscáis un scooter con excelentes prestaciones y gran capacidad de carga, pero que al mismo tiempo no queréis renunciar a la agilidad en tráfico urbano que te ofrece un scooter de peso contenido, el nuevo Voge SR3."
+    ],
+    "img": "assets/img/modelos/sr3/voge-sr3-voge-sr3-el-equilibrio-perfecto-entre-ta-1.webp",
+    "w": 1024,
+    "h_": 768
+   },
+   {
+    "h": "Relación peso/potencia de referencia",
+    "p": [
+     "Con esta premisa, al diseñar el SR3, en Voge nos propusimos reducir al máximo su peso. Con el apoyo de herramientas de diseño digital, logramos crear un bastidor ligero y resistente puesto a prueba durante exhaustivas pruebas de fatiga que superaron los 100.000 ciclos. El resultado, un peso en orden de marcha de tan solo 165 kg, que, en combinación con un brillante motor de 25,5 CV optimizado para ofrecer una respuesta enérgica en medio régimen, dota a la SR3 de una relación peso/potencia entre las mejores de su segmento, ofreciéndote agilidad y un manejo excepcional, ideales tanto para cruzar la ciudad más congestionada, como para disfrutar en carretera."
+    ],
+    "img": "assets/img/modelos/sr3/voge-sr3-relacion-peso-potencia-de-referencia-2.webp",
+    "w": 1024,
+    "h_": 768
+   },
+   {
+    "h": "Amplitud y equipamiento de Maxiscooter",
+    "p": [
+     "Sus llantas de 14 y 13 pulgadas, una distancia entre ejes de 1.525 mm y un asiento de baja altura a 770 mm garantizan estabilidad, amplitud y accesibilidad. Además, el SR3 incluye de serie un parabrisas ajustable, puños calefactables y elementos de seguridad como el control de tracción TCS, frenos de disco con ABS de doble canal, alerta de frenada de emergencia ESS y un sistema de iluminación Full LED, un depósito de 14 L para una gran autonomía, parrilla portaobjetos trasera, dos amplias guanteras (una de ellas con toma USB), compartimento bajo el asiento con capacidad para dos cascos (uno integral y otro tipo jet), arranque sin llave (keyless), cámara HD frontal y una gran pantalla TFT de 7” con navegación Turn by Turn."
+    ],
+    "img": "assets/img/modelos/sr3/voge-sr3-amplitud-y-equipamiento-de-maxiscooter-3.webp",
+    "w": 1024,
+    "h_": 768
+   }
+  ],
+  "equipTitle": "Equipamiento para tu SR3",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "Este scooter está impulsado por un motor monocilíndrico con refrigeración líquida, capaz de desarrollar 25,5 CV de potencia y un par motor de 23 Nm. Gracias a su eficiente configuración, ofrece una conducción ágil y dinámica, ideal para desplazamientos urbanos y recorridos interurbanos.",
+    "img": "assets/img/modelos/sr3/voge-sr3-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "Chasis y suspenciones",
+    "text": "Para garantizar un buen equilibrio entre comodidad y estabilidad, el scooter equipa una horquilla delantera con barras de 35 mm, que absorbe eficazmente las irregularidades del asfalto. En la parte trasera, cuenta con un doble amortiguador con regulación en precarga, permitiendo adaptar la suspensión a las necesidades del conductor y la carga transportada.",
+    "img": "assets/img/modelos/sr3/voge-sr3-equipamiento-2-chasis-y-suspenciones.webp"
+   },
+   {
+    "title": "Frenos y seguridad",
+    "text": "El sistema de frenado incorpora discos de 260 mm en la rueda delantera y 240 mm en la trasera, asistidos por un ABS de doble canal, proporcionando una frenada segura y controlada en cualquier situación. Además incorpora un sistema de alerta de frenada brusca (ESS), que hace parpadear al piloto de freno, alertando a los vehículos que circulan por detrás.",
+    "img": "assets/img/modelos/sr3/voge-sr3-equipamiento-3-frenos-y-seguridad.webp"
+   },
+   {
+    "title": "Iluminación y visibilidad",
+    "text": "El scooter cuenta con un sistema de iluminación Full LED, que no solo mejora la visibilidad, sino que también aporta una estética moderna y sofisticada. Además, incorpora un sistema de alerta de frenada de emergencia (ESS), que activa las luces de emergencia en frenadas bruscas para alertar a los vehículos que circulan detrás, aumentando la seguridad. En la parte trasera, el piloto LED también cuenta con el sistema ESS, reforzando la visibilidad en condiciones adversas o maniobras de emergencia.",
+    "img": "assets/img/modelos/sr3/voge-sr3-equipamiento-4-iluminacion-y-visibilidad.webp"
+   },
+   {
+    "title": "Electrónica y conectividad",
+    "text": "Este modelo destaca por su avanzada electrónica, incorporando: Control de tracción (TCS), que evita pérdidas de adherencia en aceleraciones bruscas o superficies deslizantes. Sistema de monitorización de presión de neumáticos, que alerta al conductor de cualquier cambio en la presión para optimizar el rendimiento y la seguridad. Conectividad con smartphone y navegación Turn-by-Turn.",
+    "img": "assets/img/modelos/sr3/voge-sr3-equipamiento-5-electronica-y-conectividad.webp"
+   },
+   {
+    "title": "Electrónica y conectividad",
+    "text": "Pantalla TFT de alto contraste, que muestra información clara y precisa, con conectividad Bluetooth y navegación Turn by Turn para facilitar la orientación en ruta. Llave electrónica (arranque sin llave), que permite activar la moto sin necesidad de sacar la llave del bolsillo. Cámara frontal HD, ideal para grabar recorridos y mejorar la seguridad en la conducción.",
+    "img": "assets/img/modelos/sr3/voge-sr3-equipamiento-6-electronica-y-conectividad.webp"
+   },
+   {
+    "title": "Confort y practicidad",
+    "text": "El diseño del scooter está pensado para maximizar el confort y la funcionalidad en el día a día. Para ello, incluye: Parabrisas regulable en altura, ajustable para una mejor protección aerodinámica. Puños calefactables. Doble guantera, una de ellas con toma USB, perfecta para cargar dispositivos móviles sobre la marcha. Freno de mano, aportando seguridad al estacionar. Amplio compartimento bajo el asiento, con iluminación interna y capacidad para dos cascos (uno integral y otro tipo jet), asegurando espacio suficiente para el día a día. Arranque keyless. Asiento con apoyo lumbar. Cámara delantera Full HD. Parrilla porta objetos.",
+    "img": "assets/img/modelos/sr3/voge-sr3-equipamiento-7-confort-y-practicidad.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/sr3/voge-sr3-galeria-1.webp",
+    "w": 1024,
+    "h": 768
+   },
+   {
+    "img": "assets/img/modelos/sr3/voge-sr3-galeria-2.webp",
+    "w": 1024,
+    "h": 768
+   }
+  ],
+  "manual": "manuales/manual-voge-sr3.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/sr3/"
+ },
+ {
+  "slug": "sr4-radar",
+  "name": "SR4 Radar",
+  "cat": "Scooters",
+  "catSlug": "scooters",
+  "cc": "349,8",
+  "cv": "34",
+  "nm": "35",
+  "ccNum": 349.8,
+  "license": "A2",
+  "price": 5892,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/sr4-radar/voge-sr4-radar.webp",
+  "mw": 1164,
+  "mh": 776,
+  "og": "assets/img/og/voge-sr4-radar.jpg",
+  "colors": [
+   {
+    "name": "Blanco",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-blanco-1.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-blanco-2.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-blanco-3.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-blanco-4.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-blanco-5.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-blanco-6.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-blanco-7.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-blanco-8.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-blanco-9.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-blanco-10.webp",
+      "w": 1024,
+      "h": 768
+     }
+    ]
+   },
+   {
+    "name": "Negro",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-negro-1.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-negro-2.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-negro-3.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-negro-4.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-negro-5.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-negro-6.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-negro-7.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-negro-8.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-negro-9.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-negro-10.webp",
+      "w": 1024,
+      "h": 768
+     }
+    ]
+   },
+   {
+    "name": "Gris antracita",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-gris-antracita-1.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-gris-antracita-2.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-gris-antracita-3.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-gris-antracita-4.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-gris-antracita-5.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-gris-antracita-6.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-gris-antracita-7.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-gris-antracita-8.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-gris-antracita-9.webp",
+      "w": 1024,
+      "h": 768
+     },
+     {
+      "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-gris-antracita-10.webp",
+      "w": 1024,
+      "h": 768
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge SR4 Radar: tecnología al servicio de tu seguridad",
+    "p": [
+     "Te presentamos nuestro scooter de vanguardia dotado con tecnología de detección de obstáculos en ángulo muerto y alerta de colisión. Un importante elemento de seguridad tanto en conducción urbana como interurbana.",
+     "Fruto de la fusión entre la mejor ingeniería alemana, el diseño italiano y la capacidad de fabricación del Grupo Loncin, la SR4 Radar integra la tecnología radar proveniente de su hermana 900DSX para consolidarse como un referente en calidad, tecnología y seguridad.",
+     "Ya disponible, con el SR4 Radar, Voge ha redefinido los estándares de seguridad en la conducción urbana e interurbana, sin renunciar a la practicidad, el rendimiento y la elegancia, todo ello con un precio altamente competitivo.",
+     "5 años de garantía y 1 año de seguro incluidos."
+    ],
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-voge-sr4-radar-tecnologia-al-servicio-de-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Tecnología Radar",
+    "p": [
+     "Su sistema de detección de obstáculos en el ángulo muerto (Blind Spot Detection, BSD) es una innovadora asistencia a la conducción diseñada para alertarte de la presencia de vehículos en las zonas laterales traseras. Este sistema utiliza tecnología de radar de onda milimétrica que escanea constantemente el entorno trasero del vehículo. Cuando detecta un obstáculo, un LED se ilumina en el espejo retrovisor, advirtiéndote de su presencia.",
+     "Además, al igual que en el modelo 900DSX, Voge ha optimizado el sistema añadiendo una función de alerta de colisión. Esta función activa la luz de freno intermitentemente cuando un vehículo se aproxima alertándole de tu presencia."
+    ],
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-tecnologia-radar-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Motor fiable y potente",
+    "p": [
+     "El Voge SR4 Radar está equipado con un robusto motor monocilíndrico de 349,8 cc, con culata de 4 válvulas y refrigeración líquida. Desarrolla 34 CV a 7.500 rpm y un par motor de 35 Nm a 5.750 rpm, ofreciendo un equilibrio perfecto entre agilidad en el tráfico urbano y rendimiento en carretera. Además, cuenta con el sistema de control de tracción (TCS) para una conducción más segura en diversas condiciones."
+    ],
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-motor-fiable-y-potente-3.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Ciclística destacada",
+    "p": [
+     "Un scooter seguro debe contar con una estructura bien dimensionada, frenos eficaces y suspensiones de calidad. El SR4 Radar destaca por su chasis optimizado, con una distancia entre ejes de 1.565 mm, rueda delantera de 15” y suspensión Kayaba, que garantizan una estabilidad excepcional.",
+     "En el apartado de frenos, dispone de un sistema de doble disco delantero de 265 mm con pinzas radiales de cuatro pistones J.Juan, que ofrecen una potencia de frenado precisa y controlada. Además, incluye ABS de doble canal y el sistema ESS de aviso de frenada de emergencia, reforzando la seguridad en situaciones críticas."
+    ],
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-ciclistica-destacada-4.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu SR4 Radar",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "El VOGE SR4 RADAR está equipado con un robusto motor monocilíndrico de 349,8 cc, con culata de 4 válvulas y refrigeración líquida, diseñado para ofrecer un equilibrio perfecto entre rendimiento, eficiencia y suavidad en la conducción. Su sistema de inyección electrónica Bosch optimiza el consumo de combustible y mejora la respuesta del acelerador, garantizando una entrega de potencia progresiva y sin brusquedades.",
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "Frenos y seguridad",
+    "text": "El sistema de frenado del SR4 RADAR está compuesto por un doble disco delantero de 265 mm con pinzas radiales J.Juan, proporcionando una frenada potente y precisa. En el eje trasero, se complementa con un sistema ABS de doble canal, desarrollado para evitar bloqueos y mejorar la estabilidad en frenadas de emergencia.",
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-equipamiento-2-frenos-y-seguridad.webp"
+   },
+   {
+    "title": "Detección de ángulo muerto",
+    "text": "Además, el SR4 RADAR incorpora un avanzado sistema de detección de ángulo muerto, que utiliza radar para identificar vehículos en zonas de poca visibilidad y alertar al conductor, incrementando la seguridad en la conducción. También cuenta con control de tracción (TCS), evitando pérdidas de adherencia en aceleraciones bruscas o superficies deslizantes.",
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-equipamiento-3-deteccion-de-angulo-muerto.webp"
+   },
+   {
+    "title": "Iluminación y visibilidad",
+    "text": "El sistema de iluminación del SR4 RADAR es Full LED, lo que garantiza una excelente visibilidad y un diseño moderno. Además, incorpora una cámara frontal, que permite grabar recorridos para mayor seguridad y control en la conducción.",
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-equipamiento-4-iluminacion-y-visibilidad.webp"
+   },
+   {
+    "title": "Ruedas y neumáticos",
+    "text": "Además, el SR4 RADAR incorpora un avanzado sistema de detección de ángulo muerto, que utiliza radar para identificar vehículos en zonas de poca visibilidad y alertar al conductor, incrementando la seguridad en la conducción. También cuenta con control de tracción (TCS), evitando pérdidas de adherencia en aceleraciones bruscas o superficies deslizantes.",
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-equipamiento-5-ruedas-y-neumaticos.webp"
+   },
+   {
+    "title": "Instrumentación",
+    "text": "El cuadro de instrumentos está compuesto por una pantalla TFT a color de 7 pulgadas con conectividad Bluetooth, ofreciendo una visualización clara de toda la información necesaria. Entre sus funciones destacan la indicación de la presión de los neumáticos, navegación Turn-by-Turn gratuita, la visualización de llamadas entrantes y el control de los puños calefactables.",
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-equipamiento-6-instrumentacion.webp"
+   },
+   {
+    "title": "Espacio de almacenamiento",
+    "text": "Uno de los puntos fuertes del SR4 RADAR es su capacidad de carga. Bajo el asiento, dispone de un compartimento iluminado con apertura eléctrica e hidráulica, con 41 litros de capacidad, suficiente para almacenar un casco integral y un casco jet. En la parte frontal, el scooter incorpora dos guanteras con cierre centralizado, con tomas de corriente USB y universal, lo que facilita la carga de dispositivos electrónicos durante la conducción.",
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-equipamiento-7-espacio-de-almacenamiento.webp"
+   },
+   {
+    "title": "Comodidad y ergonomía",
+    "text": "Diseñado para proporcionar el máximo confort, el SR4 RADAR incluye un asiento calefactable para el conductor con un respaldo ergonómico y un diseño a dos niveles, asegurando una postura de conducción relajada. Además, los puños calefactables de serie ofrecen un extra de comodidad en climas fríos. Otro de los elementos destacados es su parabrisas de altura ajustable eléctricamente, que permite al conductor ajustar la protección aerodinámica con solo pulsar un botón, mejorando la comodidad en trayectos largos o a altas velocidades.",
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-equipamiento-8-comodidad-y-ergonomia.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-galeria-1.webp",
+    "w": 1200,
+    "h": 800
+   },
+   {
+    "img": "assets/img/modelos/sr4-radar/voge-sr4-radar-galeria-2.webp",
+    "w": 1200,
+    "h": 800
+   }
+  ],
+  "manual": "manuales/manual-voge-sr4.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/sr4-radar/"
+ },
+ {
+  "slug": "sr450x",
+  "name": "SR450X",
+  "cat": "Scooters",
+  "catSlug": "scooters",
+  "cc": "398",
+  "cv": "42",
+  "nm": "44",
+  "ccNum": 398.0,
+  "license": "A2",
+  "price": 6288,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/sr450x/voge-sr450x.webp",
+  "mw": 1189,
+  "mh": 792,
+  "og": "assets/img/og/voge-sr450x.jpg",
+  "colors": [
+   {
+    "name": "Blanco",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr450x/voge-sr450x-blanco-1.webp",
+      "w": 1200,
+      "h": 800
+     }
+    ]
+   },
+   {
+    "name": "Negro Mate",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr450x/voge-sr450x-negro-mate-1.webp",
+      "w": 1200,
+      "h": 800
+     }
+    ]
+   },
+   {
+    "name": "Verde Mate",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr450x/voge-sr450x-verde-mate-1.webp",
+      "w": 1200,
+      "h": 800
+     }
+    ]
+   },
+   {
+    "name": "Azul Mate",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr450x/voge-sr450x-azul-mate-1.webp",
+      "w": 1200,
+      "h": 800
+     }
+    ]
+   },
+   {
+    "name": "Gris Mate",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/sr450x/voge-sr450x-gris-mate-1.webp",
+      "w": 1200,
+      "h": 800
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Diseño: espíritu aventurero con sofisticación europea",
+    "p": [
+     "El Voge SR450X destaca desde el primer vistazo por una estética robusta y elegante, concebida para combinar funcionalidad y presencia. Inspirado en el universo adventure, incorpora llantas de radios sin cámara, barras protectoras metálicas y una posición de conducción dominante, todo ello integrado en un conjunto de diseño italiano cuidado hasta el detalle."
+    ],
+    "img": "assets/img/modelos/sr450x/voge-sr450x-diseno-espiritu-aventurero-con-sofistica-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Motor bicilíndrico: una propuesta única en el segmento",
+    "p": [
+     "En el corazón del SR450X encontrarás un avanzado propulsor bicilíndrico de 398 cc, cuatro tiempos, ocho válvulas, refrigeración líquida e inyección electrónica, desarrollado para ofrecer prestaciones superiores con una entrega refinada. Con 42 CV a 8.000 rpm y un par máximo de 44 Nm a 5.750 rpm, garantiza aceleración contundente, suavidad de funcionamiento y gran capacidad rutera. Sus dos modos de conducción permiten adaptar el comportamiento a diferentes escenarios, desde el tráfico urbano hasta los viajes de largo recorrido."
+    ],
+    "img": "assets/img/modelos/sr450x/voge-sr450x-motor-bicilindrico-una-propuesta-unica-e-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Parte ciclo de alta gama para máxima versatilidad",
+    "p": [
+     "El bastidor de acero se complementa con una configuración de suspensiones Kayaba pensada para ofrecer estabilidad, confort y capacidad de adaptación: horquilla invertida regulable en compresión y extensión con doble tija, y amortiguadores traseros regulables en precarga y compresión. El sistema de frenado combina componentes J.Juan en el tren delantero y Nissin en el trasero, respaldados por ABS y control de tracción desconectables. Las llantas de radios tubeless de 17 pulgadas delante y 14 detrás, junto a neumáticos de enfoque mixto, refuerzan su capacidad para afrontar asfalto y terrenos más exigentes."
+    ],
+    "img": "assets/img/modelos/sr450x/voge-sr450x-parte-ciclo-de-alta-gama-para-maxima-ver-3.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Ergonomía y confort para cualquier aventura",
+    "p": [
+     "Posición de conducción dominante, asiento amplio y protección aerodinámica para afrontar con comodidad tanto los desplazamientos diarios como los viajes de largo recorrido."
+    ],
+    "img": "assets/img/modelos/sr450x/voge-sr450x-ergonomia-y-confort-para-cualquier-avent-4.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Radar de ángulo muerto",
+    "p": [
+     "Equipamiento de primer nivel poco habitual en su categoría: el radar de ángulo muerto avisa de la presencia de vehículos que no se ven por los espejos, un extra de seguridad real en ciudad y en carretera."
+    ],
+    "img": "assets/img/modelos/sr450x/voge-sr450x-radar-de-angulo-muerto-5.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu SR450X",
+  "equip": [
+   {
+    "title": "ABS y control de tracción desconectables",
+    "text": "Frenada con J.Juan delante y Nissin detrás, con ABS y control de tracción que se pueden desconectar para adaptarse a cada superficie.",
+    "img": ""
+   },
+   {
+    "title": "Suspensiones Kayaba regulables",
+    "text": "Horquilla invertida regulable en compresión y extensión, y amortiguadores traseros regulables en precarga y compresión.",
+    "img": ""
+   },
+   {
+    "title": "Llantas de radios tubeless",
+    "text": "17 pulgadas delante y 14 detrás, con neumáticos de enfoque mixto para asfalto y terrenos exigentes.",
+    "img": ""
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/sr450x/voge-sr450x-galeria-1.webp",
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "img": "assets/img/modelos/sr450x/voge-sr450x-galeria-2.webp",
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "img": "assets/img/modelos/sr450x/voge-sr450x-galeria-3.webp",
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "img": "assets/img/modelos/sr450x/voge-sr450x-galeria-4.webp",
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "img": "assets/img/modelos/sr450x/voge-sr450x-galeria-5.webp",
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "img": "assets/img/modelos/sr450x/voge-sr450x-galeria-6.webp",
+    "w": 1200,
+    "h": 900
+   }
+  ],
+  "manual": "",
+  "wpUrl": "https://voge.duomomotor.com/modelo/sr450x/"
+ },
+ {
+  "slug": "125r",
+  "name": "125R",
+  "cat": "Naked",
+  "catSlug": "naked",
+  "cc": "124,8",
+  "cv": "15",
+  "nm": "12",
+  "ccNum": 124.8,
+  "license": "A1",
+  "price": 2888,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/125r/voge-125r.webp",
+  "mw": 1200,
+  "mh": 799,
+  "og": "assets/img/og/voge-125r.jpg",
+  "colors": [
+   {
+    "name": "Negro",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/125r/voge-125r-negro-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-negro-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-negro-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-negro-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-negro-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-negro-6.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Azul",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/125r/voge-125r-azul-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-azul-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-azul-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-azul-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-azul-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-azul-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-azul-7.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-azul-8.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/125r/voge-125r-azul-9.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge 125R: La joven guerrera",
+    "p": [
+     "La VOGE 125 es una naked moderna, extremadamente ágil y segura. Su diseño vital y juvenil, afilado como una espada, se extiende por toda la moto. Desde su innovador frontal con óptica elipsoidal LED, al corto escape y al piloto trasero led con efecto 3D."
+    ],
+    "img": "assets/img/modelos/125r/voge-125r-voge-125r-la-joven-guerrera-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Motor y bastidor en lo más alto de su categoría",
+    "p": [
+     "Su potente y afinado motor con refrigeración líquida, con culata DOHC de 4 válvulas y caja de cambios de 6 relaciones, entrega 15 CV situándose en el límite máximo de la categoría para el carnet A1. Te cautivará con su sonido, suavidad de funcionamiento y alto rendimiento.",
+     "En Voge sabemos que un gran motor, ha de ir acompañado por un bastidor a su altura. Así, la Voge 125R adopta un moderno chasis de fabricación propia robotizada, responsable en gran medida del contenido peso total de 136 kg. Junto con los frenos ABS de doble canal, la horquilla invertida y el monoamortigador con precarga regulable, dotan a la 125R de un comportamiento excepcional."
+    ],
+    "img": "assets/img/modelos/125r/voge-125r-motor-y-bastidor-en-lo-mas-alto-de-su-ca-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "La moto que quieres en tu día a día",
+    "p": [
+     "Una gran moto no solo lo es por sus prestaciones. La Voge 125R te ofrece una cuidada ergonomía, una autonomía destacable gracias a su reducido consumo y su depósito de 10 L, y un equipamiento práctico y de calidad como su panel de instrumentos LCD en color y la toma de carga USB.",
+     "Con 5 años de garantía, regalo de seguro y ahora, obsequio de bolsa sobre depósito CLICK SYSTEM SHAD la Voge 125R te espera en tu Vendedor Autorizado Voge más cercano."
+    ],
+    "img": "assets/img/modelos/125r/voge-125r-la-moto-que-quieres-en-tu-dia-a-dia-3.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu 125R",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "La VOGE 125R está equipada con un motor monocilíndrico de 125 cc, diseñado específicamente para ofrecer el máximo rendimiento dentro de los límites permitidos por el carnet A1. Este motor es capaz de entregar una potencia máxima de 15 CV, lo que proporciona una experiencia de conducción ágil y dinámica. Además, el par motor alcanza los 12,1 Nm, asegurando una respuesta contundente en todo el rango de revoluciones.",
+    "img": "assets/img/modelos/125r/voge-125r-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "Chasis y basculante",
+    "text": "El chasis de la VOGE 125R está diseñado con un basculante asimétrico, lo que le otorga una excelente rigidez y comportamiento en carretera. Este basculante adopta una curvatura tipo “banana” en su brazo derecho, lo que no solo aporta una estética deportiva, sino también una mayor espacio para el escape.",
+    "img": "assets/img/modelos/125r/voge-125r-equipamiento-2-chasis-y-basculante.webp"
+   },
+   {
+    "title": "Suspenciones",
+    "text": "La moto viene equipada con una horquilla invertida de eje centrado en el tren delantero, lo que proporciona precisión y estabilidad a altas velocidades o en terrenos irregulares. En la parte trasera, el amortiguador se presenta en una disposición muy inclinada, contribuyendo a una suspensión que ofrece un buen equilibrio entre confort y rendimiento.",
+    "img": "assets/img/modelos/125r/voge-125r-equipamiento-3-suspenciones.webp"
+   },
+   {
+    "title": "Frenos",
+    "text": "El sistema de frenado de la VOGE 125R está compuesto por discos de freno en ambos ejes, con pinzas de doble pistón en la rueda delantera y de simple pistón en la rueda trasera. Además, la moto incorpora un avanzado sistema de ABS de doble canal independiente, lo que asegura una frenada más segura y controlada, incluso en condiciones de lluvia o frenadas de emergencia.",
+    "img": "assets/img/modelos/125r/voge-125r-equipamiento-4-frenos.webp"
+   },
+   {
+    "title": "Ruedas y neumáticos",
+    "text": "Las llantas de aleación de 17” de la VOGE 125R están equipadas con neumáticos de 110/70-17 en la parte delantera y 140/60-17 en la trasera. Esta configuración proporciona una buena combinación de maniobrabilidad y estabilidad, asegurando que la moto sea ágil en la ciudad pero también segura y firme en carreteras más rápidas o en curvas cerradas.",
+    "img": "assets/img/modelos/125r/voge-125r-equipamiento-5-ruedas-y-neumaticos.webp"
+   },
+   {
+    "title": "Iluminasión",
+    "text": "Toda la moto está equipada con un sistema de iluminación Full LED, destacando por su eficiencia energética y excelente visibilidad. El faro delantero cuenta con una óptica única que integra tanto las luces cortas como las largas, y está acompañado de intensas guías LED en forma de “cejas” que sirven como luz diurna DRL, brindando un aspecto moderno y aumentando la visibilidad para otros conductores. El piloto trasero, también LED, está compuesto por dos guías luminosas dispuestas en ángulo, lo que no solo mejora la estética de la moto, sino que también mejora la seguridad en condiciones de poca luz.",
+    "img": "assets/img/modelos/125r/voge-125r-equipamiento-6-iluminasion.webp"
+   },
+   {
+    "title": "Instrumentación",
+    "text": "La instrumentación de la VOGE 125R se basa en una pantalla digital LCD a color, con caracteres en negativo (blanco sobre fondo negro), lo que mejora la visibilidad en cualquier condición de luz. La pantalla ofrece una visualización estilo Racing, con el cuentavueltas dispuesto de manera horizontal en la zona más utilizable, lo que facilita el control de las revoluciones del motor de una forma cómoda y deportiva.",
+    "img": "assets/img/modelos/125r/voge-125r-equipamiento-7-instrumentacion.webp"
+   },
+   {
+    "title": "Egonomía y capacidad",
+    "text": "El asiento del piloto está a una altura de 795 mm del suelo, lo que proporciona una posición de conducción cómoda y accesible para la mayoría de los motociclistas. Con un depósito de combustible de 10 litros y su reducido consumo, la VOGE 125R ofrece una buena autonomía para recorrer distancias más largas sin tener que preocuparse por repostar con demasiada frecuencia.",
+    "img": "assets/img/modelos/125r/voge-125r-equipamiento-8-egonomia-y-capacidad.webp"
+   },
+   {
+    "title": "Escape",
+    "text": "El sistema de escape de la VOGE 125R presenta una salida corta con un diseño deportivo, que no solo contribuye al estilo agresivo de la moto, sino que también mejora el rendimiento y la eficiencia del motor y la estabilidad de la moto ayudando al centrado de las masas.",
+    "img": "assets/img/modelos/125r/voge-125r-equipamiento-9-escape.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/125r/voge-125r-galeria-1.webp",
+    "w": 1200,
+    "h": 800
+   },
+   {
+    "img": "assets/img/modelos/125r/voge-125r-galeria-2.webp",
+    "w": 1200,
+    "h": 800
+   }
+  ],
+  "manual": "manuales/manual-voge-125r.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/125r/"
+ },
+ {
+  "slug": "125rs",
+  "name": "125RS",
+  "cat": "Naked",
+  "catSlug": "naked",
+  "cc": "124,8",
+  "cv": "15",
+  "nm": "12",
+  "ccNum": 124.8,
+  "license": "A1",
+  "price": 3088,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/125rs/voge-125rs.webp",
+  "mw": 1121,
+  "mh": 747,
+  "og": "assets/img/og/voge-125rs.jpg",
+  "colors": [
+   {
+    "name": "Negro",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/125rs/voge-125rs-negro-1.webp",
+      "w": 1200,
+      "h": 800
+     },
+     {
+      "img": "assets/img/modelos/125rs/voge-125rs-negro-2.webp",
+      "w": 1200,
+      "h": 800
+     },
+     {
+      "img": "assets/img/modelos/125rs/voge-125rs-negro-3.webp",
+      "w": 1200,
+      "h": 800
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge 125RS: Nacida para impresionar",
+    "p": [
+     "La Voge 125RS llega para conquistar a una nueva generación de motoristas. Esta nueva naked eleva el nivel con un diseño más agresivo, mayor equipamiento tecnológico y una parte ciclo optimizada para ofrecer una conducción aún más emocionante."
+    ],
+    "img": "assets/img/modelos/125rs/voge-125rs-voge-125rs-nacida-para-impresionar-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Misma alma, dos formatos",
+    "p": [
+     "Pensada para quienes buscan una moto ligera, moderna y divertida, la Voge 125RS está protagonizada por un llamativo faro full LED de inspiración futurista que transmite carácter deportivo desde el primer vistazo. A ello se suma una parte ciclo pensada para disfrutar de cada trayecto, con horquilla invertida, chasis multitubular y llantas de aleación con neumáticos tubeless que refuerzan su estabilidad y agilidad. Además, sus dimensiones ligeramente mayores respecto a la 125R, con un asiento más alto y un mayor espacio entre ejes, ofrecen una posición de conducción cómoda y natural, especialmente para pilotos de mayor estatura, sin perder la manejabilidad que caracteriza a la gama."
+    ],
+    "img": "assets/img/modelos/125rs/voge-125rs-misma-alma-dos-formatos-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Espíritu deportivo para una nueva generación",
+    "p": [
+     "Con su diseño agresivo, un completo equipamiento tecnológico y unas prestaciones líderes en su categoría, la Voge 125RS está preparada para convertirse en una de las referencias entre las naked de 125 cc.",
+     "Ligera, ágil y equipada con soluciones propias de motos de mayor cilindrada, ofrece una combinación perfecta de estilo, seguridad y diversión al manillar.",
+     "Disponible en negro mate y rojo mate, y un sorprendente PVR de 3.088€ que incluye cinco años de garantía y el regalo del seguro, la 125RS está lista para conquistar a quienes buscan una 125 diferente."
+    ],
+    "img": "assets/img/modelos/125rs/voge-125rs-espiritu-deportivo-para-una-nueva-genera-3.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu 125RS",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "En el corazón de la Voge 125RS encontramos un motor monocilíndrico DOHC de 4 válvulas refrigerado por líquido con una cilindrada de 124,8 cc. Este moderno propulsor desarrolla 15 CV a 9.500 rpm y un par máximo de 12 Nm a 8.000 rpm, ofreciendo una respuesta ágil y progresiva en cualquier situación. El sistema de inyección electrónica EFI, junto al embrague antirrebote, la caja de cambios de seis velocidades y los dos modos de conducción disponibles, normal y sport, permiten aprovechar al máximo el rendimiento del motor tanto en circulación urbana como en carreteras reviradas.",
+    "img": ""
+   },
+   {
+    "title": "Chasis y Basculante",
+    "text": "La 125RS se apoya en un ligero chasis multitubular de acero con una elevada rigidez estructural. Derivado de modelos de mayor cilindrada, este chasis aporta una gran estabilidad y precisión en curva. El conjunto se completa con un basculante de acero con diseño banana, concebido para mejorar la absorción de las irregularidades del asfalto y aumentar la estabilidad del conjunto incluso a velocidades elevadas.",
+    "img": ""
+   },
+   {
+    "title": "Suspenciones",
+    "text": "La naked incorpora suspensiones de alta calidad. En la parte delantera encontramos una horquilla invertida de 35 mm que proporciona mayor rigidez estructural y una respuesta más precisa en frenadas y cambios de dirección. En el eje trasero equipa un monoamortiguador regulable en precarga, que contribuye a mantener la estabilidad y el confort tanto en conducción deportiva como en desplazamientos diarios.",
+    "img": ""
+   },
+   {
+    "title": "Frenos",
+    "text": "En el corazón de la Voge 125RS encontramos un motor monocilíndrico DOHC de 4 válvulas refrigerado por líquido con una cilindrada de 124,8 cc. Este moderno propulsor desarrolla 15 CV a 9.500 rpm y un par máximo de 12 Nm a 8.000 rpm, ofreciendo una respuesta ágil y progresiva en cualquier situación. El sistema de inyección electrónica EFI, junto al embrague antirrebote, la caja de cambios de seis velocidades y los dos modos de conducción disponibles, normal y sport, permiten aprovechar al máximo el rendimiento del motor tanto en circulación urbana como en carreteras reviradas.",
+    "img": ""
+   },
+   {
+    "title": "Ruedas y Neumáticos",
+    "text": "La Voge 125RS equipa llantas de aleación con neumáticos tubeless, una combinación que mejora la seguridad y contribuye a un comportamiento más ágil y preciso. Los neumáticos cuentan con unas dimensiones de 110/70-17 en la parte delantera y 150/60-17 en la trasera, proporcionando una excelente estabilidad y un mayor agarre en curva, especialmente gracias al generoso neumático trasero de 150 mm de anchura, que refuerza el carácter deportivo de esta naked.",
+    "img": ""
+   },
+   {
+    "title": "Iluminación",
+    "text": "Uno de los elementos más llamativos de la 125RS es su nuevo faro delantero de diseño futurista, con un estilo agresivo y moderno que le otorga una personalidad única. Toda la iluminación es full LED, garantizando una visibilidad clara y segura en cualquier situación. Además, incorpora animación dinámica de arranque e intermitentes que refuerzan su estilo tecnológico. En la parte trasera, el piloto de doble led continuo proporciona una iluminación intensa y duradera, aumentando la visibilidad frente a otros vehículos.",
+    "img": ""
+   },
+   {
+    "title": "Instrumentación",
+    "text": "La instrumentación corre a cargo de una pantalla LCD en color con diseño deportivo, que ofrece una lectura clara de toda la información necesaria durante la conducción. El cuadro incluye múltiples funciones, conectividad Bluetooth y navegación simplificada Turn by Turn, una característica muy práctica para desplazamientos urbanos o trayectos diarios.",
+    "img": ""
+   },
+   {
+    "title": "Ergonomía y Capacidad",
+    "text": "La Voge 125RS ha sido diseñada para ofrecer una posición de conducción cómoda y natural, con un tamaño ligeramente mayor al de su hermana de gama, la 125R. Con 2020 mm de longitud, 795 mm de anchura y 1100 mm de altura presenta unas proporciones equilibradas que facilitan el control de la moto. Por su parte, el asiento situado a 790 mm del suelo permite que pilotos de diferentes estaturas lleguen con facilidad al suelo. El asiento dividido y espacioso proporciona un excelente apoyo tanto para el conductor como para el pasajero. El depósito de combustible tiene una capacidad de 15 litros, que permite alcanzar hasta 500 km de autonomía.",
+    "img": ""
+   },
+   {
+    "title": "Escape",
+    "text": "El sistema de escape de la 125RS incorpora un silenciador corto combinado con una compacta cámara de expansión, optimizado para mejorar el flujo de gases y maximizar el rendimiento del motor. Además de contribuir al aumento de potencia, este diseño refuerza la estética deportiva de la moto.",
+    "img": ""
+   }
+  ],
+  "gallery": [],
+  "manual": "",
+  "wpUrl": "https://voge.duomomotor.com/modelo/125rs/"
+ },
+ {
+  "slug": "625r",
+  "name": "625R",
+  "cat": "Naked",
+  "catSlug": "naked",
+  "cc": "581",
+  "cv": "64",
+  "nm": "58",
+  "ccNum": 581.0,
+  "license": "A-A2",
+  "price": 5184,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/625r/voge-625r.webp",
+  "mw": 1200,
+  "mh": 799,
+  "og": "assets/img/og/voge-625r.jpg",
+  "colors": [
+   {
+    "name": "Negro",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/625r/voge-625r-negro-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625r/voge-625r-negro-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625r/voge-625r-negro-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625r/voge-625r-negro-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625r/voge-625r-negro-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625r/voge-625r-negro-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625r/voge-625r-negro-7.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge 625R: Nacida para impresionar",
+    "p": [
+     "La nueva Voge 625R llega para redefinir el concepto de naked de media cilindrada. Potente, ágil y equipada hasta el último detalle, esta moto combina prestaciones de alto nivel con una estética afilada y musculosa que transmite deportividad incluso antes de arrancar."
+    ],
+    "img": "assets/img/modelos/625r/voge-625r-voge-625r-nacida-para-impresionar-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Potencia con alma deportiva",
+    "p": [
+     "Bajo su imponente diseño se esconde un motor bicilíndrico en paralelo de última generación. Con 64 CV, es compartido con la reconocida 625DSX. Un propulsor compacto y refinado, con cigüeñal calado a 270º y eje de equilibrado para un comportamiento y sonido propio de un motor en V, pero en un formato más compacto. Su respuesta, llena de carácter te emocionará y te hará disfrutar de la conducción en todo tipo de recorridos."
+    ],
+    "img": "assets/img/modelos/625r/voge-625r-potencia-con-alma-deportiva-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "625R: Alto nivel",
+    "p": [
+     "La 625R no solo promete sensaciones deportivas, sino que también las respalda con un equipamiento de primera línea:",
+     "Pantalla TFT con conectividad y navegación Turn by Turn.",
+     "Dos modos de conducción.",
+     "Control de tracción.",
+     "Iluminación Full LED.",
+     "Toma USB.",
+     "Componentes de primeras marcas como Kayaba, Nissin y Pirelli, para suspensiones, frenos y neumáticos."
+    ],
+    "img": "assets/img/modelos/625r/voge-625r-625r-alto-nivel-3.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Calidad que se siente",
+    "p": [
+     "Como es habitual en Voge, la calidad de construcción es una seña de identidad: materiales de primera, excelentes ajustes para un tacto y percepción propio de motocicletas de alta gama.",
+     "Disponible en una espectacular decoración negro/gris, la Voge 625R ya está a la venta al destacado precio de 5.184 €. Además, también está disponible en versión limitada a 35 kW, ideal para el carnet A2."
+    ],
+    "img": "assets/img/modelos/625r/voge-625r-calidad-que-se-siente-4.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu 625R",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "La VOGE 625R está equipada con un motor bicilíndrico, con 581 cc y refrigeración líquida, capaz de entregar 64 CV de máxima potencia. Este propulsor, compartido con la trail 625DSX, cuenta con un cigüeñal calado a 270º, lo que le proporciona un comportamiento y un sonido similares a los de un motor en V, conservando el diseño más compacto de un bicilíndrico en paralelo. Incorpora además un embrague antirrebote, que mejora el control en reducciones bruscas y aporta mayor seguridad en una conducción deportiva.",
+    "img": "assets/img/modelos/625r/voge-625r-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "Chasis y suspenciones",
+    "text": "La parte ciclo de la 625R ha sido diseñada para ofrecer una conducción ágil y controlada. Equipa una horquilla invertida Kayaba en el tren delantero y un monoamortiguador trasero regulable. El chasis perimetral de tubo de acero, junto con su subchasis trasero desmontable, ofrece una estructura sólida y funcional, pensada para un rendimiento equilibrado.",
+    "img": "assets/img/modelos/625r/voge-625r-equipamiento-2-chasis-y-suspenciones.webp"
+   },
+   {
+    "title": "Frenos",
+    "text": "La VOGE 625R equipa un sistema de frenos de doble disco delantero de 298 mm, mordido por pinzas Nissin de doble pistón, junto a un disco trasero de 240 mm. Todo el conjunto está asistido por un sistema ABS de doble canal.",
+    "img": "assets/img/modelos/625r/voge-625r-equipamiento-3-frenos.webp"
+   },
+   {
+    "title": "Ruedas y neumáticos",
+    "text": "Las llantas de aleación ligera de la 625R calzan neumáticos Pirelli Angel GT en medidas 120/70 R17 delante y 160/60 R17 detrás, que aseguran un agarre excepcional.",
+    "img": "assets/img/modelos/625r/voge-625r-equipamiento-4-ruedas-y-neumaticos.webp"
+   },
+   {
+    "title": "Iluminación",
+    "text": "La 625R incorpora un completo sistema de iluminación Full LED, que proporciona una visibilidad óptima y un diseño moderno y afilado. El faro delantero integra luz diurna DRL, mientras que el piloto trasero y los intermitentes mantienen una línea visual deportiva.",
+    "img": "assets/img/modelos/625r/voge-625r-equipamiento-5-iluminacion.webp"
+   },
+   {
+    "title": "Instrumentación",
+    "text": "El panel de instrumentos se compone de una pantalla TFT a color de 5 pulgadas. Ofrece conectividad Bluetooth, navegación Turn by Turn, así como dos modos de conducción y control de tracción.",
+    "img": "assets/img/modelos/625r/voge-625r-equipamiento-6-instrumentacion.webp"
+   },
+   {
+    "title": "Ergonomía y capacidad",
+    "text": "El asiento se sitúa a 795 mm de altura, lo que facilita el acceso a pilotos de diferentes tallas. Su ergonomía permite mantener una postura deportiva pero cómoda. El depósito de 16,5 litros brinda una excelente autonomía, acorde al carácter versátil del modelo.",
+    "img": "assets/img/modelos/625r/voge-625r-equipamiento-7-ergonomia-y-capacidad.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/625r/voge-625r-galeria-1.webp",
+    "w": 1200,
+    "h": 800
+   },
+   {
+    "img": "assets/img/modelos/625r/voge-625r-galeria-2.webp",
+    "w": 1200,
+    "h": 800
+   }
+  ],
+  "manual": "manuales/manual-voge-625r.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/625r/"
+ },
+ {
+  "slug": "300-rally",
+  "name": "300 RALLY",
+  "cat": "Adventure",
+  "catSlug": "adventure",
+  "cc": "292",
+  "cv": "28,5",
+  "nm": "25",
+  "ccNum": 292.0,
+  "license": "A2",
+  "price": 3792,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/300-rally/voge-300-rally.webp",
+  "mw": 964,
+  "mh": 642,
+  "og": "assets/img/og/voge-300-rally.jpg",
+  "colors": [
+   {
+    "name": "Blanco / Azul",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-blanco-azul-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-blanco-azul-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-blanco-azul-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-blanco-azul-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-blanco-azul-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-blanco-azul-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-blanco-azul-7.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-blanco-azul-8.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-blanco-azul-9.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-blanco-azul-10.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Negro",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-negro-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-negro-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-negro-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-negro-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-negro-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-negro-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-negro-7.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/300-rally/voge-300-rally-negro-8.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge 300 Rally: Esencia Trail",
+    "p": [
+     "Gracias a sus características únicas, la Voge 300 Rally es la moto ideal para excursiones todoterreno, recorridos por carretera, incluso para participar en competiciones off-road exigentes como el Hellas Rally."
+    ],
+    "img": "assets/img/modelos/300-rally/voge-300-rally-voge-300-rally-esencia-trail-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Ligereza y potencia para tus escapadas off-road",
+    "p": [
+     "Nacidas en los años 70, las Trail originales eran motos fáciles, económicas y especialmente versátiles. Ligeras y sencillas, fueron motos competentes tanto en off-road como en carretera, llegando incluso a superar a algunas de sus contemporáneas diseñadas específicamente para un único tipo de utilización.",
+     "La Voge 300 Rally, en contraste con el aumento de peso y cilindrada de la mayoría de las Trail actuales, conserva toda la esencia de las Trail originales."
+    ],
+    "img": "assets/img/modelos/300-rally/voge-300-rally-ligereza-y-potencia-para-tus-escapadas-o-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Motor y bastidor listos para la aventura",
+    "p": [
+     "Equipada con un fiable motor de 292 cc, refrigeración líquida, culata DOHC de cuatro válvulas, inyección Bosch y cerca de 30 CV, te llevará a cualquier destino. Su bastidor robusto, suspensiones de largo recorrido, horquilla invertida delantera y monoamortiguador trasero con bieletas progresivas, junto a llantas de 21” y 18”, un peso reducido y detalles como la parrilla portaobjetos, la toma USB y el parabrisas protector, son el cóctel perfecto para disfrutar de cada trayecto."
+    ],
+    "img": "assets/img/modelos/300-rally/voge-300-rally-motor-y-bastidor-listos-para-la-aventura-3.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu 300 RALLY",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "El VOGE 300 RALLY está impulsado por un eficiente motor monocilíndrico con sistema de inyección electrónica, que garantiza una respuesta suave y precisa, adaptada tanto a la conducción urbana como al uso off-road.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "Suspenciones",
+    "text": "Diseñada para superar cualquier terreno, la Voge 300 RALLY equipa una robusta horquilla invertida delantera con 240 mm de recorrido, que ofrece un control preciso y una excelente capacidad de absorción. En la parte trasera, incorpora un monoamortiguador con bieletas progresivas y un recorrido total de 240 mm, que asegura una tracción constante en cualquier superficie.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-2-suspenciones.webp"
+   },
+   {
+    "title": "Frenos",
+    "text": "En el apartado de frenada, esta trail equipa frenos de disco en ambos ejes acompañados por un sistema ABS desconectable, una característica esencial para mejorar la manejabilidad en superficies de tierra o grava, permitiendo al piloto disfrutar de mayor control en tramos off-road.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-3-frenos.webp"
+   },
+   {
+    "title": "Iluminación",
+    "text": "Su nuevo sistema de iluminación es FULL LED, ofreciendo una gran visibilidad, adaptado a las exigencias de la aventura.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-4-iluminacion.webp"
+   },
+   {
+    "title": "Instrumentación",
+    "text": "El cuadro de instrumentos es una pantalla LCD que proporciona toda la información necesaria de forma clara y precisa, perfecta para mantener todo bajo control tanto en ruta como fuera de carretera. La nueva versión MY25, incorpora indicador de nivel de gasolina.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-5-instrumentacion.webp"
+   },
+   {
+    "title": "Estriberas de tipo enduro",
+    "text": "Diseñadas para el uso intensivo fuera de carretera, estas estriberas ofrecen un excelente agarre y estabilidad al pilotar de pie en terrenos irregulares, aportando seguridad en cada maniobra.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-6-estriberas-de-tipo-enduro.webp"
+   },
+   {
+    "title": "Defensas laterales",
+    "text": "Las defensas de chasis protegen eficazmente los componentes más expuestos de la moto frente a impactos y caídas, un complemento esencial para aumentar la resistencia en rutas de aventura.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-7-defensas-laterales.webp"
+   },
+   {
+    "title": "Conectividad",
+    "text": "Dispone de una toma USB que facilita la carga de dispositivos electrónicos, una solución práctica para el uso diario y viajes largos, manteniéndote siempre conectado.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-8-conectividad.webp"
+   },
+   {
+    "title": "Depósito de combustible",
+    "text": "El depósito de 11 litros de capacidad asegura una autonomía razonable tanto para desplazamientos urbanos como para escapadas por pistas y caminos rurales.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-9-deposito-de-combustible.webp"
+   },
+   {
+    "title": "Llantas de radios",
+    "text": "Equipada con llantas de radios de 21” en el eje delantero y 18” en el trasero, esta configuración garantiza resistencia y flexibilidad en superficies exigentes, mejorando la absorción y la resistencia a los impactos frente a las llantas convencionales.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-10-llantas-de-radios.webp"
+   },
+   {
+    "title": "Kit top case opcional",
+    "text": "Como opción, por tan solo 301€, la VOGE 300 RALLY puede equiparse con un práctico Top Case de 26 litros y soporte, ofreciendo espacio adicional para equipaje o herramientas, ideal para los que buscan una motocicleta lista para todo.",
+    "img": "assets/img/modelos/300-rally/voge-300-rally-equipamiento-11-kit-top-case-opcional.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/300-rally/voge-300-rally-galeria-1.webp",
+    "w": 1200,
+    "h": 800
+   },
+   {
+    "img": "assets/img/modelos/300-rally/voge-300-rally-galeria-2.webp",
+    "w": 1200,
+    "h": 800
+   }
+  ],
+  "manual": "manuales/manual-voge-300-rally.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/300-rally/"
+ },
+ {
+  "slug": "525dsx",
+  "name": "525DSX",
+  "cat": "Adventure",
+  "catSlug": "adventure",
+  "cc": "494",
+  "cv": "47,6",
+  "nm": "44,5",
+  "ccNum": 494.0,
+  "license": "A2",
+  "price": 5392,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/525dsx/voge-525dsx.webp",
+  "mw": 1141,
+  "mh": 760,
+  "og": "assets/img/og/voge-525dsx.jpg",
+  "colors": [
+   {
+    "name": "Gris",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-gris-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-gris-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-gris-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-gris-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-gris-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-gris-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-gris-7.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-gris-8.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-gris-9.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-gris-10.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Azul",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-azul-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-azul-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-azul-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-azul-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-azul-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-azul-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-azul-7.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-azul-8.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-azul-9.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Negro",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-negro-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-negro-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-negro-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-negro-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-negro-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-negro-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-negro-7.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-negro-8.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-negro-9.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/525dsx/voge-525dsx-negro-10.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Nueva Voge 525DSX, redefiniendo la aventura",
+    "p": [
+     "Ha llegado el momento de vivir rutas y viajes inolvidables en cualquier terreno con la última creación de VOGE. La nueva 525DSX MY25 lleva la experiencia Trail a un nivel superior con importantes actualizaciones que combinan innovación, rendimiento y estilo.",
+     "Principales mejoras de la versión 2025​ Como su hermana, la 625DSX, la nueva 525DSX incorpora: – Nuevo cuadro de instrumentos LCD en color con tecnología IPS, para una visualización más nítida y brillante. – Nuevos conmutadores retroiluminados, que añaden un toque de calidad y mayor funcionalidad en cualquier situación."
+    ],
+    "img": "assets/img/modelos/525dsx/voge-525dsx-nueva-voge-525dsx-redefiniendo-la-aventu-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Rendimiento y equipamiento excepcionales",
+    "p": [
+     "Con su eficiente motor, la 525DSX ofrece unas prestaciones sobresalientes que se combinan con componentes de alta calidad:",
+     "– Horquilla regulable Kayaba y llantas de radios 19” y 17” con neumáticos tubeless Metzeler. – Sistema de frenos NISSIN con ABS desconectable y embrague antirrebote, para una conducción más segura y emocionante. – Control de tracción TCS desconectable y 2 modos de conducción, para adaptarse a cualquier circunstancia."
+    ],
+    "img": "assets/img/modelos/525dsx/voge-525dsx-rendimiento-y-equipamiento-excepcionales-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Equipamiento premium para tus aventuras",
+    "p": [
+     "La 525DSX no solo destaca por su rendimiento, sino también por su completo equipamiento:",
+     "– Iluminación Full LED con faros auxiliares. – Parabrisas regulable en 2 posiciones manualmente y cubremanos. – Parrilla portabultos, defensas y protectores de motor. – Pantalla LCD en color de 7” con conectividad Bluetooth y navegación. – Cámara frontal HD 1080p para capturar cada momento.",
+     "Con cinco años de garantía y regalo del seguro, la nueva Voge 525DSX MY25 ya está disponible. Benefíciate de nuestra promoción del kit de maletas y top case originales de aluminio por sólo 750€ (850€ en color negro)."
+    ],
+    "img": "assets/img/modelos/525dsx/voge-525dsx-equipamiento-premium-para-tus-aventuras-3.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu 525DSX",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "La VOGE 525DSX equipa un motor bicilíndrico de 494 cc, cuatro tiempos y refrigeración líquida, que desarrolla 47,6 CV. Este propulsor garantiza una conducción enérgica y equilibrada, tanto en carretera como fuera de ella. Cuenta con embrague antirrebote que mejora la seguridad en reducciones bruscas y dispone de dos modos de conducción: Estándar y Sport, adaptando la respuesta a cada estilo de pilotaje. Además, incorpora control de tracción desconectable, permitiendo ajustar la seguridad al terreno.",
+    "img": "assets/img/modelos/525dsx/voge-525dsx-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "Suspenciones",
+    "text": "Para garantizar estabilidad y confort en todo tipo de terrenos, incorpora una horquilla invertida Kayaba de 41 mm, regulable en precarga y extensión, con un recorrido de 150 mm. En la parte trasera, el monoamortiguador con bieletas ofrece ajuste en la precarga y un recorrido de 145 mm, aportando una suspensión eficaz que absorbe con solvencia las irregularidades del terreno.",
+    "img": "assets/img/modelos/525dsx/voge-525dsx-equipamiento-2-suspenciones.webp"
+   },
+   {
+    "title": "Llantas y neumáticos",
+    "text": "Preparada para afrontar cualquier terreno, la 525DSX equipa llantas de radios cruzados tubeless de 19 pulgadas en la rueda delantera y 17 pulgadas en la trasera, equipadas con neumáticos Metzeler Tourance de uso mixto, que combinan agarre y durabilidad tanto en carretera como fuera de ella.",
+    "img": "assets/img/modelos/525dsx/voge-525dsx-equipamiento-3-llantas-y-neumaticos.webp"
+   },
+   {
+    "title": "frenos",
+    "text": "La seguridad es prioritaria gracias a su sistema de frenado, compuesto por un doble disco flotante de 298 mm en la rueda delantera con pinzas Nissin de doble pistón, mientras que la parte trasera monta un disco de 240 mm. El sistema ABS de doble canal es completamente desconectable, permitiendo al piloto prescindir de la intervención del antibloqueo según las condiciones del terreno.",
+    "img": "assets/img/modelos/525dsx/voge-525dsx-equipamiento-4-frenos.webp"
+   },
+   {
+    "title": "Instrumentación",
+    "text": "El cuadro de mandos se presenta con una moderna pantalla LCD a color de 7 pulgadas con tecnología IPS y un diseño con grandes dígitos que integra conectividad Bluetooth, muestra la presión de los neumáticos en tiempo real y ofrece un Sistema de Navegación Turn-by-Turn, convirtiendo cada trayecto en una experiencia intuitiva y conectada.",
+    "img": "assets/img/modelos/525dsx/voge-525dsx-equipamiento-5-instrumentacion.webp"
+   },
+   {
+    "title": "Asiento y ergonomía",
+    "text": "El diseño del asiento a 830 mm de altura y a doble nivel garantiza comodidad tanto para el conductor como para el acompañante. Además, incorpora prácticos asideros para el pasajero y una parrilla portabultos de serie, perfecta para anclar equipaje o instalar un baúl.",
+    "img": "assets/img/modelos/525dsx/voge-525dsx-equipamiento-6-asiento-y-ergonomia.webp"
+   },
+   {
+    "title": "Pantalla parabrisas regulable",
+    "text": "Para adaptarse a las preferencias de cada piloto, su pantalla parabrisas es ajustable manualmente en dos posiciones, mejorando la protección aerodinámica en ruta.",
+    "img": "assets/img/modelos/525dsx/voge-525dsx-equipamiento-7-pantalla-parabrisas-regulable.webp"
+   },
+   {
+    "title": "Protecciones y seguridad",
+    "text": "Incluye defensas para el motor y protectores anticaída, reforzando su resistencia frente a posibles imprevistos en rutas exigentes.",
+    "img": "assets/img/modelos/525dsx/voge-525dsx-equipamiento-8-protecciones-y-seguridad.webp"
+   },
+   {
+    "title": "Depósito de combustible",
+    "text": "Con una capacidad de 16,5 litros, su depósito ofrece una autonomía aproximada de 350 kilómetros, convirtiendo a la 525DSX en una compañera incansable para largas travesías.",
+    "img": "assets/img/modelos/525dsx/voge-525dsx-equipamiento-9-deposito-de-combustible.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/525dsx/voge-525dsx-galeria-1.webp",
+    "w": 1200,
+    "h": 800
+   },
+   {
+    "img": "assets/img/modelos/525dsx/voge-525dsx-galeria-2.webp",
+    "w": 1200,
+    "h": 800
+   }
+  ],
+  "manual": "manuales/manual-voge-525-dsx-euro-5.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/525dsx/"
+ },
+ {
+  "slug": "625dsx",
+  "name": "625DSX",
+  "cat": "Adventure",
+  "catSlug": "adventure",
+  "cc": "581",
+  "cv": "64",
+  "nm": "57",
+  "ccNum": 581.0,
+  "license": "A",
+  "price": 6592,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/625dsx/voge-625dsx.webp",
+  "mw": 1164,
+  "mh": 776,
+  "og": "assets/img/og/voge-625dsx.jpg",
+  "colors": [
+   {
+    "name": "Arena",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-arena-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-arena-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-arena-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-arena-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-arena-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-arena-6.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Negro",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-negro-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-negro-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-negro-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-negro-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-negro-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/625dsx/voge-625dsx-negro-6.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge 625 DSX. La crossover que te llevará a cualquier destino",
+    "p": [
+     "Descubre Voge 625DSX. Diseñada para ser tu mejor aliada en cualquier terreno, esta motocicleta combina potencia, tecnología avanzada y un diseño robusto."
+    ],
+    "img": "assets/img/modelos/625dsx/voge-625dsx-voge-625-dsx-la-crossover-que-te-llevara-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Aventura sin límites: potencia y control en cada ruta",
+    "p": [
+     "La Voge 625DSX se posiciona como una trail versátil y robusta, equipada con un motor bicilíndrico en línea de 581 cc que entrega 64 CV a 9.000 rpm y un par máximo de 57 Nm a 6.500 rpm. Su diseño ergonómico y su altura de asiento de 835 mm la hacen accesible para una amplia gama de pilotos, mientras que su peso en orden de marcha de 206 kg garantiza estabilidad y maniobrabilidad tanto en carretera como en caminos off-road. Con una capacidad de combustible de 17,6 litros y un consumo homologado de 3,8 L/100km, la 625DSX está lista para largas jornadas de aventura sin preocupaciones."
+    ],
+    "img": "assets/img/modelos/625dsx/voge-625dsx-aventura-sin-limites-potencia-y-control--2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Tecnología avanzada para el explorador moderno",
+    "p": [
+     "La 625DSX incorpora una pantalla LCD a color con tecnología IPS de 7 pulgadas con conectividad Bluetooth y navegación turn-by-turn, proporcionando información clara y precisa en todo momento. Entre su equipamiento destacan los modos de conducción, el control de tracción TCS desconectable, sensores de presión de neumáticos y un sistema de iluminación full LED con faros antiniebla. Además, cuenta con detalles pensados para el confort y la seguridad del piloto, como parabrisas y manetas ajustables, caballete central, parrilla portaequipajes y una cámara frontal HD."
+    ],
+    "img": "assets/img/modelos/625dsx/voge-625dsx-tecnologia-avanzada-para-el-explorador-m-3.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu 625DSX",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "La 625DSX monta un potente motor bicilíndrico en línea de 581 cc, con calado a 270º, doble árbol de levas DOHC y cuatro válvulas por cilindro. Este propulsor desarrolla una potencia de 64 CV a 9.000 rpm y un par motor de 57 Nm a 6.500 rpm, cifras que garantizan una respuesta enérgica y constante, perfecta para rutas de larga distancia y escapadas off-road. Este motor no solo destaca por su suavidad y fiabilidad, sino también por su polivalencia, complementada con dos modos de conducción y control de tracción desconectable, que permiten ajustar su comportamiento al terreno o estilo de pilotaje en cada momento.",
+    "img": ""
+   },
+   {
+    "title": "Suspenciones",
+    "text": "La VOGE 625DSX confía su estabilidad a una horquilla invertida Kayaba de 41 mm, ajustable en precarga y extensión, que garantiza precisión en todo tipo de terrenos. En la parte trasera, un monoamortiguador completamente regulable con depósito separado y anclado mediante bieletas permite personalizar la respuesta del tren trasero en función de las necesidades de cada ruta.",
+    "img": ""
+   },
+   {
+    "title": "Frenos",
+    "text": "El sistema de frenado equipa doble disco flotante de 298 mm en el eje delantero, mordido por pinzas Nissin de doble pistón, y un disco trasero de 240 mm. El ABS de doble canal, desconectable, permite una conducción segura tanto en asfalto como en pistas de tierra.",
+    "img": ""
+   },
+   {
+    "title": "Llantas y neumáticos",
+    "text": "Las llantas de radios tubeless de 19” delante y 17” detrás, equipadas con neumáticos Metzeler Tourance de uso mixto, ofrecen un agarre óptimo en cualquier superficie, aportando versatilidad y resistencia tanto para viajes largos como para salidas off-road.",
+    "img": ""
+   },
+   {
+    "title": "Iluminación y visibilidad",
+    "text": "El sistema de iluminación Full LED asegura una excelente visibilidad tanto de día como de noche, incluyendo luces DRL, luces antiniebla y faros auxiliares. Además, incorpora una cámara frontal HD que permite grabar cada recorrido con calidad de imagen nítida, aportando seguridad y diversión al mismo tiempo.",
+    "img": ""
+   },
+   {
+    "title": "Electrónica",
+    "text": "La VOGE 625DSX cuenta con un paquete electrónico diseñado para maximizar la seguridad y la personalización de la conducción. Dispone de dos modos de conducción — Estándar y Sport — que ajustan la respuesta del motor según las preferencias o las condiciones de la ruta. A ello se suma un sistema de control de tracción desconectable, permitiendo al piloto elegir su intervención en función del terreno. También incorpora sensor de presión de neumáticos, visible desde la instrumentación, y un sistema de alerta de frenada de emergencia, que incrementa la seguridad en situaciones imprevistas.",
+    "img": ""
+   },
+   {
+    "title": "Instrumentación",
+    "text": "El cuadro de mandos se compone de una pantalla LCD a color con tecnología IPS de 7 pulgadas con conectividad Bluetooth. Además de ofrecer información clara y de fácil lectura, gracias a sus generosos dígitos, permite conectar el smartphone y acceder al sistema de navegación básica “Turn by Turn”, consultar la presión de los neumáticos en tiempo real y recibir notificaciones de llamadas entrantes.",
+    "img": ""
+   },
+   {
+    "title": "Protección",
+    "text": "La VOGE 625DSX equipa de serie paramanos, defensas de motor y un parabrisas ajustable manualmente en dos posiciones, pensado para ofrecer protección aerodinámica y adaptarse a las preferencias de cada piloto.",
+    "img": ""
+   },
+   {
+    "title": "Ergonomía",
+    "text": "El asiento a doble altura garantiza comodidad tanto al conductor como al pasajero, completado con amplios asideros para un plus de seguridad.",
+    "img": ""
+   },
+   {
+    "title": "Capacidad y practicidad",
+    "text": "Pensando en la aventura y el día a día, la 625DSX incluye una parrilla portabultos de serie y cuenta con la opción de instalar un juego completo de maletas laterales y top case desarrollados por Loboo, perfectamente integrados en su diseño. Además, incorpora tomas de corriente USB y 12V para cargar dispositivos electrónicos sobre la marcha.",
+    "img": ""
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/625dsx/voge-625dsx-galeria-1.webp",
+    "w": 1200,
+    "h": 800
+   },
+   {
+    "img": "assets/img/modelos/625dsx/voge-625dsx-galeria-2.webp",
+    "w": 1200,
+    "h": 800
+   }
+  ],
+  "manual": "manuales/manual-voge-625-dsx-euro-5.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/625dsx/"
+ },
+ {
+  "slug": "ds800-rally",
+  "name": "DS800 RALLY",
+  "cat": "Adventure",
+  "catSlug": "adventure",
+  "cc": "798",
+  "cv": "95",
+  "nm": "81",
+  "ccNum": 798.0,
+  "license": "A",
+  "price": 7888,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/ds800-rally/voge-ds800-rally.webp",
+  "mw": 1200,
+  "mh": 800,
+  "og": "assets/img/og/voge-ds800-rally.jpg",
+  "colors": [
+   {
+    "name": "Negro",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-negro-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-negro-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-negro-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-negro-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-negro-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-negro-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-negro-7.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-negro-8.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Blanco / Azul",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-blanco-azul-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-blanco-azul-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-blanco-azul-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-blanco-azul-4.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge DS800 Rally: ¡Lista para todo!",
+    "p": [
+     "La nueva DS800 Rally de Voge responde a las exigencias de quien como tú busca una moto Trail de auténtico carácter off-road, sin renunciar a la versatilidad de una moto Trail. Esta bicilíndrica ligera y ágil se desenvuelve con soltura tanto en carretera como en los caminos más desafiantes."
+    ],
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-voge-ds800-rally-lista-para-todo-1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Diseño funcional con alma de raid",
+    "p": [
+     "Inspirada en las motos de rally, su estilizado diseño te permite una libertad total de movimientos. Su asiento situado a una contenida altura de 850 mm y el manillar montado sobre torretas ajustables se adaptan a tu fisionomía, mientras su gran depósito de 24 litros y su estudiada carrocería garantizan la autonomía y comodidad que necesitas en cualquier terreno y situación."
+    ],
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-diseno-funcional-con-alma-de-raid-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Potencia en todo momento",
+    "p": [
+     "Equipada con un nuevo motor bicilíndrico en paralelo “a la última” de 798 cc. la DS800 Rally te ofrece 95 CV a 9.000 rpm y un par máximo de 81 Nm a 6.500 rpm. Con unas curvas de entrega de potencia y par ejemplares, su funcionamiento es directo y suave a la vez, mientras que, gracias a su doble eje de equilibrado, las vibraciones son mínimas. Sus dos bombas de aceite y cárter semiseco garantizan la lubricación en las situaciones más extremas al tiempo que contribuye a bajar el centro de gravedad. La transmisión de seis velocidades con embrague hidráulico anti-rebote es un elemento fundamental para ofrecerte una conducción fluida y estable, incluso en las condiciones más exigentes."
+    ],
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-potencia-en-todo-momento-3.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Preparada para cualquier desafío",
+    "p": [
+     "La parte ciclo ha sido diseñada para sobresalir en todo tipo de condiciones. Dotada con suspensiones KYB completamente regulables, llantas sin cámara de radios cruzados (21” delante y 18” detrás) y neumáticos Pirelli Scorpion Rally STR, la Voge DS800 Rally te ofrece un rendimiento impecable tanto dentro como fuera del asfalto.",
+     "Chasis de acero reforzado con basculante de aluminio.",
+     "Suspensiones completamente regulables.",
+     "Monoamortiguador con depósito separado sobre bieletas.",
+     "Sistema de frenos Nissin radial con ABS desconectable con botón dedicado.",
+     "Altura libre al suelo de 220 mm.",
+     "Amortiguador de dirección rotativo regulable."
+    ],
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-preparada-para-cualquier-desafio-4.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Tecnología y confort integrados",
+    "p": [
+     "La DS800 Rally cuenta con un completo equipamiento tecnológico. Desde el manillar accedes a todos los sistemas a través de una gran pantalla TFT vertical con conectividad para smartphone, mirroring y navegación avanzada. Además, dispone de funciones y equipamiento pensadas tanto para la aventura como para el uso diario.",
+     "Control de tracción desconectable",
+     "Navegación Carbit Ride",
+     "Dos modos de conducción Asiento y puños calefactables",
+     "Barra porta accesorios y puerto USB",
+     "Luces antiniebla y defensas",
+     "Punteras de cambio y freno trasero articuladas",
+     "Torretas de manillar ajustables en cuatro posiciones",
+     "Sensores presión neumáticos",
+     "Cámara frontal HD",
+     "Etc."
+    ],
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-tecnologia-y-confort-integrados-5.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Disponibilidad y precio",
+    "p": [
+     "Disponible en dos combinaciones de color: negro total o blanco/azul, la nueva Voge DS800 Rally ya ha llegado a tu Vendedor Oficial Voge con un competitivo PVR de 7.888 €* con cinco años de garantía y seguro a terceros de un año incluidos.",
+     "Acércate a reservarla y consigue el 20% de descuento de lanzamiento en los kits de maletas y bolsas que SHAD ha diseñado para la Voge DS800 Rally."
+    ],
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-disponibilidad-y-precio-6.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Lleva tu equipaje de la mano de SHAD",
+    "p": [
+     "Voge y el prestigioso fabricante de soluciones para trasporte de equipaje en motos, SHAD, unen sus caminos desarrollado dos kits para la Voge DS800 Rally.",
+     "Kit bolsas blandas: herrajes para Voge DS800 Rally + dos alforjas TR30 + bolsa trasera TR50 + bolsa depósito TR10CL",
+     "Dotadas de soportes rígidos específicamente diseñados para la DS800 Rally, las bolsas blandas laterales adventure SHAD TR30, son impermeables, disfrutan de cierre con cerradura tanto para su sujeción a la moto como para su apertura.",
+     "La gran bolsa trasera TR50 tiene una impresionante capacidad para hasta dos cascos modulares integrales y dispone de sujeción y bloqueo con cerradura a la fijación top de la moto.",
+     "La bolsa sobre depósito TR10CL, completamente impermeable, disfruta de sujeción rápida Click System con bloqueo mediante llave al tapón del depósito de la moto.",
+     "Hasta el 31 de marzo disfruta de un 20% de descuento. Consigue el kit completo por 888 € con la compra de la moto."
+    ],
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-lleva-tu-equipaje-de-la-mano-de-shad-7.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Lleva tu equipaje de la mano de SHAD",
+    "p": [
+     "Kit tres maletas de aluminio: herrajes para Voge DS800 Rally + dos maletas laterales TR36 + Top Case TR55",
+     "Las maletas laterales de aluminio TR36 TERRA de SHAD, destacan por su calidad de fabricación, asa retráctil para poder transportarla cómodamente y doble cierre integrado para su apertura y fijación a la moto.",
+     "El Top Case a juego, TR55, disfruta de las mismas características, siendo el baúl de aluminio con capacidad para dos cascos modulares integrales más ligero del mercado.",
+     "Hasta el 31 de diciembre disfruta de un 20% de descuento de lanzamiento. Consigue el kit completo por 1.198 € con la compra de la moto.",
+     "SHAD, las maletas más premiadas del mercado."
+    ],
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-lleva-tu-equipaje-de-la-mano-de-shad-8.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu DS800 RALLY",
+  "equip": [
+   {
+    "title": "Motor",
+    "text": "La VOGE DS800 RALLY incorpora un nuevo motor bicilíndrico de 798 cc, con la última y más refinada tecnología: lubricación por cárter semiseco con doble bomba de aceite, doble eje de equilibrado, cigüeñal calado a 270º, distribución DOHC de doble árbol de levas y cuatro válvulas por cilindro. Este propulsor entrega una potencia máxima de 95 CV a 9.000 rpm y un par motor de 81 Nm a 6.500 rpm, ofreciendo una respuesta enérgica y progresiva tanto en carretera como en pistas. Está equipado con un embrague antirrebote con accionamiento hidráulico que mejora la seguridad y suavidad durante reducciones bruscas, especialmente útil en conducción deportiva o en terrenos complicados.",
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-equipamiento-1-motor.webp"
+   },
+   {
+    "title": "Parte ciclo",
+    "text": "La suspensión está equipada con piezas KYB reconocidas por su rendimiento, con una horquilla invertida de 43 mm totalmente regulable en precarga, compresión y extensión, que permite adaptar el comportamiento a cada terreno. En la parte trasera, un monoamortiguador también totalmente ajustable y con depósito independiente, montado sobre bieletas, asegura una gran capacidad de absorción y estabilidad en todo tipo de utilización.",
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-equipamiento-2-parte-ciclo.webp"
+   },
+   {
+    "title": "Parte ciclo",
+    "text": "El sistema de frenado utiliza componentes Nissin para un rendimiento superior, con un potente doble disco delantero mordido por pinzas radiales de 4 pistones, y un generoso freno trasero que garantiza control total incluso en las condiciones más exigentes. El sistema ABS es desconectable, pudiendo escoger si sólo la rueda trasera o las dos, lo que permite aprovechar al máximo el comportamiento de la moto fuera del asfalto.",
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-equipamiento-3-parte-ciclo.webp"
+   },
+   {
+    "title": "Parte ciclo",
+    "text": "La DS800 RALLY equipa llantas de radios cruzados de 21” delante y 18” detrás, dotadas de neumáticos tubeless Pirelli Scorpion Rally STR, que garantizan tracción, durabilidad y agarre tanto en carretera como fuera de ella.",
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-equipamiento-4-parte-ciclo.webp"
+   },
+   {
+    "title": "Instrumentación",
+    "text": "El equipamiento electrónico incluye dos modos de conducción que ajustan la entrega de potencia según el terreno y el estilo de pilotaje, junto con un sistema de control de tracción completamente desconectable, diseñado para maximizar el control en superficies sueltas o resbaladizas. Además, incorpora sensor de presión de neumáticos (TPMS) e indicador de marcha engranada para mayor seguridad y precisión. Toda esta información se visualiza en una amplia pantalla TFT vertical a color, que ofrece una lectura clara y completa. La pantalla cuenta con conectividad para smartphone y función Screen Mirroring, brindando una experiencia de conducción más conectada y práctica.",
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-equipamiento-5-instrumentacion.webp"
+   },
+   {
+    "title": "Diseño y ergonomía",
+    "text": "Pensada para el confort y la aventura, incluye puños y asiento calefactables, pantalla con dos posiciones, paramanos, barra portaccesorios, caballete central y defensas laterales. El asiento, situado a 850 mm, ha sido diseñado para ofrecer comodidad en largas distancias y buena ergonomía tanto sentado como de pie, gracias a sus torretas ajustables. El depósito de 24 litros ofrece una autonomía ideal para rutas largas, minimizando paradas.",
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-equipamiento-6-diseno-y-ergonomia.webp"
+   },
+   {
+    "title": "Equipamiento y confort",
+    "text": "La VOGE DS800 RALLY viene equipada de serie con un completo conjunto de elementos orientados tanto al confort como a la funcionalidad. El sistema de iluminación Full LED, que incluye faros antiniebla, garantiza una visibilidad óptima en cualquier condición. Incorpora cámara frontal HD para grabar rutas o mejorar la seguridad en marcha.",
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-equipamiento-7-equipamiento-y-confort.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-galeria-1.webp",
+    "w": 1200,
+    "h": 800
+   },
+   {
+    "img": "assets/img/modelos/ds800-rally/voge-ds800-rally-galeria-2.webp",
+    "w": 1200,
+    "h": 800
+   }
+  ],
+  "manual": "manuales/manual-voge-800-dsx-rally.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/ds800-rally/"
+ },
+ {
+  "slug": "900dsx",
+  "name": "900DSX",
+  "cat": "Adventure",
+  "catSlug": "adventure",
+  "cc": "895",
+  "cv": "95",
+  "nm": "95",
+  "ccNum": 895.0,
+  "license": "A",
+  "price": 9192,
+  "pvp": null,
+  "promo": false,
+  "nueva": false,
+  "main": "assets/img/modelos/900dsx/voge-900dsx.webp",
+  "mw": 1189,
+  "mh": 792,
+  "og": "assets/img/og/voge-900dsx.jpg",
+  "colors": [
+   {
+    "name": "Azul",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-azul-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-azul-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-azul-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-azul-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-azul-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-azul-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-azul-7.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-azul-8.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Negro",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-negro-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-negro-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-negro-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-negro-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-negro-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-negro-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-negro-7.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-negro-8.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   },
+   {
+    "name": "Lima",
+    "imgs": [
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-lima-1.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-lima-2.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-lima-3.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-lima-4.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-lima-5.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-lima-6.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-lima-7.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-lima-8.webp",
+      "w": 1024,
+      "h": 683
+     },
+     {
+      "img": "assets/img/modelos/900dsx/voge-900dsx-lima-9.webp",
+      "w": 1024,
+      "h": 683
+     }
+    ]
+   }
+  ],
+  "blocks": [
+   {
+    "h": "Voge 900DSX MY2025: Innovación, Seguridad y Rendimiento a tu alcance.",
+    "p": [
+     "Te presentamos la 900DSX MY2025, una motocicleta que combina tecnología de punta, un diseño y un precio increíblemente competitivo, que incorpora nuevas características diseñadas para maximizar tu experiencia de conducción, tanto en carretera como fuera de ella."
+    ],
+    "img": "assets/img/modelos/900dsx/voge-900dsx-voge-900dsx-my2025-innovacion-seguridad--1.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Innovación y seguridad en cada detalle",
+    "p": [
+     "Dotada con una avanzada IMU Bosch de 6 ejes, la 900DSX MY2025 lleva la seguridad al siguiente nivel. Gracias al conocimiento de posición y dinámica de la moto en todo momento, Voge ha podio dotar a la 900DSX MY25 de la función “Cornering ABS” previniendo así el bloqueo de las ruedas incluso en frenadas en curva inclinado. Este avance se suma al ya existente control de tracción (TCS), al radar de alerta de obstáculos en ángulo muerto y al sistema de aviso de frenada de emergencia, consolidando a la 900DSX entre las motos más avanzadas en tecnología de seguridad."
+    ],
+    "img": "assets/img/modelos/900dsx/voge-900dsx-innovacion-y-seguridad-en-cada-detalle-2.webp",
+    "w": 1200,
+    "h_": 900
+   },
+   {
+    "h": "Equipamiento premium para tus aventuras",
+    "p": [
+     "Otro aspecto en el que la nueva Voge 900DSX MY25 ha dado un paso adelante es en la conectividad incorporando la función “Mirroring” mediante la cual podrás proyectar la pantalla de tu smartphone en su TFT de 7 pulgadas. No siendo poco, con la Voge 900DSX MY25, dispondrás de tres años de acceso gratuito al valorado navegador “Carbit Ride”."
+    ],
+    "img": "assets/img/modelos/900dsx/voge-900dsx-equipamiento-premium-para-tus-aventuras-3.webp",
+    "w": 1200,
+    "h_": 900
+   }
+  ],
+  "equipTitle": "Equipamiento para tu 900DSX",
+  "equip": [
+   {
+    "title": "Iluminación y visibilidad",
+    "text": "– Sistema Full LED de alto rendimiento. – Faros antiniebla integrados. – Luz de freno con alerta de emergencia (ESS). Máxima visibilidad y seguridad en cualquier condición.",
+    "img": "assets/img/modelos/900dsx/voge-900dsx-equipamiento-1-iluminacion-y-visibilidad.webp"
+   },
+   {
+    "title": "Instrumentación",
+    "text": "– Pantalla TFT de 7” con cristal antirrayaduras. – Mirroring con smartphone y navegación Carbit Ride (3 años gratis). – Monitorización de presión de neumáticos (TPMS). – Tomas USB y 12V. Todo a la vista. Todo conectado.",
+    "img": "assets/img/modelos/900dsx/voge-900dsx-equipamiento-2-instrumentacion.webp"
+   },
+   {
+    "title": "Electrónica de seguridad",
+    "text": "– IMU Bosch de 6 ejes. – Cornering ABS y control de tracción (TCS) desconectable. – Aviso de frenada de emergencia. – Radar de ángulo muerto. – Control de crucero. – Cuatro modos de conducción: Sport, Road, Rain y Enduro. Tecnología para protegerte en cada curva.",
+    "img": "assets/img/modelos/900dsx/voge-900dsx-equipamiento-3-electronica-de-seguridad.webp"
+   },
+   {
+    "title": "Confort y ergonomía",
+    "text": "– Control de crucero. – Puños y asiento calefactables. – Parabrisas regulable, paramanos y cubrecárter. – Asiento Trail ergonómico a 825 mm. – Arranque Keyless. Pensada para ir lejos.",
+    "img": "assets/img/modelos/900dsx/voge-900dsx-equipamiento-4-confort-y-ergonomia.webp"
+   },
+   {
+    "title": "Capacidad y aventura",
+    "text": "– Defensas laterales, cubrecárter, caballete central y parrilla portabultos de serie. – Maletas y top case “by Loboo” en aluminio (opcionales). – Cámara frontal HD integrada. Preparada para la ruta… y para grabarla.",
+    "img": "assets/img/modelos/900dsx/voge-900dsx-equipamiento-5-capacidad-y-aventura.webp"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "assets/img/modelos/900dsx/voge-900dsx-galeria-1.webp",
+    "w": 1200,
+    "h": 800
+   },
+   {
+    "img": "assets/img/modelos/900dsx/voge-900dsx-galeria-2.webp",
+    "w": 1200,
+    "h": 800
+   }
+  ],
+  "manual": "manuales/manual-voge-900dsx-euro-5.pdf",
+  "wpUrl": "https://voge.duomomotor.com/modelo/900dsx/"
+ }
+]

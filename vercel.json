@@ -1,0 +1,134 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/tienda/",
+      "destination": "/#gama",
+      "permanent": true
+    },
+    {
+      "source": "/shop/",
+      "destination": "/#gama",
+      "permanent": true
+    },
+    {
+      "source": "/construccion/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/carrito/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/finalizar-compra/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/mi-cuenta/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/modelo/",
+      "destination": "/#gama",
+      "permanent": true
+    },
+    {
+      "source": "/categoria-producto/",
+      "destination": "/#gama",
+      "permanent": true
+    },
+    {
+      "source": "/producto/:slug/",
+      "destination": "/modelo/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/prueba/",
+      "destination": "/solicitud-de-prueba/",
+      "permanent": true
+    },
+    {
+      "source": "/taller/",
+      "destination": "/taller-voge/",
+      "permanent": true
+    },
+    {
+      "source": "/sobre-nosotros/",
+      "destination": "/concesionario-voge-madrid-sur/",
+      "permanent": true
+    },
+    {
+      "source": "/aviso-legal-2/",
+      "destination": "/aviso-legal/",
+      "permanent": true
+    },
+    {
+      "source": "/politica-de-privacidad/",
+      "destination": "/politicas-de-privacidad/",
+      "permanent": true
+    },
+    {
+      "source": "/politica-de-cookies/",
+      "destination": "/politicas-de-cookies/",
+      "permanent": true
+    },
+    {
+      "source": "/feed/",
+      "destination": "/blog/feed.xml",
+      "permanent": true
+    },
+    {
+      "source": "/wp-admin/:path*",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/wp-login.php",
+      "destination": "/",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/manuales/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    }
+  ]
+}

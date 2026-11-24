@@ -1,0 +1,20 @@
+{
+ "name": "Voge Madrid Sur · Duomo Motor Bikes",
+ "short_name": "Voge Madrid Sur",
+ "start_url": "/",
+ "display": "browser",
+ "background_color": "#16171d",
+ "theme_color": "#16171d",
+ "icons": [
+  {
+   "src": "/assets/img/logo/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/assets/img/logo/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}
