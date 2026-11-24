@@ -292,6 +292,10 @@ def visit_block(h="Ven a verlas a Móstoles o Getafe", tienda="ambas"):
     if tienda == "getafe": return ge
     return f'<h2 style="text-align:center;margin-bottom:28px">{h}</h2>' + mo + '<div style="height:28px"></div>' + ge
 
+def marquee(words):
+    items = "".join(f"<span>{e(w)}</span><i>✦</i>" for w in words)
+    return f'<div class="marquee" aria-hidden="true"><div class="marquee__track">{items}{items}</div></div>'
+
 def card(m, lazy=True, h="h3"):
     badge = '<span class="card__badge">En promoción</span>' if m["promo"] else ""
     price = (f'<del>{eur(m["pvp"])}</del>' if m["pvp"] else "") + eur(m["price"])
@@ -684,6 +688,7 @@ def page_home():
     </div>
   </section>
 
+  {marquee(["Voge Madrid Sur", "Scooters", "Naked", "Adventure", "Móstoles", "Getafe"])}
   <section class="section section--dark">
     <div class="wrap">
       <span class="eyebrow" style="display:flex;justify-content:center">Siempre cerca de ti</span>

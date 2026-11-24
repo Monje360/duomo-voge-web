@@ -637,3 +637,114 @@ h1, h2 { letter-spacing: -.025em; }
 .hero h2.h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); color: #fff; text-align: left; }
 .catgrid--3 { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 860px) { .catgrid--3 { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   Capa visual 2 (24/11): más impacto y versión móvil revisada
+   ============================================================ */
+/* Banda final de llamada a la acción: panel diagonal con el color de marca, sin pisar el texto */
+.cta-band { padding: 64px 48px; background: radial-gradient(120% 140% at 0% 0%, #2a2b31 0%, var(--ink) 55%); box-shadow: var(--shadow-lg); }
+.cta-band::before { left: auto; right: -2px; top: 0; height: 100%; width: 34%; clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 100%); opacity: .95; }
+.cta-band::after { right: 30%; top: 0; height: 100%; width: 14px; clip-path: polygon(70% 0, 100% 0, 30% 100%, 0 100%); opacity: .7; }
+.cta-band h2, .cta-band p, .cta-band .hero__actions { position: relative; z-index: 1; max-width: 640px; }
+.cta-band { text-align: left; }
+.cta-band p { margin-left: 0; }
+.cta-band .hero__actions { justify-content: flex-start; }
+.cta-band h2 { font-size: clamp(2rem, 4.4vw, 3.2rem); }
+
+/* Franja de texto en movimiento */
+.marquee { background: var(--ink); color: #fff; overflow: hidden; white-space: nowrap; padding: 18px 0; border-top: 4px solid var(--yellow); border-bottom: 4px solid var(--yellow); }
+.marquee__track { display: inline-flex; gap: 48px; animation: marquee 32s linear infinite; padding-left: 48px; }
+.marquee span { font-family: var(--cond); font-weight: 800; text-transform: uppercase; font-size: clamp(1.6rem, 4vw, 2.8rem); letter-spacing: .02em; }
+.marquee span:nth-child(even) { color: transparent; -webkit-text-stroke: 1.5px var(--yellow); }
+.marquee i { color: var(--yellow); font-style: normal; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .marquee__track { animation: none; } }
+
+/* Títulos de sección con acento de marca */
+.section > .wrap > h2::after { content: ""; display: block; width: 64px; height: 5px; background: var(--yellow); margin: 14px auto 0; border-radius: 3px; }
+.section--dark > .wrap > h2::after { background: var(--yellow); }
+
+/* Tarjetas: borde de marca al pasar */
+.card { transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s; border-bottom: 4px solid transparent; }
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-bottom-color: var(--yellow); }
+
+/* ---------------- MÓVIL ---------------- */
+@media (max-width: 700px) {
+  .section { padding: 52px 0; }
+  h1 { font-size: clamp(2rem, 9vw, 2.6rem); }
+  h2 { font-size: clamp(1.6rem, 7vw, 2.1rem); }
+  .sub { font-size: .95rem; margin-bottom: 26px; }
+  /* Rejilla de motos a dos columnas y tarjetas compactas */
+  .grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px; }
+  .card__body { padding: 4px 12px 14px; gap: 4px; }
+  .card__title { font-size: 1.05rem !important; line-height: 1.1; }
+  .card__cat { font-size: .62rem; }
+  .card__specs { gap: 8px; margin: 4px auto 0; }
+  .card__spec { font-size: .62rem; }
+  .card__spec b { font-size: .78rem; }
+  .card__spec:nth-child(3) { display: none; }
+  .card__colors { font-size: .66rem; }
+  .card__foot { flex-direction: column; align-items: stretch; gap: 8px; padding-top: 10px; text-align: center; }
+  .card__price { text-align: center; font-size: 1.15rem; }
+  .card__link { justify-content: center; font-size: .72rem; }
+  .card__link i { width: 22px; height: 22px; }
+  .card:hover { transform: none; }
+  /* Filtros y pestañas: una fila deslizable en lugar de varias filas */
+  .cat-bar, .ctabs { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; margin-left: -24px; margin-right: -24px; padding: 0 24px 8px; scroll-snap-type: x proximity; scrollbar-width: none; }
+  .cat-bar::-webkit-scrollbar, .ctabs::-webkit-scrollbar { display: none; }
+  .cat-bar button, .ctab { flex: 0 0 auto; scroll-snap-align: start; }
+  /* Categorías en carrusel horizontal */
+  .catgrid--3 { display: flex; overflow-x: auto; gap: 12px; margin: 0 -24px; padding: 0 24px 8px; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .catgrid--3::-webkit-scrollbar { display: none; }
+  .catgrid--3 .cattile { flex: 0 0 80%; scroll-snap-align: center; aspect-ratio: 4/3.4; }
+  .catgrid--3 .cattile__txt span { display: block; font-size: .78rem; }
+  /* Concesionarios y mapas */
+  .visit__info { padding: 26px 22px; }
+  .visit iframe { min-height: 0; height: 220px; }
+  /* Banda final */
+  .cta-band { padding: 40px 22px 44px; text-align: center; }
+  .cta-band::before { width: 100%; height: 10px; top: auto; bottom: 0; right: 0; clip-path: none; }
+  .cta-band::after { display: none; }
+  .cta-band p { margin: 10px auto 22px; }
+  .cta-band .hero__actions { justify-content: center; }
+  .hero__actions { gap: 10px; }
+  .hero__actions .btn { flex: 1 1 auto; justify-content: center; text-align: center; }
+  /* Equipamiento, galería y pie */
+  .ecards { grid-template-columns: 1fr; gap: 14px; }
+  .mgallery { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px 20px; }
+  .footer-grid > div:first-child, .footer-grid > div:last-child { grid-column: 1 / -1; }
+  .stats { gap: 22px 12px; }
+  .marquee { padding: 12px 0; }
+  .info-cards { grid-template-columns: 1fr; }
+}
+/* Voge: cabecera de ficha en oscuro con brillo amarillo detrás de la moto */
+.mhero { background: radial-gradient(55% 75% at 28% 55%, rgba(254,235,52,.30), rgba(254,235,52,0) 70%), linear-gradient(135deg, #16171d 0%, #262830 100%); color: #fff; padding: 40px 0 64px; }
+.mhero h1 { color: #fff; }
+.mhero h1 small { color: var(--yellow); }
+.mhero .pricebox__now { color: #fff; }
+.mhero .price-note { color: rgba(255,255,255,.6); }
+.mhero .kpis { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.14); }
+.mhero .kpi + .kpi, .mhero .kpi:nth-child(n+3) { border-color: rgba(255,255,255,.14); }
+.mhero .kpi b { color: #fff; }
+.mhero .kpi span { color: rgba(255,255,255,.6); }
+.mhero .colors-pick__label { color: rgba(255,255,255,.75); }
+.mhero .colors-pick__label b { color: #fff; }
+.mhero .lnk { color: var(--yellow); }
+.mhero .badge--dark { background: var(--yellow); color: var(--ink); }
+.mhero .btn--ghost { color: #fff; border-color: rgba(255,255,255,.55); background: transparent; }
+.mhero .btn--ghost:hover { background: #fff; color: var(--ink); }
+.mhero__media img { filter: drop-shadow(0 30px 40px rgba(0,0,0,.45)); }
+.kpis--3 { grid-template-columns: repeat(3, 1fr) !important; }
+@media (max-width: 700px) { .mhero { padding: 20px 0 44px; } .kpis--3 .kpi:nth-child(3) { border-left: 1px solid rgba(255,255,255,.14); border-top: 0; } }
+@media (max-width: 700px) {
+  .features { grid-template-columns: 1fr 1fr !important; gap: 10px; }
+  .feature { padding: 18px 14px; }
+  .feature h3 { font-size: .95rem; }
+  .feature p { font-size: .8rem; }
+  .feature__ico { width: 38px; height: 38px; margin-bottom: 10px; }
+  .story__txt h2, .story__txt h3 { font-size: 1.35rem; }
+  .servs { gap: 16px; }
+  .serv h3 { font-size: 1.1rem; }
+  .serv p { font-size: .8rem; }
+}
