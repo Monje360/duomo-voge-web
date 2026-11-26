@@ -138,6 +138,12 @@ DEALER_GETAFE = {
 
 # ------------------------------------------------------------------ PLANTILLA
 def head(title, desc, path, og_img="/assets/img/og/voge-madrid-sur.jpg", ld=(), noindex=False, preload=None):
+    # SEO: títulos ≤ 62 y descripciones ≤ 158 caracteres (Google corta lo demás)
+    if len(title) > 62 and " | " in title: title = title.rsplit(" | ", 1)[0]
+    if len(title) > 62 and " · " in title: title = title.rsplit(" · ", 1)[0]
+    if len(desc) > 158:
+        _c = desc[:158]; _p = _c.rfind(". ")
+        desc = _c[:_p + 1] if _p > 90 else _c.rsplit(" ", 1)[0].rstrip(",;:") + "…"
     canon = SITE + path
     ld_html = "\n".join(jsonld(x) for x in ld)
     pre = f'<link rel="preload" as="image" href="{preload}" fetchpriority="high">' if preload else ""
@@ -241,6 +247,7 @@ def footer():
         </address>
       </div>
     </div>
+    <div class="wrap footer-brands"><span>Duomo Motor Bikes, concesionario oficial multimarca en Móstoles:</span> <a href="https://duomomotor.com/">Duomo Motor Bikes</a> · <a href="https://suzuki.duomomotor.com/">Suzuki</a> · <a href="https://zontes.duomomotor.com/">Zontes</a> · <a href="https://royalenfield.duomomotor.com/">Royal Enfield</a></div>
     <div class="wrap footer-bottom">
       <span>© <span id="year">{datetime.date.today().year}</span> {NEGOCIO["razon"]}. Todos los derechos reservados.</span>
       <span><a href="/aviso-legal/">Aviso Legal</a> · <a href="/politicas-de-cookies/">Políticas de Cookies</a> · <a href="/politicas-de-privacidad/">Políticas de Privacidad</a></span>
@@ -248,6 +255,7 @@ def footer():
   </footer>
   <script src="/assets/js/config.js"></script>
   <script src="/assets/js/app.js" defer></script>
+  <script src="/assets/js/ficha-modal.js" defer></script>
   <script src="/assets/js/cookies.js" defer></script>
 </body>
 </html>
@@ -300,7 +308,7 @@ def card(m, lazy=True, h="h3"):
     badge = '<span class="card__badge">En promoción</span>' if m["promo"] else ""
     price = (f'<del>{eur(m["pvp"])}</del>' if m["pvp"] else "") + eur(m["price"])
     ncol = len(m["colors"])
-    return f"""<article class="card reveal" data-cat="{m["cat"]}">
+    return f"""<article class="card reveal" data-cat="{m["cat"]}" data-slug="{m["slug"]}">
         <div class="card__media"><img src="/{m["main"]}" alt="{e(full(m))}" width="{m["mw"]}" height="{m["mh"]}"{' loading="lazy" decoding="async"' if lazy else ''}>{badge}</div>
         <div class="card__body">
           <span class="card__cat">{m["cat"]}</span>
@@ -606,6 +614,8 @@ def blog_rerender(tpl, posts):
         if not os.path.exists(fp): continue
         fills = json.load(open(fp, encoding="utf-8"))
         fills["%%RELACIONADOS%%"] = blog_relacionados(p, posts)
+        _t = html.unescape(fills.get("%%TITLE%%", ""))
+        if len(_t) > 62 and " | " in _t: fills["%%TITLE%%"] = e(_t.rsplit(" | ", 1)[0])
         fills["%%CTA_BAND%%"] = band
         html_ = tpl
         for k, v in fills.items(): html_ = html_.replace(k, v)
@@ -717,7 +727,7 @@ def page_home():
   </section>
   {cta_band()}
 """
-    write("/", head("Motos Voge Madrid Sur · Concesionaria de Motos Voge en Madrid Sur",
+    write("/", head("Voge Madrid Sur · Concesionario oficial en Móstoles y Getafe",
                     f"Concesionarios oficiales Voge en Móstoles y Getafe. Toda la gama Voge: scooters, naked y adventure, desde {eur(precio_min())}. Solicita tu prueba.",
                     "/", ld=ld, preload="/assets/img/hero/concesionario-voge-madrid-sur-1.webp") + header("inicio") + body + footer())
 
@@ -789,10 +799,10 @@ def page_model(m):
                           "areaServed": {"@type": "AdministrativeArea", "name": "Madrid Sur"}}}
     crumbs = [("Inicio", "/"), (c["plural"], cat_url(c)), (fn, url)]
     ld = [product, crumbs_ld(crumbs)]
-    title = f"{fn} · Motos Voge Madrid Sur"
-    primera = re.split(r"(?<=[.!?])\s", desc_txt.strip())[0] if desc_txt.strip() else ""
-    meta = f"{fn} por {eur(m['price'])}. {primera}"
-    if len(meta) > 160: meta = meta[:157].rsplit(" ", 1)[0] + "…"
+    title = f"{fn}: precio y prueba en Móstoles y Getafe"
+    _lic = {"A1": "A1 o B", "A2": "A2", "A": "A"}.get(m["license"], m["license"])
+    meta = f"{fn} por {eur(m['price'])} en Voge Móstoles y Getafe. {m['cc']} cc, {m['cv']} CV, carnet {_lic}. Colores, ficha técnica y prueba sin compromiso."
+    if len(meta) > 158: meta = f"{fn} por {eur(m['price'])} en Voge Móstoles y Getafe. {m['cc']} cc, {m['cv']} CV, carnet {_lic}. Pide tu prueba."
     body = f"""
   {crumbs_html(crumbs)}
   <section class="mhero">
@@ -1119,3 +1129,20 @@ if __name__ == "__main__":
     for u, (t, s, cnt) in LEGAL.items(): page_legal(u, t, s, cnt)
     page_blog(); page_404(); seo_files()
     print(f"OK · {len(M)} modelos · {len(CATS)} categorías")
+
+# ---------- Fichas para el pop-up (como Suzuki) ----------
+def _corta(t, n=230):
+    t = re.sub(r"<[^>]+>", "", t or "").strip()
+    return t if len(t) <= n else t[:n].rsplit(" ", 1)[0] + "…"
+_LICV = {"A1": "A1 o B (+3 años)", "A2": "A2", "A": "A"}
+def _fichas():
+    d = {"_site": {"wa": WHATSAPP, "priceNote": "PVP · IVA incluido"}}
+    for m in M:
+        p = (m["blocks"][0]["p"][0] if m.get("blocks") and m["blocks"][0].get("p") else "")
+        d[m["slug"]] = {"name": m["name"], "full": full(m), "cat": m["cat"], "url": model_url(m),
+            "price": m["price"], "pvp": m["pvp"], "desc": _corta(p),
+            "specs": [["Categoría", m["cat"]], ["Cilindrada", f'{m["cc"]} cc'], ["Potencia", f'{m["cv"]} CV'],
+                      ["Par máximo", f'{m["nm"]} Nm'], ["Carnet", _LICV.get(m["license"], m["license"])]],
+            "colors": [{"name": c["name"], "img": c["imgs"][0]["img"]} for c in m["colors"] if c.get("imgs")] or [{"name": "", "img": m["main"]}]}
+    open(os.path.join(ROOT, "assets", "js", "fichas.json"), "w", encoding="utf-8").write(json.dumps(d, ensure_ascii=False, separators=(",", ":")))
+_fichas()

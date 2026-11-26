@@ -55,7 +55,7 @@
     },
     {
       "source": "/taller/",
-      "destination": "/taller-voge/",
+      "destination": "/concesionario-voge-madrid-sur/",
       "permanent": true
     },
     {
@@ -92,6 +92,51 @@
       "source": "/wp-login.php",
       "destination": "/",
       "permanent": false
+    },
+    {
+      "source": "/hello-world/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-json/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/xmlrpc.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/comments/feed/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/author/:slug/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/category/:slug/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:slug/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/page/:n/",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "headers": [
