@@ -1140,7 +1140,7 @@ def _fichas():
     for m in M:
         p = (m["blocks"][0]["p"][0] if m.get("blocks") and m["blocks"][0].get("p") else "")
         d[m["slug"]] = {"name": m["name"], "full": full(m), "cat": m["cat"], "url": model_url(m),
-            "price": m["price"], "pvp": m["pvp"], "desc": _corta(p),
+            "price": m["price"], "pvp": m["pvp"], "desc": _corta(p), "img": m["main"],
             "specs": [["Categoría", m["cat"]], ["Cilindrada", f'{m["cc"]} cc'], ["Potencia", f'{m["cv"]} CV'],
                       ["Par máximo", f'{m["nm"]} Nm'], ["Carnet", _LICV.get(m["license"], m["license"])]],
             "colors": [{"name": c["name"], "img": c["imgs"][0]["img"]} for c in m["colors"] if c.get("imgs")] or [{"name": "", "img": m["main"]}]}

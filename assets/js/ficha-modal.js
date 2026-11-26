@@ -53,7 +53,7 @@
     var sw = colors.length > 1 ?
       '<div class="fmodal__colors"><div class="fmodal__colors-label">Colores disponibles · <span data-cname>' + esc(c0.name) + "</span></div>" +
       '<div class="fmodal__swatches">' + colors.map(function (c, i) {
-        return '<button type="button" class="fswatch' + (i === 0 ? " active" : "") + '" data-i="' + i + '" title="' + esc(c.name) + '" aria-label="Color ' + esc(c.name) + '"><img src="/' + esc(c.thumb || c.img) + '" alt="" loading="lazy"></button>';
+        return '<button type="button" class="fswatch' + (i === 0 && !m.img ? " active" : "") + '" data-i="' + i + '" title="' + esc(c.name) + '" aria-label="Color ' + esc(c.name) + '"><img src="/' + esc(c.thumb || c.img) + '" alt="" loading="lazy"></button>';
       }).join("") + "</div></div>" : "";
     var price = c0.price != null ? c0.price : m.price;
     var priceHTML = price ? '<div class="fmodal__price">' + (m.pvp ? "<del>" + eur(m.pvp) + "</del>" : "") +
@@ -64,7 +64,7 @@
       '<a class="btn btn--ghost" href="/contacto/?modelo=' + q + '#solicita">Pedir presupuesto</a>';
     el.querySelector(".fmodal__panel").innerHTML =
       '<button type="button" class="fmodal__close" aria-label="Cerrar">&times;</button>' +
-      '<div class="fmodal__media"><img src="/' + esc(c0.img) + '" alt="' + esc(m.full) + '" data-photo></div>' +
+      '<div class="fmodal__media"><img src="/' + esc(m.img || c0.img) + '" alt="' + esc(m.full) + '" data-photo></div>' +
       '<div class="fmodal__info">' +
         (m.cat ? '<span class="fmodal__cat">' + esc(m.cat) + "</span>" : "") +
         '<h2 class="fmodal__title">' + esc(m.full) + "</h2>" +
